@@ -1,0 +1,1451 @@
+{
+ "id": {
+  "dataset": {
+   "name": "SmSA (IndoNLU)",
+   "source": "https://github.com/IndoNLP/indonlu",
+   "license": "Apache-2.0",
+   "origin": "Prosa.ai; Purwarianti & Crisdayanti (2019)",
+   "train": 11000,
+   "val": 1260,
+   "test": 500
+  },
+  "classes": [
+   "positive",
+   "neutral",
+   "negative"
+  ],
+  "label_counts": {
+   "train": {
+    "positive": 6416,
+    "neutral": 1148,
+    "negative": 3436
+   },
+   "val": {
+    "positive": 735,
+    "neutral": 131,
+    "negative": 394
+   },
+   "test": {
+    "positive": 208,
+    "neutral": 88,
+    "negative": 204
+   }
+  },
+  "lengths": [
+   8,
+   16,
+   29,
+   49,
+   68,
+   73
+  ],
+  "len_hist": [
+   393,
+   981,
+   1099,
+   977,
+   1138,
+   1053,
+   817,
+   688,
+   626,
+   508,
+   462,
+   407,
+   410,
+   535,
+   493,
+   280,
+   85,
+   28,
+   14,
+   5,
+   1,
+   0,
+   0,
+   0
+  ],
+  "oov": 0.0714,
+  "comparison": [
+   {
+    "model": "TF-IDF + logistic regression",
+    "val_f1": 0.8549,
+    "acc": 0.784,
+    "f1": 0.74,
+    "params": 127257
+   },
+   {
+    "model": "Word embeddings, averaged",
+    "val_f1": 0.8369,
+    "acc": 0.684,
+    "f1": 0.6611,
+    "params": 384243,
+    "epochs": 9,
+    "dim": 48,
+    "units": null
+   },
+   {
+    "model": "BiLSTM",
+    "val_f1": 0.8475,
+    "acc": 0.774,
+    "f1": 0.7539,
+    "params": 578563,
+    "epochs": 5,
+    "dim": 64,
+    "units": 64
+   }
+  ],
+  "chosen": "BiLSTM",
+  "lr_C": 10,
+  "history": {
+   "loss": [
+    0.65677,
+    0.29539,
+    0.19845,
+    0.13596,
+    0.10804
+   ],
+   "val_loss": [
+    0.40294,
+    0.37933,
+    0.4567,
+    0.45172,
+    0.49473
+   ]
+  },
+  "shipped": {
+   "acc": 0.774,
+   "f1": 0.7539,
+   "per_class_f1": [
+    0.7735,
+    0.6832,
+    0.805
+   ],
+   "agree_float": 1.0,
+   "confusion": [
+    [
+     140,
+     11,
+     57
+    ],
+    [
+     9,
+     55,
+     24
+    ],
+    [
+     5,
+     7,
+     192
+    ]
+   ]
+  },
+  "top_words": {
+   "positive": [
+    {
+     "word": "enak",
+     "weight": 8.601
+    },
+    {
+     "word": "tempat",
+     "weight": 5.374
+    },
+    {
+     "word": "bagus",
+     "weight": 4.881
+    },
+    {
+     "word": "sangat",
+     "weight": 4.512
+    },
+    {
+     "word": "makanan",
+     "weight": 4.478
+    },
+    {
+     "word": "banget",
+     "weight": 4.346
+    },
+    {
+     "word": "kebaikan",
+     "weight": 4.166
+    },
+    {
+     "word": "nya",
+     "weight": 4.132
+    },
+    {
+     "word": "menu",
+     "weight": 3.9
+    },
+    {
+     "word": "suka",
+     "weight": 3.85
+    },
+    {
+     "word": "cinta",
+     "weight": 3.728
+    },
+    {
+     "word": "cukup",
+     "weight": 3.639
+    }
+   ],
+   "neutral": [
+    {
+     "word": "demokrat",
+     "weight": 5.287
+    },
+    {
+     "word": "minimal",
+     "weight": 4.161
+    },
+    {
+     "word": "pilkada",
+     "weight": 3.14
+    },
+    {
+     "word": "bukalapak",
+     "weight": 3.09
+    },
+    {
+     "word": "biasanya",
+     "weight": 3.059
+    },
+    {
+     "word": "resi",
+     "weight": 2.974
+    },
+    {
+     "word": "mohon",
+     "weight": 2.972
+    },
+    {
+     "word": "grab",
+     "weight": 2.919
+    },
+    {
+     "word": "akan",
+     "weight": 2.915
+    },
+    {
+     "word": "mandiri",
+     "weight": 2.866
+    },
+    {
+     "word": "indomie",
+     "weight": 2.859
+    },
+    {
+     "word": "resmi",
+     "weight": 2.784
+    }
+   ],
+   "negative": [
+    {
+     "word": "saja",
+     "weight": 5.9
+    },
+    {
+     "word": "kecewa",
+     "weight": 5.456
+    },
+    {
+     "word": "tidak",
+     "weight": 5.449
+    },
+    {
+     "word": "kurang",
+     "weight": 5.351
+    },
+    {
+     "word": "macet",
+     "weight": 5.01
+    },
+    {
+     "word": "mahal",
+     "weight": 4.81
+    },
+    {
+     "word": "itu",
+     "weight": 4.64
+    },
+    {
+     "word": "orang",
+     "weight": 4.386
+    },
+    {
+     "word": "malah",
+     "weight": 4.334
+    },
+    {
+     "word": "kotor",
+     "weight": 4.201
+    },
+    {
+     "word": "menyesal",
+     "weight": 4.157
+    },
+    {
+     "word": "jangan",
+     "weight": 4.08
+    }
+   ]
+  },
+  "samples": [
+   {
+    "id": "id-135",
+    "text": "banyak promo dan aplikasi mudah digunakan . proses sangat cepat . dan juga aplikasi nya bagus dan tidak rumit .",
+    "label": "positive",
+    "pred": "positive",
+    "probs": [
+     0.8252,
+     0.0131,
+     0.1617
+    ]
+   },
+   {
+    "id": "id-155",
+    "text": "xiaomi . karena gue pakai xiaomi sekarang , sebelumnya oppo f1 . lebih suka xiaomi saja , baterai nya kuat . gue puas banget sih dengan xiaomi .",
+    "label": "positive",
+    "pred": "positive",
+    "probs": [
+     0.8173,
+     0.0173,
+     0.1654
+    ]
+   },
+   {
+    "id": "id-181",
+    "text": "aku lagi makan mangga potong ! aku suka banget buah mangga , besok kalau kepasar mau beli banyak-banyak lagi ah .",
+    "label": "positive",
+    "pred": "negative",
+    "probs": [
+     0.3473,
+     0.0111,
+     0.6416
+    ]
+   },
+   {
+    "id": "id-264",
+    "text": "di depan sana masih ada kompetisi foto dengan tema morning feel .",
+    "label": "neutral",
+    "pred": "neutral",
+    "probs": [
+     0.0119,
+     0.9443,
+     0.0437
+    ]
+   },
+   {
+    "id": "id-266",
+    "text": "isi pulsa via atm bca tadi jam 17.48 sampai sekarang belum masuk , boleh tolong dicek ? terima kasih",
+    "label": "neutral",
+    "pred": "neutral",
+    "probs": [
+     0.0099,
+     0.9778,
+     0.0123
+    ]
+   },
+   {
+    "id": "id-453",
+    "text": "gojek fitur nya makin banyak .",
+    "label": "neutral",
+    "pred": "negative",
+    "probs": [
+     0.1568,
+     0.3896,
+     0.4536
+    ]
+   },
+   {
+    "id": "id-17",
+    "text": "kata nya dapat promo 100 ribu . tapi setelah di bayar di atm - nya ternyata harga normal . sudah saya kirim email tapi tidak ada balasan . mengecewakan .",
+    "label": "negative",
+    "pred": "negative",
+    "probs": [
+     0.0048,
+     0.0179,
+     0.9773
+    ]
+   },
+   {
+    "id": "id-41",
+    "text": "sangat kecewa dengan pelayanan nya saya sudah transfer tapi sampai sekarang belum ada konfirmasi padahal sudah kirim bukti transfer dan sudah telpon ke cs nya .",
+    "label": "negative",
+    "pred": "negative",
+    "probs": [
+     0.0512,
+     0.0081,
+     0.9407
+    ]
+   },
+   {
+    "id": "id-308",
+    "text": "nyesel deh beli baju di toko tadi , kualitas nya murahan banget .",
+    "label": "negative",
+    "pred": "positive",
+    "probs": [
+     0.5583,
+     0.0311,
+     0.4106
+    ]
+   }
+  ],
+  "check": {
+   "ids": [
+    [
+     324,
+     304,
+     64,
+     19,
+     14,
+     17,
+     137,
+     5,
+     20,
+     7,
+     234,
+     149,
+     2,
+     304,
+     943,
+     13,
+     4,
+     12,
+     28,
+     22,
+     4,
+     65,
+     2,
+     184,
+     3,
+     6745,
+     11,
+     6745,
+     2,
+     8,
+     83,
+     62,
+     139,
+     19,
+     14,
+     37,
+     2,
+     34,
+     262,
+     14,
+     4,
+     18,
+     8,
+     45,
+     31,
+     3,
+     87,
+     551,
+     2
+    ],
+    [
+     353,
+     4,
+     92,
+     304,
+     8,
+     104,
+     83,
+     699,
+     62,
+     19,
+     14,
+     37,
+     2,
+     665,
+     3,
+     69,
+     3,
+     304,
+     572,
+     1,
+     436,
+     14,
+     4,
+     2131,
+     369,
+     2,
+     34,
+     150,
+     463,
+     588,
+     2,
+     33,
+     369,
+     1,
+     3,
+     33,
+     507,
+     1,
+     2,
+     90,
+     4,
+     92,
+     8,
+     20,
+     35,
+     5,
+     353,
+     1000,
+     2,
+     8,
+     119,
+     139,
+     135,
+     5,
+     166,
+     681,
+     2
+    ],
+    [
+     33,
+     4587,
+     11,
+     1010,
+     3,
+     393,
+     8,
+     20,
+     5,
+     30,
+     1,
+     23,
+     165,
+     2,
+     181,
+     3,
+     236,
+     8,
+     30,
+     1,
+     985,
+     2,
+     729,
+     3,
+     1941,
+     4,
+     108,
+     1276,
+     2,
+     2051,
+     3,
+     236,
+     8,
+     2087,
+     351,
+     2,
+     3415,
+     2,
+     256,
+     34,
+     6317,
+     275,
+     2
+    ]
+   ],
+   "probs": [
+    [
+     0.13312384,
+     0.00513163,
+     0.86174453
+    ],
+    [
+     0.03766015,
+     0.0037754,
+     0.95856445
+    ],
+    [
+     0.01208412,
+     0.00637884,
+     0.98153704
+    ]
+   ]
+  },
+  "vocab_size": 8000
+ },
+ "en": {
+  "dataset": {
+   "name": "GoEmotions",
+   "source": "https://github.com/google-research/google-research/tree/master/goemotions",
+   "license": "Apache-2.0",
+   "origin": "Google Research; Demszky et al. (2020)",
+   "train": 43410,
+   "val": 5426,
+   "test": 5427
+  },
+  "classes": [
+   "positive",
+   "neutral",
+   "negative",
+   "ambiguous"
+  ],
+  "emotions": [
+   "admiration",
+   "amusement",
+   "anger",
+   "annoyance",
+   "approval",
+   "caring",
+   "confusion",
+   "curiosity",
+   "desire",
+   "disappointment",
+   "disapproval",
+   "disgust",
+   "embarrassment",
+   "excitement",
+   "fear",
+   "gratitude",
+   "grief",
+   "joy",
+   "love",
+   "nervousness",
+   "optimism",
+   "pride",
+   "realization",
+   "relief",
+   "remorse",
+   "sadness",
+   "surprise",
+   "neutral"
+  ],
+  "groups": {
+   "admiration": "positive",
+   "amusement": "positive",
+   "anger": "negative",
+   "annoyance": "negative",
+   "approval": "positive",
+   "caring": "positive",
+   "confusion": "ambiguous",
+   "curiosity": "ambiguous",
+   "desire": "positive",
+   "disappointment": "negative",
+   "disapproval": "negative",
+   "disgust": "negative",
+   "embarrassment": "negative",
+   "excitement": "positive",
+   "fear": "negative",
+   "gratitude": "positive",
+   "grief": "negative",
+   "joy": "positive",
+   "love": "positive",
+   "nervousness": "negative",
+   "optimism": "positive",
+   "pride": "positive",
+   "realization": "ambiguous",
+   "relief": "positive",
+   "remorse": "negative",
+   "sadness": "negative",
+   "surprise": "ambiguous",
+   "neutral": "neutral"
+  },
+  "label_counts": {
+   "train": {
+    "positive": 15216,
+    "neutral": 12823,
+    "negative": 8133,
+    "ambiguous": 3858,
+    "mixed": 3380
+   },
+   "val": {
+    "positive": 1941,
+    "neutral": 1592,
+    "negative": 1014,
+    "ambiguous": 459,
+    "mixed": 420
+   },
+   "test": {
+    "positive": 1863,
+    "neutral": 1606,
+    "negative": 1070,
+    "ambiguous": 488,
+    "mixed": 400
+   }
+  },
+  "emotion_counts": {
+   "admiration": 4130,
+   "amusement": 2328,
+   "anger": 1567,
+   "annoyance": 2470,
+   "approval": 2939,
+   "caring": 1087,
+   "confusion": 1368,
+   "curiosity": 2191,
+   "desire": 641,
+   "disappointment": 1269,
+   "disapproval": 2022,
+   "disgust": 793,
+   "embarrassment": 303,
+   "excitement": 853,
+   "fear": 596,
+   "gratitude": 2662,
+   "grief": 77,
+   "joy": 1452,
+   "love": 2086,
+   "nervousness": 164,
+   "optimism": 1581,
+   "pride": 111,
+   "realization": 1110,
+   "relief": 153,
+   "remorse": 545,
+   "sadness": 1326,
+   "surprise": 1060,
+   "neutral": 14219
+  },
+  "multi_label": 0.1636,
+  "lengths": [
+   5,
+   9,
+   15,
+   21,
+   26,
+   29
+  ],
+  "len_hist": [
+   105,
+   4745,
+   5182,
+   5436,
+   5497,
+   5407,
+   4916,
+   4254,
+   3627,
+   2752,
+   1101,
+   288,
+   70,
+   16,
+   6,
+   3,
+   1,
+   1,
+   0,
+   3
+  ],
+  "oov": 0.0425,
+  "comparison": [
+   {
+    "model": "TF-IDF + logistic regression",
+    "val_f1": 0.6328,
+    "acc": 0.666,
+    "f1": 0.6425,
+    "emo_f1": 0.4618,
+    "params": 2137856
+   },
+   {
+    "model": "Word embeddings, averaged",
+    "val_f1": 0.5975,
+    "acc": 0.6346,
+    "f1": 0.6124,
+    "emo_f1": 0.3601,
+    "params": 481664,
+    "epochs": 10,
+    "dim": 48,
+    "units": null,
+    "pos_weights": "full"
+   },
+   {
+    "model": "BiLSTM",
+    "val_f1": 0.6444,
+    "acc": 0.6543,
+    "f1": 0.6319,
+    "emo_f1": 0.3845,
+    "params": 710304,
+    "epochs": 6,
+    "dim": 64,
+    "units": 64,
+    "pos_weights": "full"
+   }
+  ],
+  "chosen": "BiLSTM",
+  "lr_C": 1,
+  "history": {
+   "loss": [
+    3.88217,
+    2.95066,
+    2.58987,
+    2.34815,
+    2.08858,
+    1.94102
+   ],
+   "val_loss": [
+    3.18536,
+    2.91042,
+    2.89681,
+    2.95234,
+    3.11053,
+    3.18729
+   ]
+  },
+  "thresholds": [
+   0.85,
+   0.85,
+   0.85,
+   0.75,
+   0.65,
+   0.7,
+   0.85,
+   0.8,
+   0.9,
+   0.75,
+   0.8,
+   0.95,
+   0.85,
+   0.9,
+   0.85,
+   0.9,
+   0.55,
+   0.85,
+   0.9,
+   0.8,
+   0.85,
+   0.65,
+   0.85,
+   0.45,
+   0.9,
+   0.85,
+   0.9,
+   0.55
+  ],
+  "shipped": {
+   "acc": 0.6539,
+   "f1": 0.6316,
+   "per_class_f1": [
+    0.7725,
+    0.5973,
+    0.6218,
+    0.5347
+   ],
+   "emo_f1": 0.3855,
+   "emo_per_class": {
+    "admiration": 0.5608,
+    "amusement": 0.7861,
+    "anger": 0.3779,
+    "annoyance": 0.2455,
+    "approval": 0.2561,
+    "caring": 0.2544,
+    "confusion": 0.2935,
+    "curiosity": 0.5076,
+    "desire": 0.3553,
+    "disappointment": 0.1393,
+    "disapproval": 0.2753,
+    "disgust": 0.3646,
+    "embarrassment": 0.1395,
+    "excitement": 0.327,
+    "fear": 0.4466,
+    "gratitude": 0.9031,
+    "grief": 0.125,
+    "joy": 0.5322,
+    "love": 0.7602,
+    "nervousness": 0.0667,
+    "optimism": 0.5288,
+    "pride": 0.2222,
+    "realization": 0.2339,
+    "relief": 0.0645,
+    "remorse": 0.5732,
+    "sadness": 0.3773,
+    "surprise": 0.4248,
+    "neutral": 0.653
+   },
+   "agree_float": 0.999,
+   "confusion": [
+    [
+     1299,
+     308,
+     146,
+     110
+    ],
+    [
+     142,
+     962,
+     290,
+     212
+    ],
+    [
+     43,
+     247,
+     702,
+     78
+    ],
+    [
+     16,
+     98,
+     50,
+     324
+    ]
+   ],
+   "test_rows": 5027
+  },
+  "top_words": {
+   "positive": [
+    {
+     "word": "lol",
+     "weight": 10.813
+    },
+    {
+     "word": "thanks",
+     "weight": 9.736
+    },
+    {
+     "word": "love",
+     "weight": 9.298
+    },
+    {
+     "word": "great",
+     "weight": 7.525
+    },
+    {
+     "word": "thank",
+     "weight": 7.036
+    },
+    {
+     "word": "good",
+     "weight": 6.294
+    },
+    {
+     "word": "hope",
+     "weight": 5.895
+    },
+    {
+     "word": "haha",
+     "weight": 5.735
+    },
+    {
+     "word": "glad",
+     "weight": 5.592
+    },
+    {
+     "word": "awesome",
+     "weight": 5.55
+    },
+    {
+     "word": "funny",
+     "weight": 5.45
+    },
+    {
+     "word": "amazing",
+     "weight": 5.426
+    }
+   ],
+   "neutral": [
+    {
+     "word": "they",
+     "weight": 1.99
+    },
+    {
+     "word": "hello",
+     "weight": 1.554
+    },
+    {
+     "word": "hi",
+     "weight": 1.282
+    },
+    {
+     "word": "saving",
+     "weight": 1.221
+    },
+    {
+     "word": "remindme",
+     "weight": 1.197
+    },
+    {
+     "word": "political",
+     "weight": 1.167
+    },
+    {
+     "word": "asking",
+     "weight": 1.144
+    },
+    {
+     "word": "friends",
+     "weight": 1.063
+    },
+    {
+     "word": "only",
+     "weight": 1.038
+    },
+    {
+     "word": "rather",
+     "weight": 1.035
+    },
+    {
+     "word": "bet",
+     "weight": 1.004
+    },
+    {
+     "word": "f",
+     "weight": 0.991
+    }
+   ],
+   "negative": [
+    {
+     "word": "sorry",
+     "weight": 8.635
+    },
+    {
+     "word": "sad",
+     "weight": 6.543
+    },
+    {
+     "word": "hate",
+     "weight": 4.875
+    },
+    {
+     "word": "stupid",
+     "weight": 4.843
+    },
+    {
+     "word": "disgusting",
+     "weight": 4.791
+    },
+    {
+     "word": "worst",
+     "weight": 4.284
+    },
+    {
+     "word": "worse",
+     "weight": 4.262
+    },
+    {
+     "word": "bad",
+     "weight": 4.247
+    },
+    {
+     "word": "awful",
+     "weight": 4.201
+    },
+    {
+     "word": "terrible",
+     "weight": 4.183
+    },
+    {
+     "word": "horrible",
+     "weight": 4.104
+    },
+    {
+     "word": "sadly",
+     "weight": 3.999
+    }
+   ],
+   "ambiguous": [
+    {
+     "word": "surprised",
+     "weight": 8.613
+    },
+    {
+     "word": "wow",
+     "weight": 6.787
+    },
+    {
+     "word": "curious",
+     "weight": 6.048
+    },
+    {
+     "word": "confused",
+     "weight": 5.834
+    },
+    {
+     "word": "wonder",
+     "weight": 5.186
+    },
+    {
+     "word": "why",
+     "weight": 5.056
+    },
+    {
+     "word": "omg",
+     "weight": 4.953
+    },
+    {
+     "word": "realized",
+     "weight": 4.448
+    },
+    {
+     "word": "shocked",
+     "weight": 4.216
+    },
+    {
+     "word": "how",
+     "weight": 3.924
+    },
+    {
+     "word": "realize",
+     "weight": 3.737
+    },
+    {
+     "word": "wondering",
+     "weight": 3.638
+    }
+   ]
+  },
+  "samples": [
+   {
+    "id": "en-3",
+    "text": "I didn't know that, thank you for teaching me something today!",
+    "label": "positive",
+    "pred": "positive",
+    "emotions": [
+     "gratitude"
+    ],
+    "probs": [
+     0.9038,
+     0.0104,
+     0.0182,
+     0.0676
+    ]
+   },
+   {
+    "id": "en-61",
+    "text": "Loving everyone so far. This is going to be a great season.",
+    "label": "positive",
+    "pred": "positive",
+    "emotions": [
+     "love"
+    ],
+    "probs": [
+     0.9827,
+     0.0128,
+     0.002,
+     0.0024
+    ]
+   },
+   {
+    "id": "en-1",
+    "text": "It's wonderful because it's awful. At not with.",
+    "label": "positive",
+    "pred": "negative",
+    "emotions": [
+     "admiration"
+    ],
+    "probs": [
+     0.1316,
+     0.0199,
+     0.8457,
+     0.0028
+    ]
+   },
+   {
+    "id": "en-23",
+    "text": "Well, there's cubs and otters too.",
+    "label": "neutral",
+    "pred": "neutral",
+    "emotions": [
+     "neutral"
+    ],
+    "probs": [
+     0.2298,
+     0.551,
+     0.1549,
+     0.0644
+    ]
+   },
+   {
+    "id": "en-28",
+    "text": "Same here but it seems like that will make it more rewarding to actually build a base with gardens and stuff.",
+    "label": "neutral",
+    "pred": "neutral",
+    "emotions": [
+     "neutral"
+    ],
+    "probs": [
+     0.0914,
+     0.6796,
+     0.1556,
+     0.0734
+    ]
+   },
+   {
+    "id": "en-36",
+    "text": "I totally thought the same thing! I was like, oh honey nooooo!",
+    "label": "neutral",
+    "pred": "ambiguous",
+    "emotions": [
+     "neutral"
+    ],
+    "probs": [
+     0.1948,
+     0.2575,
+     0.023,
+     0.5247
+    ]
+   },
+   {
+    "id": "en-96",
+    "text": "Because of this bad situation some people are afraid of becoming youtubers because of this",
+    "label": "negative",
+    "pred": "negative",
+    "emotions": [
+     "fear"
+    ],
+    "probs": [
+     0.0043,
+     0.0253,
+     0.9651,
+     0.0052
+    ]
+   },
+   {
+    "id": "en-8",
+    "text": "I’m sorry to hear that friend :(. It’s for the best most likely if she didn’t accept you for who you are",
+    "label": "negative",
+    "pred": "negative",
+    "emotions": [
+     "remorse"
+    ],
+    "probs": [
+     0.073,
+     0.013,
+     0.8816,
+     0.0324
+    ]
+   },
+   {
+    "id": "en-103",
+    "text": "Lovely places to buy from but very hard to get a good price as a seller because of their high rents (and bargaining expertise!)",
+    "label": "negative",
+    "pred": "positive",
+    "emotions": [
+     "disappointment"
+    ],
+    "probs": [
+     0.8395,
+     0.1136,
+     0.0292,
+     0.0177
+    ]
+   },
+   {
+    "id": "en-85",
+    "text": "I'm not sure I have heard of this. Really interesting.",
+    "label": "ambiguous",
+    "pred": "ambiguous",
+    "emotions": [
+     "confusion"
+    ],
+    "probs": [
+     0.0825,
+     0.0316,
+     0.0122,
+     0.8737
+    ]
+   },
+   {
+    "id": "en-300",
+    "text": "So she knows of 3 languages, Wonder what they are?",
+    "label": "ambiguous",
+    "pred": "ambiguous",
+    "emotions": [
+     "curiosity",
+     "surprise"
+    ],
+    "probs": [
+     0.0012,
+     0.0479,
+     0.0014,
+     0.9495
+    ]
+   },
+   {
+    "id": "en-143",
+    "text": "Ok, fair enough. From your original post, it wasn't really clear that you looked at sources other than YouTube.",
+    "label": "ambiguous",
+    "pred": "neutral",
+    "emotions": [
+     "confusion"
+    ],
+    "probs": [
+     0.4066,
+     0.479,
+     0.0858,
+     0.0286
+    ]
+   }
+  ],
+  "check": {
+   "ids": [
+    [
+     35,
+     67,
+     126,
+     49,
+     39,
+     621,
+     63,
+     110,
+     1173,
+     4,
+     51,
+     3,
+     1453,
+     1,
+     5,
+     1,
+     5,
+     9,
+     1,
+     10
+    ],
+    [
+     37,
+     782,
+     91,
+     37,
+     515,
+     2,
+     45,
+     25,
+     34,
+     2
+    ],
+    [
+     5445,
+     445,
+     109,
+     5,
+     56,
+     291,
+     6,
+     8,
+     244,
+     10,
+     82,
+     27,
+     66,
+     299,
+     144,
+     6,
+     308,
+     10
+    ]
+   ],
+   "sent": [
+    [
+     0.08309546,
+     0.00826929,
+     0.87940866,
+     0.02922659
+    ],
+    [
+     0.13159951,
+     0.0199406,
+     0.84565633,
+     0.00280355
+    ],
+    [
+     0.98272398,
+     0.01292187,
+     0.00119842,
+     0.00315574
+    ]
+   ],
+   "emo": [
+    [
+     0.06951063,
+     0.10049605,
+     0.12760305,
+     0.18395564,
+     0.14224096,
+     0.27886853,
+     0.21528698,
+     0.16285267,
+     0.10684604,
+     0.67130017,
+     0.31091119,
+     0.22937128,
+     0.62667887,
+     0.03259179,
+     0.57169411,
+     0.09893139,
+     0.21200437,
+     0.06862479,
+     0.68537828,
+     0.13061288,
+     0.2566747,
+     0.02894369,
+     0.48830143,
+     0.03240923,
+     0.9551104,
+     0.94563321,
+     0.12615687,
+     0.01775919
+    ],
+    [
+     0.82217179,
+     0.01349933,
+     0.65495724,
+     0.78678757,
+     0.29634741,
+     0.04644657,
+     0.00969345,
+     0.00516714,
+     0.01317544,
+     0.87803794,
+     0.44563781,
+     0.9352813,
+     0.10896647,
+     0.10611631,
+     0.36855036,
+     0.04814668,
+     0.02227187,
+     0.09790605,
+     0.02411685,
+     0.01677806,
+     0.01982317,
+     0.00599145,
+     0.25495912,
+     0.01611517,
+     0.01463511,
+     0.57199905,
+     0.03665973,
+     0.03203886
+    ],
+    [
+     0.86088957,
+     0.02622966,
+     0.03341348,
+     0.05254545,
+     0.63252837,
+     0.75899464,
+     0.01660816,
+     0.12409485,
+     0.30226347,
+     0.03699956,
+     0.02082667,
+     0.01193783,
+     0.00204269,
+     0.8724549,
+     0.00192646,
+     0.62778196,
+     0.00347872,
+     0.71675689,
+     0.06511192,
+     0.00107316,
+     0.8441132,
+     0.07624176,
+     0.11857135,
+     0.11289676,
+     0.00150039,
+     0.0026289,
+     0.05061547,
+     0.08237691
+    ]
+   ]
+  },
+  "vocab_size": 10000
+ },
+ "token_pattern": "[a-z0-9]+(?:'[a-z]+)?|[^\\sa-z0-9]",
+ "maxlen": 100,
+ "tf": {
+  "tensorflow": "2.21.0",
+  "keras": "3.15.1"
+ }
+}

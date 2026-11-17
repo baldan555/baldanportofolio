@@ -1,0 +1,267 @@
+{
+ "measured": "2026-11-11",
+ "python": "3.12.9",
+ "pandas": "3.1.1",
+ "pipelines": [
+  {
+   "id": "retail-profile",
+   "name": "Retail profiling",
+   "script": "ml/retail_profile.py",
+   "kind": "batch",
+   "seconds": 4.3,
+   "inputs": [
+    {
+     "file": "ml/data/raw/retail/online_retail.pkl",
+     "bytes": 27414886,
+     "rows": 541909
+    }
+   ],
+   "outputs": [
+    {
+     "file": "src/data/retail-profile.json",
+     "bytes": 8590
+    }
+   ],
+   "steps": [
+    "load the raw export",
+    "profile every column",
+    "find duplicates, cancellations, odd prices",
+    "count each cleaning rule",
+    "small aggregates for demos"
+   ],
+   "feeds": "Data models page (Raw to ready, method library)"
+  },
+  {
+   "id": "retail-dashboard",
+   "name": "Sales dashboard ETL",
+   "script": "ml/retail_dashboard.py",
+   "kind": "batch",
+   "seconds": 36.2,
+   "inputs": [
+    {
+     "file": "ml/data/raw/retail/online_retail.pkl",
+     "bytes": 27414886,
+     "rows": 541909
+    }
+   ],
+   "outputs": [
+    {
+     "file": "src/data/retail-dashboard.json",
+     "bytes": 11087
+    },
+    {
+     "file": "src/data/sales-dashboard.json",
+     "bytes": 42101
+    }
+   ],
+   "steps": [
+    "same cleaning rules",
+    "net revenue (minus cancellations)",
+    "metrics by country × month",
+    "products, timing, cohorts, RFM",
+    "serve as JSON"
+   ],
+   "feeds": "Overview journey, Dashboards story, sales dashboard"
+  },
+  {
+   "id": "ab-dashboard",
+   "name": "A/B test aggregates",
+   "script": "ml/ab_dashboard.py",
+   "kind": "batch",
+   "seconds": 2.7,
+   "inputs": [
+    {
+     "file": "ml/data/raw/hillstrom/hillstrom.csv",
+     "bytes": 3964977,
+     "rows": 64000
+    }
+   ],
+   "outputs": [
+    {
+     "file": "src/data/ab-dashboard.json",
+     "bytes": 8097
+    }
+   ],
+   "steps": [
+    "fix a typo in the source",
+    "segment bands",
+    "cell sums per arm (n, visits, buys, spend, spend²)",
+    "sample-ratio and balance checks"
+   ],
+   "feeds": "A/B test dashboard"
+  },
+  {
+   "id": "churn-dashboard",
+   "name": "Churn de-identification",
+   "script": "ml/churn_dashboard.py",
+   "kind": "batch",
+   "seconds": 0.7,
+   "inputs": [
+    {
+     "file": "ml/data/raw/telco/telco.csv",
+     "bytes": 970457,
+     "rows": 7043
+    }
+   ],
+   "outputs": [
+    {
+     "file": "src/data/churn-dashboard.json",
+     "bytes": 148982
+    }
+   ],
+   "steps": [
+    "drop IDs, gender, age, household",
+    "encode categories as digit strings",
+    "attach the trained model"
+   ],
+   "feeds": "Churn dashboard"
+  },
+  {
+   "id": "air-dashboard",
+   "name": "Air quality history",
+   "script": "ml/air_dashboard.py",
+   "kind": "batch",
+   "seconds": 0.8,
+   "inputs": [
+    {
+     "file": "ml/data/raw/live/pm25_jakarta.json",
+     "bytes": 1109367,
+     "rows": 42600
+    }
+   ],
+   "outputs": [
+    {
+     "file": "src/data/air-dashboard.json",
+     "bytes": 25426
+    }
+   ],
+   "steps": [
+    "keep whole days before the fetch",
+    "daily, monthly, hour × month",
+    "days over WHO / Indonesian limits",
+    "14-day offline snapshot"
+   ],
+   "feeds": "Jakarta air dashboard"
+  },
+  {
+   "id": "geo",
+   "name": "Map shapes",
+   "script": "ml/geo_prepare.py",
+   "kind": "batch",
+   "seconds": 0.5,
+   "inputs": [
+    {
+     "file": "ml/data/raw/geo/idn_adm1_simplified.geojson",
+     "bytes": 6579300,
+     "rows": 34
+    },
+    {
+     "file": "ml/data/raw/geo/ne_110m_countries.geojson",
+     "bytes": 838726,
+     "rows": 177
+    }
+   ],
+   "outputs": [
+    {
+     "file": "src/data/geo-shapes.json",
+     "bytes": 145390
+    }
+   ],
+   "steps": [
+    "project lon/lat to SVG",
+    "simplify rings (Douglas–Peucker)",
+    "drop specks, keep islands",
+    "sample store dots inside provinces"
+   ],
+   "feeds": "Real maps in the chart library"
+  },
+  {
+   "id": "de-profile",
+   "name": "Pipeline profile",
+   "script": "ml/de_profile.py",
+   "kind": "batch",
+   "seconds": 0.8,
+   "inputs": [
+    {
+     "file": "ml/data/raw/live/pm25_jakarta.json",
+     "bytes": 1109367,
+     "rows": 42600
+    }
+   ],
+   "outputs": [
+    {
+     "file": "src/data/de-pipeline.json",
+     "bytes": 4928
+    }
+   ],
+   "steps": [
+    "measure every stage",
+    "run the seven checks",
+    "extract the real code"
+   ],
+   "feeds": "This hub's overview story"
+  },
+  {
+   "id": "live-data",
+   "name": "Live API fetcher",
+   "script": "ml/live_data.py",
+   "kind": "api",
+   "seconds": null,
+   "inputs": [
+    {
+     "file": "Open-Meteo · Frankfurter · Wikimedia APIs",
+     "bytes": null,
+     "rows": null
+    }
+   ],
+   "outputs": [
+    {
+     "file": "ml/data/raw/live/pm25_jakarta.json",
+     "bytes": 1109367
+    },
+    {
+     "file": "ml/data/raw/live/usd_idr.json",
+     "bytes": 146557
+    },
+    {
+     "file": "ml/data/raw/live/wiki_id.json",
+     "bytes": 4903090
+    }
+   ],
+   "steps": [
+    "yearly or monthly requests",
+    "retries with backoff, longer on HTTP 429",
+    "skip what is already cached",
+    "filter unsafe Wikipedia titles"
+   ],
+   "feeds": "Live Forecast Lab, air dashboard, this hub"
+  },
+  {
+   "id": "train",
+   "name": "Model training",
+   "script": "ml/train.py",
+   "kind": "ml",
+   "seconds": null,
+   "inputs": [
+    {
+     "file": "public datasets in ml/data/raw",
+     "bytes": null,
+     "rows": null
+    }
+   ],
+   "outputs": [
+    {
+     "file": "src/data/models/ (24 JSON files)",
+     "bytes": 2882912
+    }
+   ],
+   "steps": [
+    "one function per project",
+    "train, compare, pick",
+    "export weights and samples as JSON",
+    "parity checks with the browser"
+   ],
+   "feeds": "Every ML and DL project page"
+  }
+ ]
+}

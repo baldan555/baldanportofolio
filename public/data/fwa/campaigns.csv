@@ -1,0 +1,6 @@
+campaign_id,name,objective,channel,first_wave,target_rule,offer,holdout_pct,cost_per_contact_idr
+C1,Early-life welcome,Cut churn in the first months,WhatsApp + call,2025-09,Month 2 of service and first-month usage under 60% of the plan's typical,Setup tips and a usage check call,20,6000
+C2,Rebuy reminder,Rebuy on time,WhatsApp,2025-07,Monthly-package customers who were late at least once in the last 3 months,Reminder 3 days before the package expires,20,400
+C3,Payment recovery,Recover overdue invoices,Call + WhatsApp,2025-10,Postpaid customers 5 to 30 days past due,Reminder call and a payment link,20,5000
+C4,Save offer,Keep customers at risk,Retention desk call,2026-01,"Active customers with a risk flag (late payment, low or falling usage, open complaint), up to 120 per month",20% off for 3 months,30,8000
+C5,5G upgrade,Move covered 4G customers to 5G,WhatsApp + outlet,2025-11,"4G customers whose home now has 5G coverage, not contacted in the last 3 months, up to 150 per month",Free 5G device swap with a 5G plan,20,3000

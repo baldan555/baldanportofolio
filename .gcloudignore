@@ -1,0 +1,21 @@
+# What NOT to upload when building with gcloud from this folder (CI builds from GitHub instead).
+.gcloudignore
+.git/
+node_modules/
+.next/
+# raw data, the Python venv and the analysis scripts stay home: the site needs their JSON output in src/data,
+# plus the scripts whose code the project pages show (read at build time by src/lib/code-docs.ts, list in
+# src/data/code-docs.ts)
+ml/*
+!ml/train.py
+!ml/live_data.py
+!ml/quickdraw_data.py
+docs/
+# secrets (OpenRouter key etc.) are never uploaded; set them on the Cloud Run service instead
+.env*
+# personal documents at the root (the public CV lives in public/)
+/*.pdf
+*.tsbuildinfo
+# regenerated from node_modules by scripts/copy-mediapipe.mjs during the build
+public/mediapipe/wasm/
+npm-debug.log*

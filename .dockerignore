@@ -1,0 +1,20 @@
+# Kept out of the image build context (see also .gcloudignore for the upload itself)
+.git
+node_modules
+.next
+# all of ml/ except the scripts the project pages show (src/lib/code-docs.ts reads them at build time)
+ml/*
+!ml/train.py
+!ml/live_data.py
+!ml/quickdraw_data.py
+docs
+.env*
+# root-level PDFs only (public/cv-baldanullah.pdf stays)
+*.pdf
+*.tsbuildinfo
+public/mediapipe/wasm
+Dockerfile
+cloudbuild.yaml
+.gcloudignore
+.dockerignore
+npm-debug.log*

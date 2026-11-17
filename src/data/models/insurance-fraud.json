@@ -1,0 +1,1798 @@
+{
+ "dataset": {
+  "name": "Auto insurance claims (insurance_claims.csv)",
+  "source": "https://data.mendeley.com/datasets/992mh7dk9y/2",
+  "mirror": "https://github.com/mwitiderrick/insurancedata",
+  "rows": 1000,
+  "raw_cols": 39,
+  "fraud_rate": 0.247,
+  "features_used": [
+   "months_as_customer",
+   "umbrella_limit",
+   "injury_claim",
+   "property_claim",
+   "vehicle_claim",
+   "number_of_vehicles_involved",
+   "bodily_injuries",
+   "witnesses",
+   "incident_severity",
+   "incident_type",
+   "collision_type",
+   "authorities_contacted",
+   "property_damage",
+   "police_report_available"
+  ],
+  "left_out": [
+   "insured_sex",
+   "age",
+   "insured_zip",
+   "insured_education_level",
+   "insured_occupation",
+   "insured_relationship",
+   "insured_hobbies",
+   "policy_number",
+   "dates",
+   "locations",
+   "auto make/model"
+  ]
+ },
+ "validation": "Stratified 5-fold cross-validation, out-of-fold scores",
+ "comparison": [
+  {
+   "model": "Logistic Regression",
+   "features": "claim facts",
+   "roc_auc": 0.77,
+   "ap": 0.5016,
+   "top20": 0.482
+  },
+  {
+   "model": "Decision tree (depth 3)",
+   "features": "claim facts",
+   "roc_auc": 0.7535,
+   "ap": 0.4829,
+   "top20": 0.449
+  },
+  {
+   "model": "Gradient Boosting",
+   "features": "claim facts",
+   "roc_auc": 0.7461,
+   "ap": 0.5036,
+   "top20": 0.457
+  },
+  {
+   "model": "Severity only",
+   "features": "one column",
+   "roc_auc": 0.7658,
+   "ap": 0.5018,
+   "top20": 0.466
+  },
+  {
+   "model": "Logistic Regression",
+   "features": "+ hobbies",
+   "roc_auc": 0.87,
+   "ap": 0.6209,
+   "top20": 0.559
+  },
+  {
+   "model": "Gradient Boosting",
+   "features": "+ hobbies",
+   "roc_auc": 0.8604,
+   "ap": 0.6565,
+   "top20": 0.526
+  }
+ ],
+ "chosen": "Logistic Regression · claim facts",
+ "model": {
+  "intercept": -1.523175,
+  "numeric": {
+   "months_as_customer": {
+    "mean": 203.954,
+    "scale": 115.055603,
+    "coef": 0.008134
+   },
+   "umbrella_limit": {
+    "mean": 1101000.0,
+    "scale": 2296257.6075,
+    "coef": 0.219214
+   },
+   "injury_claim": {
+    "mean": 7433.42,
+    "scale": 4878.510767,
+    "coef": -0.152004
+   },
+   "property_claim": {
+    "mean": 7399.57,
+    "scale": 4822.313212,
+    "coef": -0.043058
+   },
+   "vehicle_claim": {
+    "mean": 37928.95,
+    "scale": 18876.807405,
+    "coef": 0.276745
+   },
+   "number_of_vehicles_involved": {
+    "mean": 1.839,
+    "scale": 1.018371,
+    "coef": 0.064095
+   },
+   "bodily_injuries": {
+    "mean": 0.992,
+    "scale": 0.819717,
+    "coef": 0.05868
+   },
+   "witnesses": {
+    "mean": 1.487,
+    "scale": 1.110779,
+    "coef": 0.091597
+   }
+  },
+  "categorical": {
+   "incident_severity": {
+    "Major Damage": 1.937478,
+    "Minor Damage": -0.570141,
+    "Total Loss": -0.408792,
+    "Trivial Damage": -0.960861
+   },
+   "incident_type": {
+    "Multi-vehicle Collision": -0.245451,
+    "Parked Car": 0.185921,
+    "Single Vehicle Collision": 0.021018,
+    "Vehicle Theft": 0.036196
+   },
+   "collision_type": {
+    "Front Collision": -0.124127,
+    "Rear Collision": 0.18221,
+    "Side Collision": -0.282516,
+    "Unknown": 0.222117
+   },
+   "authorities_contacted": {
+    "Ambulance": 0.093734,
+    "Fire": -0.067837,
+    "None": -0.427273,
+    "Other": 0.330802,
+    "Police": 0.068259
+   },
+   "property_damage": {
+    "NO": -0.206048,
+    "Unknown": 0.148262,
+    "YES": 0.05547
+   },
+   "police_report_available": {
+    "NO": 0.088794,
+    "Unknown": -0.02391,
+    "YES": -0.0672
+   }
+  }
+ },
+ "options": {
+  "incident_severity": [
+   "Major Damage",
+   "Minor Damage",
+   "Total Loss",
+   "Trivial Damage"
+  ],
+  "incident_type": [
+   "Multi-vehicle Collision",
+   "Parked Car",
+   "Single Vehicle Collision",
+   "Vehicle Theft"
+  ],
+  "collision_type": [
+   "Front Collision",
+   "Rear Collision",
+   "Side Collision",
+   "Unknown"
+  ],
+  "authorities_contacted": [
+   "Ambulance",
+   "Fire",
+   "None",
+   "Other",
+   "Police"
+  ],
+  "property_damage": [
+   "NO",
+   "Unknown",
+   "YES"
+  ],
+  "police_report_available": [
+   "NO",
+   "Unknown",
+   "YES"
+  ]
+ },
+ "ranges": {
+  "months_as_customer": [
+   0,
+   479
+  ],
+  "umbrella_limit": [
+   -1000000,
+   10000000
+  ],
+  "injury_claim": [
+   0,
+   21450
+  ],
+  "property_claim": [
+   0,
+   23670
+  ],
+  "vehicle_claim": [
+   70,
+   79560
+  ],
+  "number_of_vehicles_involved": [
+   1,
+   4
+  ],
+  "bodily_injuries": [
+   0,
+   2
+  ],
+  "witnesses": [
+   0,
+   3
+  ]
+ },
+ "medians": {
+  "months_as_customer": 199,
+  "umbrella_limit": 0,
+  "injury_claim": 6775,
+  "property_claim": 6750,
+  "vehicle_claim": 42100,
+  "number_of_vehicles_involved": 1,
+  "bodily_injuries": 1,
+  "witnesses": 1
+ },
+ "tree": {
+  "nodes": [
+   {
+    "split": {
+     "kind": "cat",
+     "col": "incident_severity",
+     "value": "Major Damage"
+    },
+    "l": 1,
+    "r": 8,
+    "p": 0.247,
+    "n": 1000
+   },
+   {
+    "split": {
+     "kind": "num",
+     "col": "vehicle_claim",
+     "t": 60870.0
+    },
+    "l": 2,
+    "r": 5,
+    "p": 0.1105,
+    "n": 724
+   },
+   {
+    "split": {
+     "kind": "cat",
+     "col": "collision_type",
+     "value": "Rear Collision"
+    },
+    "l": 3,
+    "r": 4,
+    "p": 0.1031,
+    "n": 679
+   },
+   {
+    "split": null,
+    "l": -1,
+    "r": -1,
+    "p": 0.0842,
+    "n": 499
+   },
+   {
+    "split": null,
+    "l": -1,
+    "r": -1,
+    "p": 0.1556,
+    "n": 180
+   },
+   {
+    "split": {
+     "kind": "num",
+     "col": "witnesses",
+     "t": 2.5
+    },
+    "l": 6,
+    "r": 7,
+    "p": 0.2222,
+    "n": 45
+   },
+   {
+    "split": null,
+    "l": -1,
+    "r": -1,
+    "p": 0.1351,
+    "n": 37
+   },
+   {
+    "split": null,
+    "l": -1,
+    "r": -1,
+    "p": 0.625,
+    "n": 8
+   },
+   {
+    "split": {
+     "kind": "num",
+     "col": "property_claim",
+     "t": 18550.0
+    },
+    "l": 9,
+    "r": 12,
+    "p": 0.6051,
+    "n": 276
+   },
+   {
+    "split": {
+     "kind": "cat",
+     "col": "authorities_contacted",
+     "value": "Other"
+    },
+    "l": 10,
+    "r": 11,
+    "p": 0.5955,
+    "n": 267
+   },
+   {
+    "split": null,
+    "l": -1,
+    "r": -1,
+    "p": 0.5644,
+    "n": 202
+   },
+   {
+    "split": null,
+    "l": -1,
+    "r": -1,
+    "p": 0.6923,
+    "n": 65
+   },
+   {
+    "split": {
+     "kind": "num",
+     "col": "vehicle_claim",
+     "t": 36960.0
+    },
+    "l": 13,
+    "r": 14,
+    "p": 0.8889,
+    "n": 9
+   },
+   {
+    "split": null,
+    "l": -1,
+    "r": -1,
+    "p": 0.0,
+    "n": 1
+   },
+   {
+    "split": null,
+    "l": -1,
+    "r": -1,
+    "p": 1.0,
+    "n": 8
+   }
+  ]
+ },
+ "samples": [
+  {
+   "id": "CLM-283414",
+   "months_as_customer": 118,
+   "umbrella_limit": 0,
+   "injury_claim": 7420,
+   "property_claim": 14840,
+   "vehicle_claim": 51940,
+   "number_of_vehicles_involved": 2,
+   "bodily_injuries": 1,
+   "witnesses": 0,
+   "incident_severity": "Major Damage",
+   "incident_type": "Multi-vehicle Collision",
+   "collision_type": "Front Collision",
+   "authorities_contacted": "Ambulance",
+   "property_damage": "NO",
+   "police_report_available": "Unknown",
+   "actual": "Legit",
+   "predicted": 0.422
+  },
+  {
+   "id": "CLM-285496",
+   "months_as_customer": 370,
+   "umbrella_limit": 0,
+   "injury_claim": 17880,
+   "property_claim": 5960,
+   "vehicle_claim": 47680,
+   "number_of_vehicles_involved": 3,
+   "bodily_injuries": 0,
+   "witnesses": 0,
+   "incident_severity": "Major Damage",
+   "incident_type": "Multi-vehicle Collision",
+   "collision_type": "Rear Collision",
+   "authorities_contacted": "Ambulance",
+   "property_damage": "NO",
+   "police_report_available": "YES",
+   "actual": "Fraud",
+   "predicted": 0.379
+  },
+  {
+   "id": "CLM-354455",
+   "months_as_customer": 246,
+   "umbrella_limit": 0,
+   "injury_claim": 5020,
+   "property_claim": 5020,
+   "vehicle_claim": 35140,
+   "number_of_vehicles_involved": 1,
+   "bodily_injuries": 0,
+   "witnesses": 3,
+   "incident_severity": "Minor Damage",
+   "incident_type": "Single Vehicle Collision",
+   "collision_type": "Rear Collision",
+   "authorities_contacted": "Ambulance",
+   "property_damage": "YES",
+   "police_report_available": "Unknown",
+   "actual": "Legit",
+   "predicted": 0.142
+  },
+  {
+   "id": "CLM-648397",
+   "months_as_customer": 258,
+   "umbrella_limit": 10000000,
+   "injury_claim": 4770,
+   "property_claim": 9540,
+   "vehicle_claim": 33390,
+   "number_of_vehicles_involved": 3,
+   "bodily_injuries": 0,
+   "witnesses": 1,
+   "incident_severity": "Total Loss",
+   "incident_type": "Multi-vehicle Collision",
+   "collision_type": "Side Collision",
+   "authorities_contacted": "Other",
+   "property_damage": "NO",
+   "police_report_available": "Unknown",
+   "actual": "Fraud",
+   "predicted": 0.178
+  },
+  {
+   "id": "CLM-555374",
+   "months_as_customer": 334,
+   "umbrella_limit": 6000000,
+   "injury_claim": 12740,
+   "property_claim": 6370,
+   "vehicle_claim": 38220,
+   "number_of_vehicles_involved": 1,
+   "bodily_injuries": 2,
+   "witnesses": 1,
+   "incident_severity": "Minor Damage",
+   "incident_type": "Single Vehicle Collision",
+   "collision_type": "Rear Collision",
+   "authorities_contacted": "Police",
+   "property_damage": "NO",
+   "police_report_available": "NO",
+   "actual": "Legit",
+   "predicted": 0.156
+  },
+  {
+   "id": "CLM-315041",
+   "months_as_customer": 46,
+   "umbrella_limit": 0,
+   "injury_claim": 13100,
+   "property_claim": 19650,
+   "vehicle_claim": 45850,
+   "number_of_vehicles_involved": 3,
+   "bodily_injuries": 1,
+   "witnesses": 3,
+   "incident_severity": "Total Loss",
+   "incident_type": "Multi-vehicle Collision",
+   "collision_type": "Rear Collision",
+   "authorities_contacted": "Ambulance",
+   "property_damage": "NO",
+   "police_report_available": "Unknown",
+   "actual": "Fraud",
+   "predicted": 0.059
+  },
+  {
+   "id": "CLM-655787",
+   "months_as_customer": 231,
+   "umbrella_limit": 0,
+   "injury_claim": 7710,
+   "property_claim": 15420,
+   "vehicle_claim": 53970,
+   "number_of_vehicles_involved": 3,
+   "bodily_injuries": 2,
+   "witnesses": 2,
+   "incident_severity": "Minor Damage",
+   "incident_type": "Multi-vehicle Collision",
+   "collision_type": "Front Collision",
+   "authorities_contacted": "Police",
+   "property_damage": "YES",
+   "police_report_available": "YES",
+   "actual": "Legit",
+   "predicted": 0.086
+  },
+  {
+   "id": "CLM-110084",
+   "months_as_customer": 16,
+   "umbrella_limit": 0,
+   "injury_claim": 10000,
+   "property_claim": 10000,
+   "vehicle_claim": 35000,
+   "number_of_vehicles_involved": 1,
+   "bodily_injuries": 2,
+   "witnesses": 1,
+   "incident_severity": "Total Loss",
+   "incident_type": "Single Vehicle Collision",
+   "collision_type": "Rear Collision",
+   "authorities_contacted": "Other",
+   "property_damage": "NO",
+   "police_report_available": "Unknown",
+   "actual": "Fraud",
+   "predicted": 0.102
+  },
+  {
+   "id": "CLM-931625",
+   "months_as_customer": 151,
+   "umbrella_limit": 0,
+   "injury_claim": 5910,
+   "property_claim": 5910,
+   "vehicle_claim": 47280,
+   "number_of_vehicles_involved": 3,
+   "bodily_injuries": 1,
+   "witnesses": 2,
+   "incident_severity": "Total Loss",
+   "incident_type": "Multi-vehicle Collision",
+   "collision_type": "Rear Collision",
+   "authorities_contacted": "Fire",
+   "property_damage": "NO",
+   "police_report_available": "YES",
+   "actual": "Fraud",
+   "predicted": 0.106
+  },
+  {
+   "id": "CLM-979963",
+   "months_as_customer": 260,
+   "umbrella_limit": 0,
+   "injury_claim": 15080,
+   "property_claim": 7540,
+   "vehicle_claim": 52780,
+   "number_of_vehicles_involved": 1,
+   "bodily_injuries": 1,
+   "witnesses": 0,
+   "incident_severity": "Total Loss",
+   "incident_type": "Single Vehicle Collision",
+   "collision_type": "Front Collision",
+   "authorities_contacted": "Fire",
+   "property_damage": "Unknown",
+   "police_report_available": "Unknown",
+   "actual": "Legit",
+   "predicted": 0.091
+  }
+ ],
+ "eda": {
+  "by_severity": [
+   {
+    "label": "Major Damage",
+    "rate": 0.605,
+    "n": 276
+   },
+   {
+    "label": "Minor Damage",
+    "rate": 0.107,
+    "n": 354
+   },
+   {
+    "label": "Total Loss",
+    "rate": 0.129,
+    "n": 280
+   },
+   {
+    "label": "Trivial Damage",
+    "rate": 0.067,
+    "n": 90
+   }
+  ],
+  "by_type": [
+   {
+    "label": "Multi-vehicle Collision",
+    "rate": 0.272,
+    "n": 419
+   },
+   {
+    "label": "Parked Car",
+    "rate": 0.095,
+    "n": 84
+   },
+   {
+    "label": "Single Vehicle Collision",
+    "rate": 0.29,
+    "n": 403
+   },
+   {
+    "label": "Vehicle Theft",
+    "rate": 0.085,
+    "n": 94
+   }
+  ],
+  "by_authorities": [
+   {
+    "label": "Ambulance",
+    "rate": 0.291,
+    "n": 196
+   },
+   {
+    "label": "Fire",
+    "rate": 0.269,
+    "n": 223
+   },
+   {
+    "label": "None",
+    "rate": 0.066,
+    "n": 91
+   },
+   {
+    "label": "Other",
+    "rate": 0.318,
+    "n": 198
+   },
+   {
+    "label": "Police",
+    "rate": 0.209,
+    "n": 292
+   }
+  ],
+  "by_police_report": [
+   {
+    "label": "NO",
+    "rate": 0.251,
+    "n": 343
+   },
+   {
+    "label": "Unknown",
+    "rate": 0.259,
+    "n": 343
+   },
+   {
+    "label": "YES",
+    "rate": 0.229,
+    "n": 314
+   }
+  ],
+  "by_hobby": [
+   {
+    "label": "chess",
+    "rate": 0.826,
+    "n": 46
+   },
+   {
+    "label": "cross-fit",
+    "rate": 0.743,
+    "n": 35
+   },
+   {
+    "label": "yachting",
+    "rate": 0.302,
+    "n": 53
+   },
+   {
+    "label": "board-games",
+    "rate": 0.292,
+    "n": 48
+   },
+   {
+    "label": "polo",
+    "rate": 0.277,
+    "n": 47
+   },
+   {
+    "label": "reading",
+    "rate": 0.266,
+    "n": 64
+   },
+   {
+    "label": "base-jumping",
+    "rate": 0.265,
+    "n": 49
+   },
+   {
+    "label": "hiking",
+    "rate": 0.231,
+    "n": 52
+   },
+   {
+    "label": "paintball",
+    "rate": 0.228,
+    "n": 57
+   },
+   {
+    "label": "skydiving",
+    "rate": 0.224,
+    "n": 49
+   },
+   {
+    "label": "video-games",
+    "rate": 0.2,
+    "n": 50
+   },
+   {
+    "label": "sleeping",
+    "rate": 0.195,
+    "n": 41
+   },
+   {
+    "label": "exercise",
+    "rate": 0.193,
+    "n": 57
+   },
+   {
+    "label": "basketball",
+    "rate": 0.176,
+    "n": 34
+   },
+   {
+    "label": "movies",
+    "rate": 0.164,
+    "n": 55
+   },
+   {
+    "label": "bungie-jumping",
+    "rate": 0.161,
+    "n": 56
+   },
+   {
+    "label": "dancing",
+    "rate": 0.116,
+    "n": 43
+   },
+   {
+    "label": "golf",
+    "rate": 0.109,
+    "n": 55
+   },
+   {
+    "label": "kayaking",
+    "rate": 0.093,
+    "n": 54
+   },
+   {
+    "label": "camping",
+    "rate": 0.091,
+    "n": 55
+   }
+  ],
+  "claim_hist": {
+   "bins": [
+    0.0,
+    10000.0,
+    20000.0,
+    30000.0,
+    40000.0,
+    50000.0,
+    60000.0,
+    70000.0,
+    80000.0,
+    90000.0,
+    100000.0,
+    110000.0,
+    120000.0
+   ],
+   "series": {
+    "Legit": [
+     0.2138,
+     0.004,
+     0.0106,
+     0.0478,
+     0.1062,
+     0.1846,
+     0.1899,
+     0.1368,
+     0.0637,
+     0.0292,
+     0.012,
+     0.0013
+    ],
+    "Fraud": [
+     0.0648,
+     0.0,
+     0.004,
+     0.0364,
+     0.1053,
+     0.2429,
+     0.2227,
+     0.1903,
+     0.085,
+     0.0364,
+     0.0081,
+     0.004
+    ]
+   }
+  }
+ },
+ "eval": {
+  "roc": {
+   "Claim facts": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.008,
+     0.008
+    ],
+    [
+     0.011,
+     0.028
+    ],
+    [
+     0.015,
+     0.049
+    ],
+    [
+     0.025,
+     0.065
+    ],
+    [
+     0.029,
+     0.077
+    ],
+    [
+     0.033,
+     0.101
+    ],
+    [
+     0.037,
+     0.138
+    ],
+    [
+     0.046,
+     0.174
+    ],
+    [
+     0.053,
+     0.19
+    ],
+    [
+     0.057,
+     0.239
+    ],
+    [
+     0.062,
+     0.251
+    ],
+    [
+     0.065,
+     0.271
+    ],
+    [
+     0.07,
+     0.291
+    ],
+    [
+     0.073,
+     0.34
+    ],
+    [
+     0.078,
+     0.352
+    ],
+    [
+     0.081,
+     0.36
+    ],
+    [
+     0.084,
+     0.401
+    ],
+    [
+     0.089,
+     0.421
+    ],
+    [
+     0.097,
+     0.437
+    ],
+    [
+     0.1,
+     0.453
+    ],
+    [
+     0.105,
+     0.482
+    ],
+    [
+     0.113,
+     0.49
+    ],
+    [
+     0.116,
+     0.51
+    ],
+    [
+     0.122,
+     0.559
+    ],
+    [
+     0.127,
+     0.595
+    ],
+    [
+     0.133,
+     0.628
+    ],
+    [
+     0.138,
+     0.668
+    ],
+    [
+     0.146,
+     0.676
+    ],
+    [
+     0.175,
+     0.688
+    ],
+    [
+     0.183,
+     0.696
+    ],
+    [
+     0.212,
+     0.717
+    ],
+    [
+     0.24,
+     0.725
+    ],
+    [
+     0.271,
+     0.737
+    ],
+    [
+     0.299,
+     0.749
+    ],
+    [
+     0.316,
+     0.761
+    ],
+    [
+     0.378,
+     0.773
+    ],
+    [
+     0.42,
+     0.781
+    ],
+    [
+     0.473,
+     0.794
+    ],
+    [
+     0.509,
+     0.802
+    ],
+    [
+     0.534,
+     0.81
+    ],
+    [
+     0.539,
+     0.818
+    ],
+    [
+     0.555,
+     0.834
+    ],
+    [
+     0.568,
+     0.846
+    ],
+    [
+     0.576,
+     0.854
+    ],
+    [
+     0.584,
+     0.866
+    ],
+    [
+     0.604,
+     0.874
+    ],
+    [
+     0.629,
+     0.883
+    ],
+    [
+     0.656,
+     0.891
+    ],
+    [
+     0.677,
+     0.903
+    ],
+    [
+     0.695,
+     0.911
+    ],
+    [
+     0.742,
+     0.919
+    ],
+    [
+     0.769,
+     0.931
+    ],
+    [
+     0.799,
+     0.939
+    ],
+    [
+     0.827,
+     0.947
+    ],
+    [
+     0.879,
+     0.955
+    ],
+    [
+     0.922,
+     0.968
+    ],
+    [
+     0.95,
+     0.98
+    ],
+    [
+     0.977,
+     0.988
+    ],
+    [
+     1.0,
+     1.0
+    ]
+   ],
+   "+ hobbies": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.005,
+     0.008
+    ],
+    [
+     0.008,
+     0.016
+    ],
+    [
+     0.009,
+     0.036
+    ],
+    [
+     0.012,
+     0.049
+    ],
+    [
+     0.015,
+     0.073
+    ],
+    [
+     0.021,
+     0.089
+    ],
+    [
+     0.027,
+     0.13
+    ],
+    [
+     0.032,
+     0.146
+    ],
+    [
+     0.033,
+     0.166
+    ],
+    [
+     0.037,
+     0.178
+    ],
+    [
+     0.041,
+     0.19
+    ],
+    [
+     0.045,
+     0.231
+    ],
+    [
+     0.048,
+     0.251
+    ],
+    [
+     0.049,
+     0.279
+    ],
+    [
+     0.052,
+     0.316
+    ],
+    [
+     0.054,
+     0.368
+    ],
+    [
+     0.057,
+     0.381
+    ],
+    [
+     0.06,
+     0.393
+    ],
+    [
+     0.061,
+     0.425
+    ],
+    [
+     0.065,
+     0.453
+    ],
+    [
+     0.072,
+     0.498
+    ],
+    [
+     0.076,
+     0.502
+    ],
+    [
+     0.08,
+     0.518
+    ],
+    [
+     0.082,
+     0.53
+    ],
+    [
+     0.085,
+     0.579
+    ],
+    [
+     0.09,
+     0.587
+    ],
+    [
+     0.094,
+     0.607
+    ],
+    [
+     0.097,
+     0.64
+    ],
+    [
+     0.102,
+     0.66
+    ],
+    [
+     0.104,
+     0.68
+    ],
+    [
+     0.114,
+     0.7
+    ],
+    [
+     0.117,
+     0.709
+    ],
+    [
+     0.12,
+     0.725
+    ],
+    [
+     0.122,
+     0.745
+    ],
+    [
+     0.125,
+     0.761
+    ],
+    [
+     0.129,
+     0.773
+    ],
+    [
+     0.131,
+     0.785
+    ],
+    [
+     0.135,
+     0.802
+    ],
+    [
+     0.138,
+     0.81
+    ],
+    [
+     0.143,
+     0.834
+    ],
+    [
+     0.147,
+     0.846
+    ],
+    [
+     0.15,
+     0.862
+    ],
+    [
+     0.157,
+     0.866
+    ],
+    [
+     0.163,
+     0.879
+    ],
+    [
+     0.174,
+     0.887
+    ],
+    [
+     0.252,
+     0.895
+    ],
+    [
+     0.299,
+     0.907
+    ],
+    [
+     0.339,
+     0.915
+    ],
+    [
+     0.377,
+     0.919
+    ],
+    [
+     0.449,
+     0.927
+    ],
+    [
+     0.486,
+     0.935
+    ],
+    [
+     0.527,
+     0.943
+    ],
+    [
+     0.599,
+     0.951
+    ],
+    [
+     0.656,
+     0.955
+    ],
+    [
+     0.744,
+     0.964
+    ],
+    [
+     0.818,
+     0.972
+    ],
+    [
+     0.846,
+     0.984
+    ],
+    [
+     0.975,
+     0.992
+    ],
+    [
+     1.0,
+     1.0
+    ]
+   ],
+   "Severity only": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.036,
+     0.142
+    ],
+    [
+     0.069,
+     0.271
+    ],
+    [
+     0.096,
+     0.389
+    ],
+    [
+     0.126,
+     0.551
+    ],
+    [
+     0.145,
+     0.676
+    ],
+    [
+     0.214,
+     0.688
+    ],
+    [
+     0.286,
+     0.717
+    ],
+    [
+     0.347,
+     0.741
+    ],
+    [
+     0.4,
+     0.777
+    ],
+    [
+     0.469,
+     0.822
+    ],
+    [
+     0.548,
+     0.846
+    ],
+    [
+     0.636,
+     0.874
+    ],
+    [
+     0.72,
+     0.903
+    ],
+    [
+     0.799,
+     0.935
+    ],
+    [
+     0.888,
+     0.976
+    ],
+    [
+     0.919,
+     0.98
+    ],
+    [
+     0.944,
+     0.984
+    ],
+    [
+     0.964,
+     0.988
+    ],
+    [
+     0.98,
+     0.992
+    ],
+    [
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "gains": [
+   {
+    "pct": 1,
+    "captured": 0.0162
+   },
+   {
+    "pct": 2,
+    "captured": 0.0405
+   },
+   {
+    "pct": 3,
+    "captured": 0.0607
+   },
+   {
+    "pct": 4,
+    "captured": 0.0769
+   },
+   {
+    "pct": 5,
+    "captured": 0.1012
+   },
+   {
+    "pct": 6,
+    "captured": 0.1296
+   },
+   {
+    "pct": 7,
+    "captured": 0.1619
+   },
+   {
+    "pct": 8,
+    "captured": 0.1822
+   },
+   {
+    "pct": 9,
+    "captured": 0.1984
+   },
+   {
+    "pct": 10,
+    "captured": 0.2308
+   },
+   {
+    "pct": 11,
+    "captured": 0.2551
+   },
+   {
+    "pct": 12,
+    "captured": 0.2794
+   },
+   {
+    "pct": 13,
+    "captured": 0.3077
+   },
+   {
+    "pct": 14,
+    "captured": 0.3401
+   },
+   {
+    "pct": 15,
+    "captured": 0.3603
+   },
+   {
+    "pct": 16,
+    "captured": 0.3927
+   },
+   {
+    "pct": 17,
+    "captured": 0.4211
+   },
+   {
+    "pct": 18,
+    "captured": 0.4372
+   },
+   {
+    "pct": 19,
+    "captured": 0.4534
+   },
+   {
+    "pct": 20,
+    "captured": 0.4818
+   },
+   {
+    "pct": 21,
+    "captured": 0.502
+   },
+   {
+    "pct": 22,
+    "captured": 0.5304
+   },
+   {
+    "pct": 23,
+    "captured": 0.5587
+   },
+   {
+    "pct": 24,
+    "captured": 0.583
+   },
+   {
+    "pct": 25,
+    "captured": 0.6154
+   },
+   {
+    "pct": 26,
+    "captured": 0.6397
+   },
+   {
+    "pct": 27,
+    "captured": 0.668
+   },
+   {
+    "pct": 28,
+    "captured": 0.6761
+   },
+   {
+    "pct": 29,
+    "captured": 0.6883
+   },
+   {
+    "pct": 30,
+    "captured": 0.6883
+   },
+   {
+    "pct": 31,
+    "captured": 0.6964
+   },
+   {
+    "pct": 32,
+    "captured": 0.7126
+   },
+   {
+    "pct": 33,
+    "captured": 0.7126
+   },
+   {
+    "pct": 34,
+    "captured": 0.7166
+   },
+   {
+    "pct": 35,
+    "captured": 0.7166
+   },
+   {
+    "pct": 36,
+    "captured": 0.7247
+   },
+   {
+    "pct": 37,
+    "captured": 0.7328
+   },
+   {
+    "pct": 38,
+    "captured": 0.7328
+   },
+   {
+    "pct": 39,
+    "captured": 0.7409
+   },
+   {
+    "pct": 40,
+    "captured": 0.7449
+   },
+   {
+    "pct": 41,
+    "captured": 0.749
+   },
+   {
+    "pct": 42,
+    "captured": 0.753
+   },
+   {
+    "pct": 43,
+    "captured": 0.7611
+   },
+   {
+    "pct": 44,
+    "captured": 0.7652
+   },
+   {
+    "pct": 45,
+    "captured": 0.7733
+   },
+   {
+    "pct": 46,
+    "captured": 0.7733
+   },
+   {
+    "pct": 47,
+    "captured": 0.7733
+   },
+   {
+    "pct": 48,
+    "captured": 0.7773
+   },
+   {
+    "pct": 49,
+    "captured": 0.7773
+   },
+   {
+    "pct": 50,
+    "captured": 0.7773
+   },
+   {
+    "pct": 51,
+    "captured": 0.7854
+   },
+   {
+    "pct": 52,
+    "captured": 0.7895
+   },
+   {
+    "pct": 53,
+    "captured": 0.7895
+   },
+   {
+    "pct": 54,
+    "captured": 0.7895
+   },
+   {
+    "pct": 55,
+    "captured": 0.7895
+   },
+   {
+    "pct": 56,
+    "captured": 0.7935
+   },
+   {
+    "pct": 57,
+    "captured": 0.7935
+   },
+   {
+    "pct": 58,
+    "captured": 0.7976
+   },
+   {
+    "pct": 59,
+    "captured": 0.8097
+   },
+   {
+    "pct": 60,
+    "captured": 0.8097
+   },
+   {
+    "pct": 61,
+    "captured": 0.8259
+   },
+   {
+    "pct": 62,
+    "captured": 0.83
+   },
+   {
+    "pct": 63,
+    "captured": 0.834
+   },
+   {
+    "pct": 64,
+    "captured": 0.8502
+   },
+   {
+    "pct": 65,
+    "captured": 0.8583
+   },
+   {
+    "pct": 66,
+    "captured": 0.8704
+   },
+   {
+    "pct": 67,
+    "captured": 0.8704
+   },
+   {
+    "pct": 68,
+    "captured": 0.8785
+   },
+   {
+    "pct": 69,
+    "captured": 0.8826
+   },
+   {
+    "pct": 70,
+    "captured": 0.8907
+   },
+   {
+    "pct": 71,
+    "captured": 0.8907
+   },
+   {
+    "pct": 72,
+    "captured": 0.8988
+   },
+   {
+    "pct": 73,
+    "captured": 0.8988
+   },
+   {
+    "pct": 74,
+    "captured": 0.9069
+   },
+   {
+    "pct": 75,
+    "captured": 0.9109
+   },
+   {
+    "pct": 76,
+    "captured": 0.9109
+   },
+   {
+    "pct": 77,
+    "captured": 0.915
+   },
+   {
+    "pct": 78,
+    "captured": 0.915
+   },
+   {
+    "pct": 79,
+    "captured": 0.9231
+   },
+   {
+    "pct": 80,
+    "captured": 0.9271
+   },
+   {
+    "pct": 81,
+    "captured": 0.9312
+   },
+   {
+    "pct": 82,
+    "captured": 0.9352
+   },
+   {
+    "pct": 83,
+    "captured": 0.9352
+   },
+   {
+    "pct": 84,
+    "captured": 0.9393
+   },
+   {
+    "pct": 85,
+    "captured": 0.9474
+   },
+   {
+    "pct": 86,
+    "captured": 0.9514
+   },
+   {
+    "pct": 87,
+    "captured": 0.9514
+   },
+   {
+    "pct": 88,
+    "captured": 0.9514
+   },
+   {
+    "pct": 89,
+    "captured": 0.9555
+   },
+   {
+    "pct": 90,
+    "captured": 0.9595
+   },
+   {
+    "pct": 91,
+    "captured": 0.9595
+   },
+   {
+    "pct": 92,
+    "captured": 0.9636
+   },
+   {
+    "pct": 93,
+    "captured": 0.9636
+   },
+   {
+    "pct": 94,
+    "captured": 0.9676
+   },
+   {
+    "pct": 95,
+    "captured": 0.9676
+   },
+   {
+    "pct": 96,
+    "captured": 0.9838
+   },
+   {
+    "pct": 97,
+    "captured": 0.9879
+   },
+   {
+    "pct": 98,
+    "captured": 0.9879
+   },
+   {
+    "pct": 99,
+    "captured": 0.9919
+   },
+   {
+    "pct": 100,
+    "captured": 1.0
+   }
+  ],
+  "confusion": {
+   "tn": 663,
+   "fp": 90,
+   "fn": 113,
+   "tp": 134
+  }
+ }
+}

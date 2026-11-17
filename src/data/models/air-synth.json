@@ -1,0 +1,105 @@
+{
+ "dataset": {
+  "name": "ASLNow! fingerspelling",
+  "source": "https://huggingface.co/datasets/sid220/asl-now-fingerspelling",
+  "license": "MIT",
+  "hands": 905
+ },
+ "counts": [
+  {
+   "letter": "A",
+   "shape": "Fist, thumb at the side",
+   "fingers": 0,
+   "n": 65,
+   "acc": 1
+  },
+  {
+   "letter": "S",
+   "shape": "Fist, thumb across",
+   "fingers": 0,
+   "n": 83,
+   "acc": 0.988
+  },
+  {
+   "letter": "E",
+   "shape": "Fingers curled, thumb tucked",
+   "fingers": 0,
+   "n": 57,
+   "acc": 1
+  },
+  {
+   "letter": "D",
+   "shape": "Index up",
+   "fingers": 1,
+   "n": 72,
+   "acc": 0.8611
+  },
+  {
+   "letter": "I",
+   "shape": "Pinky up",
+   "fingers": 1,
+   "n": 68,
+   "acc": 1
+  },
+  {
+   "letter": "U",
+   "shape": "Index + middle together",
+   "fingers": 2,
+   "n": 106,
+   "acc": 1
+  },
+  {
+   "letter": "V",
+   "shape": "Index + middle apart",
+   "fingers": 2,
+   "n": 83,
+   "acc": 1
+  },
+  {
+   "letter": "L",
+   "shape": "Thumb + index",
+   "fingers": 2,
+   "n": 84,
+   "acc": 0.9762
+  },
+  {
+   "letter": "Y",
+   "shape": "Thumb + pinky",
+   "fingers": 2,
+   "n": 82,
+   "acc": 0.939
+  },
+  {
+   "letter": "W",
+   "shape": "Three fingers",
+   "fingers": 3,
+   "n": 75,
+   "acc": 0.92
+  },
+  {
+   "letter": "F",
+   "shape": "Middle, ring, pinky up; thumb on index",
+   "fingers": 3,
+   "n": 61,
+   "acc": 0.9672
+  },
+  {
+   "letter": "B",
+   "shape": "Four fingers, thumb folded",
+   "fingers": 4,
+   "n": 69,
+   "acc": 1
+  }
+ ],
+ "count_acc": 0.9713,
+ "fist": {
+  "hit": 1,
+  "false_alarm": 0.0029,
+  "n": 905
+ },
+ "tap": {
+  "index_on_f": 0.9672,
+  "false_on_open": 0.0029,
+  "n": 402
+ }
+}

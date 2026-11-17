@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>N.I.S. Baldanullah — CV</title>
+<style>
+  @font-face { font-family: "Geist"; font-weight: 100 900; src: url("fonts/geist-latin.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+  @font-face { font-family: "Geist"; font-weight: 100 900; src: url("fonts/geist-latin-ext.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+  @page { size: A4; margin: 11mm 14mm 11mm 14mm; }
+  :root { --ink: #111; --ink2: #333; --muted: #5f5f5f; --rule: #111; --accent: #0f8a5f; }
+  * { box-sizing: border-box; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body { margin: 0; font-family: "Geist", "Segoe UI", Arial, sans-serif; font-size: 8.9pt; line-height: 1.33; color: var(--ink2); }
+  a { color: inherit; text-decoration: none; }
+  a.u { text-decoration: underline; text-underline-offset: 1.5pt; text-decoration-thickness: 0.5pt; }
+  b, strong { color: var(--ink); font-weight: 650; }
+
+  header { text-align: center; padding-bottom: 6pt; border-bottom: 1.2pt solid var(--rule); }
+  h1 { margin: 0; font-size: 21pt; line-height: 1.05; letter-spacing: 0.02em; font-weight: 750; color: var(--ink); }
+  .title { margin-top: 3pt; font-size: 9.8pt; font-weight: 650; letter-spacing: 0.05em; color: var(--ink); }
+  .contact { margin-top: 5pt; font-size: 8.6pt; color: var(--ink2); }
+  .contact span + span::before { content: "|"; margin: 0 6pt; color: #9a9a9a; }
+
+  .summary { margin: 6pt 0 0; text-align: justify; }
+  .highlights { display: flex; gap: 6pt; margin-top: 6pt; }
+  .highlights div { flex: 1; border: 0.6pt solid #cfcfcf; border-radius: 5pt; padding: 3pt 6pt; text-align: center; }
+  .highlights b { display: block; font-size: 12.5pt; line-height: 1.1; color: var(--accent); font-weight: 700; }
+  .highlights span { font-size: 7.4pt; color: var(--muted); line-height: 1.2; display: block; }
+
+  h2 { margin: 9pt 0 4pt; padding-bottom: 2pt; border-bottom: 0.8pt solid var(--rule); font-size: 10.2pt; letter-spacing: 0.1em; font-weight: 750; color: var(--ink); text-transform: uppercase; break-after: avoid; }
+  .item { margin-bottom: 5pt; break-inside: avoid; }
+  .row { display: flex; justify-content: space-between; align-items: baseline; gap: 10pt; }
+  .role { font-size: 9.8pt; font-weight: 700; color: var(--ink); }
+  .role em { font-style: normal; font-weight: 450; color: var(--ink2); }
+  .date { font-size: 9pt; font-weight: 650; color: var(--ink); white-space: nowrap; }
+  .org { font-size: 8.7pt; color: var(--muted); }
+  .loc { font-size: 8.4pt; color: var(--muted); white-space: nowrap; }
+  ul { margin: 2.5pt 0 0; padding-left: 11pt; }
+  li { margin: 1pt 0; text-align: justify; }
+  li::marker { color: #777; }
+  .sub { margin: 5pt 0 1.5pt; font-size: 8.7pt; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent); break-after: avoid; }
+  .proj { margin: 2pt 0; text-align: justify; break-inside: avoid; }
+  .proj b { color: var(--ink); }
+  .stack { color: var(--muted); font-size: 8.3pt; }
+  .list { text-align: justify; }
+  .skills p { margin: 1.5pt 0; text-align: justify; }
+  .two { display: flex; justify-content: space-between; gap: 10pt; }
+</style>
+</head>
+<body>
+  <header>
+    <h1>N.I.S. BALDANULLAH</h1>
+    <div class="title">FULL STACK DATA SCIENTIST</div>
+    <div class="contact">
+      <span>Makassar · Jakarta, Indonesia</span><span>+62 812 4594 1155</span><span><a class="u" href="mailto:baldanullah55@gmail.com">baldanullah55@gmail.com</a></span><span><a class="u" href="https://linkedin.com/in/baldanullah">linkedin.com/in/baldanullah</a></span>
+    </div>
+    <div class="contact">
+      <span>Portfolio (30+ live projects): <a class="u" href="https://portofolio.baldanproject.my.id/">portofolio.baldanproject.my.id</a></span>
+    </div>
+  </header>
+
+  <p class="summary">
+    Full Stack Data Scientist who builds data products end to end: from SQL pipelines, cloud databases and machine learning / deep learning models to the
+    dashboards, web platforms, mobile field apps and automation bots that people use every day. Currently builds and runs the internal systems of Indosat
+    Ooredoo Hutchison's Kalisumapa channel team (via Mitracomm): a sales-operations portal, a geofenced promoter app, a helpdesk, manpower and budget
+    trackers and portal bots, all deployed on Google Cloud. Earlier delivered BI, profit and fraud analytics for a Telkomsel distributor and bitumen price
+    forecasting for Kalla Group. Works across Python, SQL, Next.js, FastAPI, TensorFlow, Power BI and GCP, and applies Generative and Agentic AI to real workflows.
+  </p>
+  <div class="highlights">
+    <div><b>20+</b><span>apps, dashboards &amp; bots shipped to real users</span></div>
+    <div><b>8</b><span>enterprise portal automations</span></div>
+    <div><b>30+</b><span>live ML / DL projects on the portfolio</span></div>
+    <div><b>70%</b><span>of decisions enhanced by the bitumen forecast</span></div>
+    <div><b>3.76</b><span>GPA, Computer Science (Data Science)</span></div>
+  </div>
+
+  <h2>Professional Experience</h2>
+
+  <div class="item">
+    <div class="row"><div class="role">Tech Support Administration <em>– Contract</em></div><div class="date">May 2026 – Present</div></div>
+    <div class="row"><div class="org">PT Mitracomm Ekasarana · placed at Indosat Ooredoo Hutchison, Circle Kalisumapa</div><div class="loc">Makassar, Indonesia</div></div>
+    <ul>
+      <li>Run end-to-end data operations for Sales &amp; Distribution: daily GCP data extraction for Trade Revenue, SnD KPI dashboard updates, Channel Operation distribution tracking across Kalisumapa, partner status reports, monthly master data, partner management and payout administration.</li>
+      <li><b>Portal Channel Operation</b> (FastAPI, pandas, Cloud Storage, Firestore, Cloud Run): built and maintain the team's daily workbench, six work areas behind one login with per-page, per-tab and per-territory access; Excel uploads become clean masters, P&amp;L ingest with purchase validation, server-side exports, email/WhatsApp reminders and an activity log.</li>
+      <li><b>PROTRACK</b> (FastAPI, Firestore, Android/Kotlin): field app for promoters. Check-in only within 500 m of the outlet with camera-only photos; fake GPS, replayed requests and impossible jumps rejected; every SIM card scanned once and its activation checked; live tracking on the portal.</li>
+      <li><b>TickMate</b> helpdesk (Next.js, Prisma), <b>Fulfillment Manpower</b> (Next.js, Firestore) and <b>Budget Tower</b> for the Marketing division (Next.js, Cloud Storage): role- and region-scoped access, full audit trails, Excel in / Excel out, vacancy and budget-burn tracking.</li>
+      <li>Automated enterprise portals: a web app that replaced the Oracle Fusion sales-order macro (quantity sheet in, validated import ZIP out) and Playwright / Chrome-extension bots for PO approvals, SO downloads and daily WhatsApp reports; plus a D-1 KPI wall for the office TV and Embed Hub for the teams' Excel dashboards.</li>
+    </ul>
+  </div>
+
+  <div class="item">
+    <div class="row"><div class="role">Data Analyst <em>– Contract</em></div><div class="date">August 2024 – May 2026</div></div>
+    <div class="row"><div class="org">PT Makassar Mega Putra Prima (Telkomsel distributor)</div><div class="loc">Makassar, Indonesia</div></div>
+    <ul>
+      <li>Managed and optimised cloud databases and wrote the SQL behind each analysis to support strategic decisions.</li>
+      <li>Designed interactive dashboards in Power BI and, when the analysis outgrew Power BI, built web-based dashboards instead (Python, Next.js).</li>
+      <li>Delivered profit analysis, fraud transaction detection and Nochip tracking for daily operations and business strategy.</li>
+    </ul>
+  </div>
+
+  <div class="item">
+    <div class="row"><div class="role">Big Data Analyst <em>– Intern</em></div><div class="date">August 2023 – December 2023</div></div>
+    <div class="row"><div class="org">Kalla Group</div><div class="loc">Makassar, Indonesia</div></div>
+    <ul>
+      <li>Led scalable data pipelines that cleansed, stored and pre-processed large datasets from several subsidiaries, using SQL for data management.</li>
+      <li>Built a recurrent neural network forecasting FOB Bitumen Singapore prices and deployed it in an interactive Plotly + Streamlit dashboard for real-time monitoring of predictions and trends; the end-to-end solution enhanced 70% of decision-making processes.</li>
+    </ul>
+  </div>
+
+  <div class="item">
+    <div class="row"><div class="role">Web Data Management <em>– Contract</em></div><div class="date">April 2021 – April 2022</div></div>
+    <div class="row"><div class="org">INIPASTI Communika</div><div class="loc">Makassar, Indonesia</div></div>
+    <ul>
+      <li>Tracked and analysed website visitors to improve audience engagement and content strategy; optimised posting times from audience behaviour, sharpening stakeholder decisions.</li>
+    </ul>
+  </div>
+
+  <h2>Selected Projects</h2>
+
+  <div class="sub">Own products</div>
+  <p class="proj"><b>GatherInsight (2026)</b> — SaaS for field research that comes with its proof: surveys, interviews, traffic counts and geo mapping. Bilingual (ID/EN) web platform plus three mobile apps with offline sync, GPS and audio. <span class="stack">Next.js, Prisma, PostgreSQL, Expo / React Native, Cloud Run, Cloud SQL, Cloud Storage, Cloud Scheduler · <a class="u" href="https://gatherinsight.baldanproject.my.id/">gatherinsight.baldanproject.my.id</a></span></p>
+  <p class="proj"><b>Portfolio platform (2026)</b> — 30+ live projects: ML and deep-learning demos running in the browser, five analytics dashboards (Online Retail sales, A/B test, live Jakarta air quality, Telco churn, and an FWA base-health case with cohorts, a churn model, campaign tests and customer surveys), data-engineering and automation labs. <span class="stack">Next.js 16, React 19, TypeScript, Tailwind CSS, Python, Docker, Cloud Build, Cloud Run</span></p>
+
+  <div class="sub">Machine learning (scikit-learn, models exported to run in the browser)</div>
+  <p class="list">Telco Customer Churn (ROC-AUC 0.83) • Manufacturing Defects (F1 0.89 on 3% failures) • Credit Risk (39% lower cost of errors) • Complaint Router (96% routed to the right team) • Feedback Themes (ROC-AUC 0.96) • Card Fraud Review Queue (79 of 108 frauds in the top 100 alerts) • Bank Churn Targeting • Insurance Claim Fraud • Heart Failure Prediction • Student Performance • Air Quality Virtual Sensor • Demand Forecasting • Product Recommender • Uplift Promo Targeting • House Price Range • Mall Customer Segments • NYC Taxi Anomalies</p>
+
+  <div class="sub">Deep learning &amp; computer vision (TensorFlow, MediaPipe, on-device)</div>
+  <p class="list">Handwritten Digits CNN (99.2% accuracy) • Hand Gestures • Live Object Detection • Sign Language Speller • Face Mood Mirror • Drowsiness Detector • Virtual Mouse • Head &amp; Blink Keyboard • Traffic Counter on London JamCams • Doodle Duel • Live Forecast Lab (LSTMs) • Bilingual Sentiment (BiLSTM, Indonesian/English) • Air Synth</p>
+
+  <p class="list" style="margin-top:4pt"><b>Virtual experiences:</b> Business Intelligence with Power BI (PwC Switzerland × Forage, 2024) • British Airways Sentiment &amp; Predictive Analysis (British Airways × Forage, 2024)</p>
+
+  <h2>Education</h2>
+
+  <div class="item">
+    <div class="row"><div class="role">Bachelor of Computer Science, Data Science</div><div class="date">July 2020 – August 2024</div></div>
+    <div class="row"><div class="org">Universitas Pancasila</div><div class="loc">South Jakarta, Indonesia</div></div>
+    <ul>
+      <li>GPA 3.76 / 4.00. Thesis: “Forecasting Free On Board Bitumen Singapore Price Using Recurrent Neural Network”.</li>
+      <li>Led paper projects: “Comparison of TOPSIS, WP and SAW Methods for Determining the Best Journalist”, “Testing Web&#8209;Based Learning Applications Using Equivalence Partitioning”, “Parallel Processing on Machine Learning Modelling Using the Random Forest Algorithm”.</li>
+    </ul>
+  </div>
+
+  <div class="item">
+    <div class="row"><div class="role">Machine Learning Path, Graduated Cohort</div><div class="date">January 2023 – July 2023</div></div>
+    <div class="row"><div class="org">Bangkit Academy (led by Google, GoTo and Traveloka)</div><div class="loc">Online</div></div>
+    <ul>
+      <li>Supervised and unsupervised learning, deep learning, NLP and computer vision; capstone: a tire-damage classification model deployed into a vehicle-booking service mobile app.</li>
+    </ul>
+  </div>
+
+  <div class="item">
+    <div class="role" style="font-size:9.4pt">Courses</div>
+    <p class="list" style="margin:2pt 0 0">Database Design &amp; Database Programming with SQL (BPSDMP Jakarta, 2024) • Azure AI Engineer (Kominfo × Microsoft Azure, 2024) • Data Analysis with Python (freeCodeCamp, 2024) • Tableau Fundamentals (DataCamp, 2024) • Google Data Analytics (Google, 2023) • Deep Learning with TensorFlow (2023) • Machine Learning (Stanford University, 2023) • Data Visualization (ASEAN DSE, 2022)</p>
+  </div>
+
+  <h2>Certification</h2>
+  <div class="two"><div><b>Database Administrator</b> — BNSP</div><div class="date">December 2024 – December 2027</div></div>
+  <div class="two" style="margin-top:2pt"><div><b>TensorFlow Developer Certificate</b> — Google</div><div class="date">December 2023 – December 2026</div></div>
+
+  <h2>Skills</h2>
+  <div class="skills">
+    <p><b>Core:</b> Data Analysis, Machine Learning, Deep Learning, Business Intelligence, Database Design, Full-Stack Development, Process Automation, Business Development.</p>
+    <p><b>Data &amp; ML:</b> Python, SQL, pandas, NumPy, scikit-learn, TensorFlow / Keras, time series (RNN, LSTM), NLP, computer vision, MediaPipe, A/B testing, cohort &amp; survival analysis.</p>
+    <p><b>BI &amp; visualisation:</b> Power BI, Tableau, Looker Studio, Excel, Plotly, Streamlit, Seaborn, Matplotlib, custom SVG / d3 dashboards.</p>
+    <p><b>Data &amp; databases:</b> BigQuery, PostgreSQL, MySQL, SQLite, Firestore, Oracle Database, Pentaho, Cloud Storage, data modelling, ETL pipelines.</p>
+    <p><b>Web, SaaS &amp; mobile:</b> TypeScript, Next.js, React, Tailwind CSS, Prisma, FastAPI, Node.js / Express, REST APIs, authentication &amp; role-based access, Expo / React Native, Android (Kotlin).</p>
+    <p><b>Cloud &amp; DevOps:</b> Google Cloud (Cloud Run, Cloud Build, Cloud SQL, Cloud Storage, Cloud Scheduler, Firebase), Docker.</p>
+    <p><b>Automation &amp; AI:</b> Playwright, Chrome extensions, Power Automate, WhatsApp API, Oracle Fusion, SAP, LLM integration, AI agents &amp; agentic workflows, prompt engineering, Model Context Protocol (MCP), no-code / low-code.</p>
+    <p><b>Soft skills:</b> Problem solving, analytical thinking, communication, collaboration, project management, adaptability. <b>Languages:</b> Indonesian (native), English (TOEFL ITP 617 predicted, IELTS 6.0).</p>
+  </div>
+</body>
+</html>

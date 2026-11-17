@@ -1,0 +1,685 @@
+{
+ "dataset": {
+  "name": "UCI Heart Failure Clinical Records",
+  "source": "https://archive.ics.uci.edu/dataset/519/heart+failure+clinical+records",
+  "rows": 299,
+  "raw_cols": 13,
+  "event_rate": 0.321,
+  "features_used": [
+   "age",
+   "ejection_fraction",
+   "serum_creatinine",
+   "serum_sodium",
+   "high_blood_pressure",
+   "anaemia"
+  ],
+  "left_out": [
+   "time (follow-up days, would leak the outcome)"
+  ]
+ },
+ "validation": "Repeated stratified 5-fold cross-validation (10 repeats)",
+ "comparison": [
+  {
+   "model": "Logistic Regression",
+   "roc_auc_mean": 0.7751,
+   "roc_auc_std": 0.059
+  },
+  {
+   "model": "Random Forest",
+   "roc_auc_mean": 0.7853,
+   "roc_auc_std": 0.0582
+  }
+ ],
+ "chosen": "Logistic Regression",
+ "model": {
+  "intercept": -0.862309,
+  "numeric": {
+   "age": {
+    "mean": 60.833893,
+    "scale": 11.874901,
+    "coef": 0.584785
+   },
+   "ejection_fraction": {
+    "mean": 38.083612,
+    "scale": 11.815033,
+    "coef": -0.7664
+   },
+   "serum_creatinine": {
+    "mean": 1.39388,
+    "scale": 1.032779,
+    "coef": 0.659714
+   },
+   "serum_sodium": {
+    "mean": 136.625418,
+    "scale": 4.405092,
+    "coef": -0.222485
+   }
+  },
+  "categorical": {
+   "high_blood_pressure": {
+    "No": -0.201729,
+    "Yes": 0.203655
+   },
+   "anaemia": {
+    "No": -0.14419,
+    "Yes": 0.146116
+   }
+  }
+ },
+ "ranges": {
+  "age": [
+   40.0,
+   95.0
+  ],
+  "ejection_fraction": [
+   14.0,
+   80.0
+  ],
+  "serum_creatinine": [
+   0.5,
+   9.4
+  ],
+  "serum_sodium": [
+   113.0,
+   148.0
+  ]
+ },
+ "medians": {
+  "age": 60.0,
+  "ejection_fraction": 38.0,
+  "serum_creatinine": 1.1,
+  "serum_sodium": 137.0
+ },
+ "samples": [
+  {
+   "id": "P155",
+   "age": 65,
+   "ejection_fraction": 35,
+   "serum_creatinine": 0.8,
+   "serum_sodium": 136,
+   "high_blood_pressure": "Yes",
+   "anaemia": "Yes",
+   "actual": "No",
+   "predicted": 0.431
+  },
+  {
+   "id": "P165",
+   "age": 45,
+   "ejection_fraction": 30,
+   "serum_creatinine": 1.1,
+   "serum_sodium": 139,
+   "high_blood_pressure": "No",
+   "anaemia": "No",
+   "actual": "Yes",
+   "predicted": 0.141
+  },
+  {
+   "id": "P079",
+   "age": 75,
+   "ejection_fraction": 38,
+   "serum_creatinine": 0.6,
+   "serum_sodium": 131,
+   "high_blood_pressure": "Yes",
+   "anaemia": "Yes",
+   "actual": "No",
+   "predicted": 0.448
+  },
+  {
+   "id": "P182",
+   "age": 59,
+   "ejection_fraction": 25,
+   "serum_creatinine": 1.0,
+   "serum_sodium": 136,
+   "high_blood_pressure": "No",
+   "anaemia": "Yes",
+   "actual": "Yes",
+   "predicted": 0.371
+  },
+  {
+   "id": "P205",
+   "age": 78,
+   "ejection_fraction": 40,
+   "serum_creatinine": 0.7,
+   "serum_sodium": 137,
+   "high_blood_pressure": "No",
+   "anaemia": "Yes",
+   "actual": "No",
+   "predicted": 0.394
+  },
+  {
+   "id": "P145",
+   "age": 72,
+   "ejection_fraction": 25,
+   "serum_creatinine": 1.7,
+   "serum_sodium": 139,
+   "high_blood_pressure": "Yes",
+   "anaemia": "Yes",
+   "actual": "Yes",
+   "predicted": 0.773
+  },
+  {
+   "id": "P139",
+   "age": 62,
+   "ejection_fraction": 35,
+   "serum_creatinine": 1.0,
+   "serum_sodium": 136,
+   "high_blood_pressure": "No",
+   "anaemia": "No",
+   "actual": "No",
+   "predicted": 0.242
+  },
+  {
+   "id": "P038",
+   "age": 82,
+   "ejection_fraction": 50,
+   "serum_creatinine": 1.0,
+   "serum_sodium": 145,
+   "high_blood_pressure": "Yes",
+   "anaemia": "Yes",
+   "actual": "Yes",
+   "predicted": 0.248
+  },
+  {
+   "id": "P263",
+   "age": 65,
+   "ejection_fraction": 25,
+   "serum_creatinine": 1.4,
+   "serum_sodium": 129,
+   "high_blood_pressure": "No",
+   "anaemia": "Yes",
+   "actual": "Yes",
+   "predicted": 0.661
+  },
+  {
+   "id": "P065",
+   "age": 45,
+   "ejection_fraction": 80,
+   "serum_creatinine": 1.18,
+   "serum_sodium": 137,
+   "high_blood_pressure": "No",
+   "anaemia": "No",
+   "actual": "No",
+   "predicted": 0.011
+  }
+ ],
+ "eda": {
+  "ef_hist": {
+   "bins": [
+    10.0,
+    15.0,
+    20.0,
+    25.0,
+    30.0,
+    35.0,
+    40.0,
+    45.0,
+    50.0,
+    55.0,
+    60.0,
+    65.0,
+    70.0,
+    75.0,
+    80.0
+   ],
+   "series": {
+    "Survived": [
+     0.0,
+     0.0049,
+     0.0099,
+     0.0887,
+     0.1034,
+     0.33,
+     0.1626,
+     0.0739,
+     0.0739,
+     0.0099,
+     0.1379,
+     0.0,
+     0.0,
+     0.0049
+    ],
+    "Died": [
+     0.0104,
+     0.0312,
+     0.1667,
+     0.1875,
+     0.1354,
+     0.2292,
+     0.0417,
+     0.0521,
+     0.0625,
+     0.0104,
+     0.0521,
+     0.0104,
+     0.0104,
+     0.0
+    ]
+   }
+  },
+  "creatinine_hist": {
+   "bins": [
+    0.5,
+    1.0,
+    1.5,
+    2.0,
+    2.5,
+    3.0,
+    3.5,
+    4.0,
+    4.5
+   ],
+   "series": {
+    "Survived": [
+     0.3547,
+     0.5123,
+     0.069,
+     0.0246,
+     0.0099,
+     0.0099,
+     0.0099,
+     0.0099
+    ],
+    "Died": [
+     0.0938,
+     0.4375,
+     0.2396,
+     0.0729,
+     0.0521,
+     0.0208,
+     0.0208,
+     0.0625
+    ]
+   }
+  },
+  "event_by_age": [
+   {
+    "label": "40–50",
+    "rate": 0.257,
+    "n": 74
+   },
+   {
+    "label": "51–60",
+    "rate": 0.284,
+    "n": 88
+   },
+   {
+    "label": "61–70",
+    "rate": 0.247,
+    "n": 85
+   },
+   {
+    "label": "71–80",
+    "rate": 0.529,
+    "n": 34
+   },
+   {
+    "label": "81–95",
+    "rate": 0.722,
+    "n": 18
+   }
+  ]
+ },
+ "eval": {
+  "folds": {
+   "Logistic Regression": [
+    0.689,
+    0.78,
+    0.748,
+    0.856,
+    0.813,
+    0.746,
+    0.777,
+    0.747,
+    0.727,
+    0.866,
+    0.843,
+    0.86,
+    0.813,
+    0.718,
+    0.649,
+    0.861,
+    0.746,
+    0.772,
+    0.756,
+    0.746,
+    0.759,
+    0.792,
+    0.788,
+    0.727,
+    0.82,
+    0.73,
+    0.774,
+    0.689,
+    0.881,
+    0.833,
+    0.881,
+    0.668,
+    0.764,
+    0.838,
+    0.761,
+    0.761,
+    0.854,
+    0.778,
+    0.685,
+    0.804,
+    0.681,
+    0.746,
+    0.802,
+    0.846,
+    0.743,
+    0.838,
+    0.834,
+    0.706,
+    0.728,
+    0.734
+   ],
+   "Random Forest": [
+    0.704,
+    0.777,
+    0.76,
+    0.856,
+    0.783,
+    0.782,
+    0.81,
+    0.737,
+    0.745,
+    0.912,
+    0.831,
+    0.878,
+    0.843,
+    0.739,
+    0.722,
+    0.87,
+    0.671,
+    0.807,
+    0.779,
+    0.75,
+    0.827,
+    0.773,
+    0.807,
+    0.673,
+    0.799,
+    0.695,
+    0.795,
+    0.728,
+    0.856,
+    0.872,
+    0.849,
+    0.674,
+    0.789,
+    0.852,
+    0.78,
+    0.75,
+    0.884,
+    0.8,
+    0.71,
+    0.83,
+    0.728,
+    0.755,
+    0.791,
+    0.791,
+    0.772,
+    0.836,
+    0.837,
+    0.757,
+    0.777,
+    0.72
+   ]
+  },
+  "roc_oof": [
+   [
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.01
+   ],
+   [
+    0.005,
+    0.021
+   ],
+   [
+    0.01,
+    0.052
+   ],
+   [
+    0.015,
+    0.073
+   ],
+   [
+    0.015,
+    0.125
+   ],
+   [
+    0.025,
+    0.26
+   ],
+   [
+    0.044,
+    0.271
+   ],
+   [
+    0.049,
+    0.281
+   ],
+   [
+    0.054,
+    0.292
+   ],
+   [
+    0.059,
+    0.292
+   ],
+   [
+    0.069,
+    0.344
+   ],
+   [
+    0.084,
+    0.375
+   ],
+   [
+    0.089,
+    0.396
+   ],
+   [
+    0.089,
+    0.406
+   ],
+   [
+    0.094,
+    0.448
+   ],
+   [
+    0.099,
+    0.458
+   ],
+   [
+    0.128,
+    0.469
+   ],
+   [
+    0.138,
+    0.479
+   ],
+   [
+    0.143,
+    0.479
+   ],
+   [
+    0.148,
+    0.521
+   ],
+   [
+    0.158,
+    0.531
+   ],
+   [
+    0.163,
+    0.562
+   ],
+   [
+    0.163,
+    0.583
+   ],
+   [
+    0.172,
+    0.594
+   ],
+   [
+    0.177,
+    0.604
+   ],
+   [
+    0.197,
+    0.635
+   ],
+   [
+    0.202,
+    0.646
+   ],
+   [
+    0.217,
+    0.646
+   ],
+   [
+    0.222,
+    0.667
+   ],
+   [
+    0.227,
+    0.688
+   ],
+   [
+    0.236,
+    0.698
+   ],
+   [
+    0.236,
+    0.708
+   ],
+   [
+    0.251,
+    0.719
+   ],
+   [
+    0.315,
+    0.729
+   ],
+   [
+    0.32,
+    0.74
+   ],
+   [
+    0.325,
+    0.75
+   ],
+   [
+    0.34,
+    0.75
+   ],
+   [
+    0.365,
+    0.76
+   ],
+   [
+    0.374,
+    0.771
+   ],
+   [
+    0.389,
+    0.792
+   ],
+   [
+    0.389,
+    0.802
+   ],
+   [
+    0.429,
+    0.812
+   ],
+   [
+    0.438,
+    0.823
+   ],
+   [
+    0.483,
+    0.833
+   ],
+   [
+    0.552,
+    0.844
+   ],
+   [
+    0.557,
+    0.844
+   ],
+   [
+    0.576,
+    0.854
+   ],
+   [
+    0.606,
+    0.875
+   ],
+   [
+    0.611,
+    0.896
+   ],
+   [
+    0.611,
+    0.906
+   ],
+   [
+    0.621,
+    0.917
+   ],
+   [
+    0.626,
+    0.927
+   ],
+   [
+    0.67,
+    0.938
+   ],
+   [
+    0.833,
+    0.948
+   ],
+   [
+    0.901,
+    0.948
+   ],
+   [
+    0.916,
+    0.958
+   ],
+   [
+    0.921,
+    0.969
+   ],
+   [
+    0.931,
+    0.99
+   ],
+   [
+    1.0,
+    1.0
+   ]
+  ],
+  "oof_metrics": {
+   "roc_auc": 0.7719,
+   "accuracy": 0.7525,
+   "precision": 0.6667,
+   "recall": 0.4583,
+   "f1": 0.5432,
+   "confusion": {
+    "tn": 181,
+    "fp": 22,
+    "fn": 52,
+    "tp": 44
+   }
+  }
+ }
+}

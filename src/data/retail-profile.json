@@ -1,0 +1,458 @@
+{
+ "source": "UCI Online Retail (CC BY 4.0), profiled by ml/retail_profile.py; customer IDs are counted, never shown",
+ "rows": 541909,
+ "columns": [
+  {
+   "name": "InvoiceNo",
+   "type": "str",
+   "nulls": 0,
+   "distinct": 25900
+  },
+  {
+   "name": "StockCode",
+   "type": "str",
+   "nulls": 0,
+   "distinct": 4070
+  },
+  {
+   "name": "Description",
+   "type": "object",
+   "nulls": 1454,
+   "distinct": 4223
+  },
+  {
+   "name": "Quantity",
+   "type": "int64",
+   "nulls": 0,
+   "distinct": 722,
+   "min": -80995.0,
+   "max": 80995.0,
+   "negative": 10624,
+   "zero": 0
+  },
+  {
+   "name": "InvoiceDate",
+   "type": "datetime64[us]",
+   "nulls": 0,
+   "distinct": 23260,
+   "min": "2010-12-01",
+   "max": "2011-12-09"
+  },
+  {
+   "name": "UnitPrice",
+   "type": "float64",
+   "nulls": 0,
+   "distinct": 1630,
+   "min": -11062.06,
+   "max": 38970.0,
+   "negative": 2,
+   "zero": 2515
+  },
+  {
+   "name": "CustomerID",
+   "type": "float64",
+   "nulls": 135080,
+   "distinct": 4372
+  },
+  {
+   "name": "Country",
+   "type": "str",
+   "nulls": 0,
+   "distinct": 38
+  }
+ ],
+ "cases": {
+  "duplicates": {
+   "rows": 5268,
+   "example": [
+    {
+     "invoice": "536409",
+     "stock": "21866",
+     "description": "UNION JACK FLAG LUGGAGE TAG",
+     "quantity": 1,
+     "date": "2010-12-01 11:45",
+     "price": 1.25,
+     "customer": "known",
+     "country": "United Kingdom"
+    },
+    {
+     "invoice": "536409",
+     "stock": "21866",
+     "description": "UNION JACK FLAG LUGGAGE TAG",
+     "quantity": 1,
+     "date": "2010-12-01 11:45",
+     "price": 1.25,
+     "customer": "known",
+     "country": "United Kingdom"
+    }
+   ]
+  },
+  "cancellations": {
+   "rows": 9288,
+   "example": [
+    {
+     "invoice": "C536379",
+     "stock": "D",
+     "description": "Discount",
+     "quantity": -1,
+     "date": "2010-12-01 09:41",
+     "price": 27.5,
+     "customer": "known",
+     "country": "United Kingdom"
+    }
+   ]
+  },
+  "negative_quantity": {
+   "rows": 10624
+  },
+  "zero_price": {
+   "rows": 2517,
+   "example": [
+    {
+     "invoice": "536941",
+     "stock": "22734",
+     "description": "amazon",
+     "quantity": 20,
+     "date": "2010-12-03 12:08",
+     "price": 0.0,
+     "customer": null,
+     "country": "United Kingdom"
+    }
+   ]
+  },
+  "missing_description": {
+   "rows": 1454,
+   "example": [
+    {
+     "invoice": "536414",
+     "stock": "22139",
+     "description": null,
+     "quantity": 56,
+     "date": "2010-12-01 11:52",
+     "price": 0.0,
+     "customer": null,
+     "country": "United Kingdom"
+    }
+   ]
+  },
+  "missing_customer": {
+   "rows": 135080,
+   "share": 0.2493
+  },
+  "non_product_codes": {
+   "rows": 2916,
+   "codes": [
+    "AMAZONFEE",
+    "B",
+    "BANK CHARGES",
+    "C2",
+    "CRUK",
+    "D",
+    "DOT",
+    "M",
+    "PADS",
+    "POST",
+    "S"
+   ]
+  },
+  "description_variants": {
+   "stock": "17107D",
+   "names": [
+    {
+     "name": "FLOWER FAIRY,5 SUMMER B'DRAW LINERS",
+     "rows": 25
+    },
+    {
+     "name": "FLOWER FAIRY 5 DRAWER LINERS",
+     "rows": 21
+    },
+    {
+     "name": "FLOWER FAIRY 5 SUMMER DRAW LINERS",
+     "rows": 1
+    }
+   ]
+  },
+  "outlier": {
+   "example": [
+    {
+     "invoice": "581483",
+     "stock": "23843",
+     "description": "PAPER CRAFT , LITTLE BIRDIE",
+     "quantity": 80995,
+     "date": "2011-12-09 09:15",
+     "price": 2.08,
+     "customer": "known",
+     "country": "United Kingdom"
+    },
+    {
+     "invoice": "C581484",
+     "stock": "23843",
+     "description": "PAPER CRAFT , LITTLE BIRDIE",
+     "quantity": -80995,
+     "date": "2011-12-09 09:27",
+     "price": 2.08,
+     "customer": "known",
+     "country": "United Kingdom"
+    }
+   ],
+   "quantiles": {
+    "q1": 1.0,
+    "median": 3.0,
+    "q3": 10.0,
+    "p99": 100.0
+   },
+   "above_fence": 56635
+  }
+ },
+ "funnel": [
+  {
+   "step": "Raw rows",
+   "rows": 541909
+  },
+  {
+   "step": "Exact duplicates removed",
+   "rows": 536641
+  },
+  {
+   "step": "Cancellations removed",
+   "rows": 527390
+  },
+  {
+   "step": "Zero or negative quantity / price removed",
+   "rows": 524878
+  },
+  {
+   "step": "Missing descriptions removed",
+   "rows": 524878
+  },
+  {
+   "step": "Postage, fees and adjustments removed",
+   "rows": 522568
+  }
+ ],
+ "invoice": [
+  {
+   "invoice": "536365",
+   "stock": "85123A",
+   "description": "WHITE HANGING HEART T-LIGHT HOLDER",
+   "quantity": 6,
+   "date": "2010-12-01 08:26",
+   "price": 2.55,
+   "customer": "known",
+   "country": "United Kingdom"
+  },
+  {
+   "invoice": "536365",
+   "stock": "71053",
+   "description": "WHITE METAL LANTERN",
+   "quantity": 6,
+   "date": "2010-12-01 08:26",
+   "price": 3.39,
+   "customer": "known",
+   "country": "United Kingdom"
+  },
+  {
+   "invoice": "536365",
+   "stock": "84406B",
+   "description": "CREAM CUPID HEARTS COAT HANGER",
+   "quantity": 8,
+   "date": "2010-12-01 08:26",
+   "price": 2.75,
+   "customer": "known",
+   "country": "United Kingdom"
+  },
+  {
+   "invoice": "536365",
+   "stock": "84029G",
+   "description": "KNITTED UNION FLAG HOT WATER BOTTLE",
+   "quantity": 6,
+   "date": "2010-12-01 08:26",
+   "price": 3.39,
+   "customer": "known",
+   "country": "United Kingdom"
+  },
+  {
+   "invoice": "536365",
+   "stock": "84029E",
+   "description": "RED WOOLLY HOTTIE WHITE HEART.",
+   "quantity": 6,
+   "date": "2010-12-01 08:26",
+   "price": 3.39,
+   "customer": "known",
+   "country": "United Kingdom"
+  },
+  {
+   "invoice": "536365",
+   "stock": "22752",
+   "description": "SET 7 BABUSHKA NESTING BOXES",
+   "quantity": 2,
+   "date": "2010-12-01 08:26",
+   "price": 7.65,
+   "customer": "known",
+   "country": "United Kingdom"
+  },
+  {
+   "invoice": "536365",
+   "stock": "21730",
+   "description": "GLASS STAR FROSTED T-LIGHT HOLDER",
+   "quantity": 6,
+   "date": "2010-12-01 08:26",
+   "price": 4.25,
+   "customer": "known",
+   "country": "United Kingdom"
+  }
+ ],
+ "pivot": {
+  "countries": [
+   "United Kingdom",
+   "Germany",
+   "France"
+  ],
+  "months": [
+   "2011-09",
+   "2011-10",
+   "2011-11"
+  ],
+  "cells": [
+   {
+    "country": "France",
+    "month": "2011-09",
+    "orders": 45
+   },
+   {
+    "country": "France",
+    "month": "2011-10",
+    "orders": 33
+   },
+   {
+    "country": "France",
+    "month": "2011-11",
+    "orders": 64
+   },
+   {
+    "country": "Germany",
+    "month": "2011-09",
+    "orders": 41
+   },
+   {
+    "country": "Germany",
+    "month": "2011-10",
+    "orders": 56
+   },
+   {
+    "country": "Germany",
+    "month": "2011-11",
+    "orders": 64
+   },
+   {
+    "country": "United Kingdom",
+    "month": "2011-09",
+    "orders": 1631
+   },
+   {
+    "country": "United Kingdom",
+    "month": "2011-10",
+    "orders": 1789
+   },
+   {
+    "country": "United Kingdom",
+    "month": "2011-11",
+    "orders": 2481
+   }
+  ]
+ },
+ "monthly": [
+  {
+   "month": "2010-12",
+   "orders": 1550,
+   "revenue": 775715
+  },
+  {
+   "month": "2011-01",
+   "orders": 1081,
+   "revenue": 670439
+  },
+  {
+   "month": "2011-02",
+   "orders": 1093,
+   "revenue": 507867
+  },
+  {
+   "month": "2011-03",
+   "orders": 1440,
+   "revenue": 689842
+  },
+  {
+   "month": "2011-04",
+   "orders": 1235,
+   "revenue": 515470
+  },
+  {
+   "month": "2011-05",
+   "orders": 1668,
+   "revenue": 740036
+  },
+  {
+   "month": "2011-06",
+   "orders": 1525,
+   "revenue": 737684
+  },
+  {
+   "month": "2011-07",
+   "orders": 1452,
+   "revenue": 688253
+  },
+  {
+   "month": "2011-08",
+   "orders": 1339,
+   "revenue": 724308
+  },
+  {
+   "month": "2011-09",
+   "orders": 1818,
+   "revenue": 1028345
+  },
+  {
+   "month": "2011-10",
+   "orders": 2005,
+   "revenue": 1103331
+  },
+  {
+   "month": "2011-11",
+   "orders": 2751,
+   "revenue": 1452116
+  },
+  {
+   "month": "2011-12",
+   "orders": 816,
+   "revenue": 614499
+  }
+ ],
+ "top_products": [
+  {
+   "stock": "85123A",
+   "description": "WHITE HANGING HEART T-LIGHT HOLDER",
+   "lines": 2244
+  },
+  {
+   "stock": "85099B",
+   "description": "JUMBO BAG RED RETROSPOT",
+   "lines": 2109
+  },
+  {
+   "stock": "22423",
+   "description": "REGENCY CAKESTAND 3 TIER",
+   "lines": 2007
+  },
+  {
+   "stock": "47566",
+   "description": "PARTY BUNTING",
+   "lines": 1699
+  },
+  {
+   "stock": "20725",
+   "description": "LUNCH BAG RED RETROSPOT",
+   "lines": 1581
+  }
+ ]
+}

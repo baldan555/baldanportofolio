@@ -1,0 +1,1489 @@
+request_id,customer_id,created_date,type,channel,resolved_date,resolution_days,sla_days,within_sla,outcome
+RQ-000001,FWA-000093,2025-01-11,Device fault,Call center,2025-01-16,5,3,N,Device replaced
+RQ-000002,FWA-000088,2025-02-11,Device fault,Store,2025-02-13,2,3,Y,Fixed remotely
+RQ-000003,FWA-000087,2025-03-28,Device fault,Store,2025-03-29,1,3,Y,Fixed remotely
+RQ-000004,FWA-000099,2025-03-27,Relocation,App,2025-04-06,10,7,N,"Moved, service working"
+RQ-000005,FWA-000260,2025-03-06,Relocation,Call center,2025-03-11,5,7,Y,"Moved, service working"
+RQ-000006,FWA-000262,2025-03-08,Device fault,Store,2025-03-11,3,3,N,Device replaced
+RQ-000007,FWA-000332,2025-03-24,Relocation,App,2025-04-02,9,7,N,"Moved, service working"
+RQ-000008,FWA-000335,2025-03-07,Relocation,Call center,2025-03-12,5,7,Y,"Moved, service working"
+RQ-000009,FWA-000364,2025-03-08,Device fault,Call center,2025-03-10,2,3,Y,Fixed remotely
+RQ-000010,FWA-000464,2025-03-11,Device fault,Call center,2025-03-13,2,3,Y,Fixed remotely
+RQ-000011,FWA-000061,2025-04-09,Device fault,App,2025-04-20,11,3,N,Device replaced
+RQ-000012,FWA-000072,2025-04-26,Device fault,Store,2025-04-30,4,3,N,Fixed remotely
+RQ-000013,FWA-000079,2025-04-08,Device fault,Call center,2025-04-10,2,3,Y,Fixed remotely
+RQ-000014,FWA-000284,2025-04-02,Device fault,App,2025-04-03,1,3,Y,Device replaced
+RQ-000015,FWA-000322,2025-04-14,Device fault,App,2025-04-19,5,3,N,Device replaced
+RQ-000016,FWA-000512,2025-04-15,Relocation,Call center,2025-04-18,3,7,Y,"Moved, service working"
+RQ-000017,FWA-000652,2025-04-23,Device fault,App,2025-04-24,1,3,Y,Fixed remotely
+RQ-000018,FWA-000016,2025-05-03,Device fault,App,2025-05-05,2,3,Y,Device replaced
+RQ-000019,FWA-000101,2025-05-21,Relocation,Store,2025-06-15,25,7,N,"Moved, service working"
+RQ-000020,FWA-000300,2025-05-22,Relocation,App,2025-06-02,11,7,N,"Moved, service working"
+RQ-000021,FWA-000381,2025-05-27,Device fault,Call center,2025-05-29,2,3,Y,Device replaced
+RQ-000022,FWA-000589,2025-05-24,Relocation,Call center,2025-06-07,14,7,N,"Moved, service working"
+RQ-000023,FWA-000590,2025-05-16,Device fault,App,2025-05-22,6,3,N,Device replaced
+RQ-000024,FWA-000799,2025-05-20,Device fault,App,2025-05-23,3,3,N,Fixed remotely
+RQ-000025,FWA-000033,2025-06-09,Device fault,Call center,2025-06-11,2,3,Y,Device replaced
+RQ-000026,FWA-000062,2025-06-02,Relocation,App,2025-06-12,10,7,N,"Moved, service working"
+RQ-000027,FWA-000136,2025-06-01,Device fault,Store,2025-06-02,1,3,Y,Device replaced
+RQ-000028,FWA-000150,2025-06-04,Relocation,App,2025-06-08,4,7,Y,"Moved, service working"
+RQ-000029,FWA-000181,2025-06-01,Relocation,Call center,2025-06-04,3,7,Y,"Moved, service working"
+RQ-000030,FWA-000240,2025-06-11,Device fault,Store,2025-06-13,2,3,Y,Device replaced
+RQ-000031,FWA-000258,2025-06-03,Device fault,Store,2025-06-04,1,3,Y,Fixed remotely
+RQ-000032,FWA-000411,2025-06-23,Relocation,Store,2025-06-27,4,7,Y,"Moved, service working"
+RQ-000033,FWA-000621,2025-06-27,Device fault,App,2025-06-29,2,3,Y,Device replaced
+RQ-000034,FWA-000693,2025-06-12,Device fault,Call center,2025-06-15,3,3,Y,Device replaced
+RQ-000035,FWA-000779,2025-06-20,Relocation,App,2025-06-24,4,7,Y,"Moved, service working"
+RQ-000036,FWA-000825,2025-06-13,Device fault,Store,2025-06-14,1,3,Y,Device replaced
+RQ-000037,FWA-000870,2025-06-01,Device fault,App,2025-06-05,4,3,N,Device replaced
+RQ-000038,FWA-000067,2025-07-10,Device fault,Call center,2025-07-12,2,3,Y,Fixed remotely
+RQ-000039,FWA-000072,2025-07-21,5G upgrade,Store,2025-07-22,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000040,FWA-000125,2025-07-06,Device fault,Store,2025-07-08,2,3,Y,Fixed remotely
+RQ-000041,FWA-000354,2025-07-27,5G upgrade,App,2025-07-28,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000042,FWA-000366,2025-07-24,Relocation,Call center,2025-07-28,4,7,Y,"Moved, service working"
+RQ-000043,FWA-000389,2025-07-19,5G upgrade,Store,2025-07-20,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000044,FWA-000446,2025-07-10,Relocation,Call center,2025-07-20,10,7,N,"Moved, service working"
+RQ-000045,FWA-000480,2025-07-26,Device fault,App,2025-07-28,2,3,Y,Device replaced
+RQ-000046,FWA-000654,2025-07-11,5G upgrade,App,2025-07-12,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000047,FWA-000657,2025-07-15,5G upgrade,App,2025-07-16,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000048,FWA-000717,2025-07-17,5G upgrade,Store,2025-07-18,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000049,FWA-000780,2025-07-28,Device fault,Store,2025-07-29,1,3,Y,Fixed remotely
+RQ-000050,FWA-000807,2025-07-15,5G upgrade,Store,2025-07-16,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000051,FWA-000850,2025-07-20,Relocation,Call center,2025-07-22,2,7,Y,"Moved, service working"
+RQ-000052,FWA-001136,2025-07-03,5G upgrade,App,2025-07-04,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000053,FWA-001146,2025-07-22,5G upgrade,App,2025-07-23,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000054,FWA-001167,2025-07-18,Device fault,Store,2025-07-20,2,3,Y,Fixed remotely
+RQ-000055,FWA-000103,2025-08-23,5G upgrade,App,2025-08-24,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000056,FWA-000106,2025-08-24,Device fault,App,2025-08-30,6,3,N,Fixed remotely
+RQ-000057,FWA-000107,2025-08-15,Relocation,App,2025-08-18,3,7,Y,"Moved, service working"
+RQ-000058,FWA-000147,2025-08-19,Device fault,Store,2025-08-21,2,3,Y,Device replaced
+RQ-000059,FWA-000279,2025-08-07,Device fault,Call center,2025-08-12,5,3,N,Device replaced
+RQ-000060,FWA-000389,2025-08-25,Relocation,App,2025-08-29,4,7,Y,"Moved, service working"
+RQ-000061,FWA-000416,2025-08-06,Relocation,App,2025-08-15,9,7,N,"Moved, service working"
+RQ-000062,FWA-000447,2025-08-13,Relocation,App,2025-08-18,5,7,Y,"Moved, service working"
+RQ-000063,FWA-000487,2025-08-10,Device fault,App,2025-08-12,2,3,Y,Device replaced
+RQ-000064,FWA-000507,2025-08-19,Device fault,Store,2025-08-30,11,3,N,Fixed remotely
+RQ-000065,FWA-000522,2025-08-07,5G upgrade,Store,2025-08-08,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000066,FWA-000544,2025-08-25,Relocation,App,2025-08-31,6,7,Y,"Moved, service working"
+RQ-000067,FWA-000606,2025-08-22,5G upgrade,Store,2025-08-23,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000068,FWA-000657,2025-08-09,Device fault,Store,2025-08-12,3,3,Y,Fixed remotely
+RQ-000069,FWA-000716,2025-08-08,Device fault,App,2025-08-12,4,3,N,Fixed remotely
+RQ-000070,FWA-000767,2025-08-23,5G upgrade,App,2025-08-24,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000071,FWA-000813,2025-08-22,Relocation,Call center,2025-08-25,3,7,Y,"Moved, service working"
+RQ-000072,FWA-000831,2025-08-27,5G upgrade,App,2025-08-28,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000073,FWA-000836,2025-08-28,5G upgrade,App,2025-08-29,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000074,FWA-000905,2025-08-20,Relocation,Call center,2025-08-27,7,7,N,"Moved, service working"
+RQ-000075,FWA-001027,2025-08-12,Device fault,Store,2025-08-14,2,3,Y,Device replaced
+RQ-000076,FWA-001067,2025-08-04,Device fault,Call center,2025-08-06,2,3,Y,Fixed remotely
+RQ-000077,FWA-001092,2025-08-20,Device fault,App,2025-08-25,5,3,N,Device replaced
+RQ-000078,FWA-001177,2025-08-26,5G upgrade,App,2025-08-27,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000079,FWA-001186,2025-08-13,5G upgrade,Store,2025-08-14,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000080,FWA-000118,2025-09-16,5G upgrade,App,2025-09-17,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000081,FWA-000337,2025-09-02,5G upgrade,App,2025-09-03,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000082,FWA-000367,2025-09-15,5G upgrade,App,2025-09-16,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000083,FWA-000519,2025-09-01,5G upgrade,Store,2025-09-02,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000084,FWA-000523,2025-09-14,Device fault,Call center,2025-09-16,2,3,Y,Device replaced
+RQ-000085,FWA-000798,2025-09-22,5G upgrade,App,2025-09-23,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000086,FWA-000834,2025-09-25,Device fault,App,2025-09-30,5,3,N,Device replaced
+RQ-000087,FWA-000907,2025-09-15,5G upgrade,Store,2025-09-16,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000088,FWA-000994,2025-09-25,5G upgrade,App,2025-09-26,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000089,FWA-001141,2025-09-02,Relocation,Store,2025-09-06,4,7,Y,"Moved, service working"
+RQ-000090,FWA-001146,2025-09-08,Relocation,Call center,2025-09-17,9,7,N,"Moved, service working"
+RQ-000091,FWA-001155,2025-09-19,5G upgrade,App,2025-09-20,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000092,FWA-001271,2025-09-16,5G upgrade,App,2025-09-17,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000093,FWA-001342,2025-09-02,Relocation,Store,2025-09-05,3,7,Y,"Moved, service working"
+RQ-000094,FWA-001469,2025-09-12,5G upgrade,Store,2025-09-13,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000095,FWA-001475,2025-09-09,Device fault,App,2025-09-17,8,3,N,Device replaced
+RQ-000096,FWA-000002,2025-10-14,5G upgrade,Store,2025-10-15,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000097,FWA-000032,2025-10-06,Device fault,Call center,2025-10-12,6,3,N,Device replaced
+RQ-000098,FWA-000041,2025-10-18,Device fault,Call center,2025-10-23,5,3,N,Device replaced
+RQ-000099,FWA-000089,2025-10-13,5G upgrade,App,2025-10-14,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000100,FWA-000115,2025-10-12,Relocation,Store,2025-10-21,9,7,N,"Moved, service working"
+RQ-000101,FWA-000116,2025-10-24,Relocation,Call center,2026-01-01,69,7,N,"Moved, service working"
+RQ-000102,FWA-000146,2025-10-07,Relocation,Call center,2025-10-15,8,7,N,"Moved, service working"
+RQ-000103,FWA-000172,2025-10-27,Relocation,Store,2025-10-29,2,7,Y,"Moved, service working"
+RQ-000104,FWA-000224,2025-10-22,Device fault,Call center,2025-10-26,4,3,N,Fixed remotely
+RQ-000105,FWA-000372,2025-10-14,Relocation,Store,2025-10-20,6,7,Y,"Moved, service working"
+RQ-000106,FWA-000381,2025-10-12,Relocation,Call center,2025-10-21,9,7,N,"Moved, service working"
+RQ-000107,FWA-000401,2025-10-19,Device fault,App,2025-11-02,14,3,N,Device replaced
+RQ-000108,FWA-000522,2025-10-05,Device fault,Store,2025-10-06,1,3,Y,Fixed remotely
+RQ-000109,FWA-000528,2025-10-13,Device fault,Store,2025-10-15,2,3,Y,Device replaced
+RQ-000110,FWA-000558,2025-10-19,5G upgrade,Store,2025-10-20,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000111,FWA-000562,2025-10-06,Device fault,Store,2025-10-07,1,3,Y,Fixed remotely
+RQ-000112,FWA-000583,2025-10-01,Relocation,Store,2025-10-05,4,7,Y,"Moved, service working"
+RQ-000113,FWA-000684,2025-10-03,5G upgrade,Store,2025-10-04,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000114,FWA-000699,2025-10-20,5G upgrade,Store,2025-10-21,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000115,FWA-000712,2025-10-12,Device fault,Call center,2025-10-15,3,3,N,Fixed remotely
+RQ-000116,FWA-000817,2025-10-28,5G upgrade,App,2025-10-29,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000117,FWA-000858,2025-10-03,Relocation,Store,2025-10-21,18,7,N,"Moved, service working"
+RQ-000118,FWA-000934,2025-10-13,Relocation,Store,2025-10-20,7,7,N,"Moved, service working"
+RQ-000119,FWA-000958,2025-10-16,5G upgrade,Store,2025-10-17,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000120,FWA-000971,2025-10-09,Device fault,Call center,2025-10-10,1,3,Y,Fixed remotely
+RQ-000121,FWA-000991,2025-10-20,Device fault,Call center,2025-10-23,3,3,Y,Fixed remotely
+RQ-000122,FWA-001037,2025-10-16,5G upgrade,App,2025-10-17,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000123,FWA-001097,2025-10-15,Relocation,Store,2025-10-21,6,7,Y,"Moved, service working"
+RQ-000124,FWA-001186,2025-10-03,Device fault,Store,2025-10-12,9,3,N,Device replaced
+RQ-000125,FWA-001326,2025-10-20,5G upgrade,App,2025-10-21,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000126,FWA-001346,2025-10-17,5G upgrade,App,2025-10-18,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000127,FWA-001422,2025-10-17,Device fault,Call center,2025-10-19,2,3,Y,Fixed remotely
+RQ-000128,FWA-001479,2025-10-01,Relocation,Call center,2025-10-05,4,7,Y,"Moved, service working"
+RQ-000129,FWA-001548,2025-10-06,Device fault,Call center,2025-10-12,6,3,N,Fixed remotely
+RQ-000130,FWA-001621,2025-10-14,Relocation,Call center,2025-10-20,6,7,Y,"Moved, service working"
+RQ-000131,FWA-001647,2025-10-04,Relocation,Store,2025-10-14,10,7,N,"Moved, service working"
+RQ-000132,FWA-001690,2025-10-01,Device fault,Call center,2025-10-02,1,3,Y,Fixed remotely
+RQ-000133,FWA-000082,2025-11-13,5G upgrade,Store,2025-11-14,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000134,FWA-000109,2025-11-08,Device fault,Store,2025-11-10,2,3,Y,Fixed remotely
+RQ-000135,FWA-000140,2025-11-23,5G upgrade,Store,2025-11-24,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000136,FWA-000157,2025-11-16,Device fault,Store,2025-11-19,3,3,N,Device replaced
+RQ-000137,FWA-000195,2025-11-20,5G upgrade,Store,2025-11-21,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000138,FWA-000269,2025-11-08,Device fault,Call center,2025-11-11,3,3,Y,Device replaced
+RQ-000139,FWA-000295,2025-11-14,5G upgrade,Store,2025-11-15,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000140,FWA-000314,2025-11-08,Device fault,App,2025-11-10,2,3,Y,Device replaced
+RQ-000141,FWA-000321,2025-11-04,Relocation,Call center,2025-11-11,7,7,N,"Moved, service working"
+RQ-000142,FWA-000339,2025-11-04,Relocation,Store,2025-11-11,7,7,Y,"Moved, service working"
+RQ-000143,FWA-000364,2025-11-08,Device fault,App,2025-11-09,1,3,Y,Fixed remotely
+RQ-000144,FWA-000425,2025-11-01,5G upgrade,Store,2025-11-02,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000145,FWA-000528,2025-11-09,Relocation,Store,2025-11-16,7,7,Y,"Moved, service working"
+RQ-000146,FWA-000561,2025-11-26,Device fault,App,2025-12-01,5,3,N,Device replaced
+RQ-000147,FWA-000628,2025-11-09,Device fault,App,2025-11-10,1,3,Y,Fixed remotely
+RQ-000148,FWA-000635,2025-11-15,Relocation,App,2025-11-19,4,7,Y,"Moved, service working"
+RQ-000149,FWA-000639,2025-11-01,5G upgrade,Store,2025-11-02,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000150,FWA-000651,2025-11-01,5G upgrade,Store,2025-11-02,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000151,FWA-000676,2025-11-12,5G upgrade,Store,2025-11-13,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000152,FWA-000684,2025-11-16,Relocation,App,2025-11-19,3,7,Y,"Moved, service working"
+RQ-000153,FWA-000685,2025-11-06,5G upgrade,Store,2025-11-07,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000154,FWA-000745,2025-11-08,5G upgrade,Store,2025-11-09,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000155,FWA-000773,2025-11-07,Device fault,Store,2025-11-18,11,3,N,Fixed remotely
+RQ-000156,FWA-000789,2025-11-16,5G upgrade,Store,2025-11-17,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000157,FWA-000813,2025-11-04,Relocation,Call center,2025-11-07,3,7,Y,"Moved, service working"
+RQ-000158,FWA-000823,2025-11-18,5G upgrade,Store,2025-11-19,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000159,FWA-000836,2025-11-26,Relocation,Call center,2025-12-20,24,7,N,"Moved, service working"
+RQ-000160,FWA-000854,2025-11-10,Relocation,Store,2025-12-02,22,7,N,"Moved, service working"
+RQ-000161,FWA-000954,2025-11-15,Device fault,Call center,2025-11-19,4,3,N,Fixed remotely
+RQ-000162,FWA-000996,2025-11-11,5G upgrade,Store,2025-11-12,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000163,FWA-001033,2025-11-24,5G upgrade,Store,2025-11-25,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000164,FWA-001092,2025-11-02,Relocation,Call center,2025-11-04,2,7,Y,"Moved, service working"
+RQ-000165,FWA-001111,2025-11-20,5G upgrade,Store,2025-11-21,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000166,FWA-001140,2025-11-05,5G upgrade,App,2025-11-06,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000167,FWA-001214,2025-11-07,Device fault,Call center,2025-11-08,1,3,Y,Device replaced
+RQ-000168,FWA-001225,2025-11-13,Relocation,Store,2025-11-20,7,7,N,"Moved, service working"
+RQ-000169,FWA-001275,2025-11-20,5G upgrade,Store,2025-11-21,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000170,FWA-001310,2025-11-26,Relocation,Call center,2025-12-09,13,7,N,"Moved, service working"
+RQ-000171,FWA-001435,2025-11-03,5G upgrade,Store,2025-11-04,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000172,FWA-001472,2025-11-22,5G upgrade,Store,2025-11-23,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000173,FWA-001483,2025-11-21,Device fault,Store,2025-11-22,1,3,Y,Device replaced
+RQ-000174,FWA-001505,2025-11-21,Relocation,App,2025-12-17,26,7,N,"Moved, service working"
+RQ-000175,FWA-001517,2025-11-06,Device fault,Call center,2025-11-07,1,3,Y,Device replaced
+RQ-000176,FWA-001580,2025-11-11,Relocation,Call center,2025-11-15,4,7,Y,"Moved, service working"
+RQ-000177,FWA-001592,2025-11-14,5G upgrade,Store,2025-11-15,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000178,FWA-001608,2025-11-21,Device fault,Call center,2025-11-23,2,3,Y,Device replaced
+RQ-000179,FWA-001627,2025-11-14,Device fault,Store,2025-11-16,2,3,Y,Fixed remotely
+RQ-000180,FWA-001749,2025-11-11,5G upgrade,App,2025-11-12,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000181,FWA-001758,2025-11-23,5G upgrade,Store,2025-11-24,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000182,FWA-001839,2025-11-20,Relocation,Call center,2025-12-16,26,7,N,"Moved, service working"
+RQ-000183,FWA-001840,2025-11-02,Device fault,Call center,2025-11-04,2,3,Y,Fixed remotely
+RQ-000184,FWA-001928,2025-11-07,Relocation,Call center,2025-11-14,7,7,Y,"Moved, service working"
+RQ-000185,FWA-000002,2025-12-16,Renewal,Call center,2025-12-18,2,5,Y,Renewed 12 months
+RQ-000186,FWA-000005,2025-12-15,Renewal,Call center,2025-12-17,2,5,Y,Renewed 12 months
+RQ-000187,FWA-000009,2025-12-05,Renewal,Call center,2025-12-07,2,5,Y,Renewed 12 months
+RQ-000188,FWA-000013,2025-12-07,Renewal,Call center,2025-12-09,2,5,Y,"Declined, no contract"
+RQ-000189,FWA-000013,2025-12-19,5G upgrade,Store,2025-12-20,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000190,FWA-000015,2025-12-08,Renewal,Call center,2025-12-10,2,5,Y,"Declined, no contract"
+RQ-000191,FWA-000016,2025-12-25,Renewal,Call center,2025-12-27,2,5,Y,"Declined, no contract"
+RQ-000192,FWA-000019,2025-12-24,Renewal,Call center,2025-12-26,2,5,Y,Renewed 12 months
+RQ-000193,FWA-000023,2025-12-21,Renewal,Call center,2025-12-23,2,5,Y,Renewed 12 months
+RQ-000194,FWA-000042,2025-12-23,Renewal,Call center,2025-12-25,2,5,Y,Renewed 12 months
+RQ-000195,FWA-000054,2025-12-04,Renewal,Call center,2025-12-06,2,5,Y,Renewed 12 months
+RQ-000196,FWA-000055,2025-12-08,Renewal,Call center,2025-12-10,2,5,Y,"Declined, no contract"
+RQ-000197,FWA-000056,2025-12-11,Renewal,Call center,2025-12-13,2,5,Y,Renewed 12 months
+RQ-000198,FWA-000057,2025-12-20,Renewal,Call center,2025-12-22,2,5,Y,"Declined, no contract"
+RQ-000199,FWA-000060,2025-12-05,Renewal,Call center,2025-12-07,2,5,Y,Renewed 12 months
+RQ-000200,FWA-000073,2025-12-01,Renewal,Call center,2025-12-03,2,5,Y,Renewed 12 months
+RQ-000201,FWA-000074,2025-12-28,Renewal,Call center,2025-12-30,2,5,Y,"Declined, no contract"
+RQ-000202,FWA-000077,2025-12-28,Renewal,Call center,2025-12-30,2,5,Y,Renewed 12 months
+RQ-000203,FWA-000079,2025-12-16,Renewal,Call center,2025-12-18,2,5,Y,Renewed 12 months
+RQ-000204,FWA-000080,2025-12-20,Renewal,Call center,2025-12-22,2,5,Y,Renewed 12 months
+RQ-000205,FWA-000083,2025-12-21,Renewal,Call center,2025-12-23,2,5,Y,"Declined, no contract"
+RQ-000206,FWA-000092,2025-12-26,Renewal,Call center,2025-12-28,2,5,Y,Renewed 12 months
+RQ-000207,FWA-000093,2025-12-27,Renewal,Call center,2025-12-29,2,5,Y,"Declined, no contract"
+RQ-000208,FWA-000095,2025-12-27,Renewal,Call center,2025-12-29,2,5,Y,Renewed 12 months
+RQ-000209,FWA-000102,2025-12-22,Renewal,Call center,2025-12-24,2,5,Y,Renewed 12 months
+RQ-000210,FWA-000106,2025-12-04,Renewal,Call center,2025-12-06,2,5,Y,Renewed 12 months
+RQ-000211,FWA-000107,2025-12-20,Renewal,Call center,2025-12-22,2,5,Y,Renewed 12 months
+RQ-000212,FWA-000111,2025-12-08,Renewal,Call center,2025-12-10,2,5,Y,Renewed 12 months
+RQ-000213,FWA-000113,2025-12-04,Renewal,Call center,2025-12-06,2,5,Y,"Declined, no contract"
+RQ-000214,FWA-000119,2025-12-06,5G upgrade,Store,2025-12-07,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000215,FWA-000122,2025-12-04,Renewal,Call center,2025-12-06,2,5,Y,Renewed 12 months
+RQ-000216,FWA-000126,2025-12-04,Renewal,Call center,2025-12-06,2,5,Y,Renewed 12 months
+RQ-000217,FWA-000128,2025-12-09,Renewal,Call center,2025-12-11,2,5,Y,Renewed 12 months
+RQ-000218,FWA-000130,2025-12-02,Renewal,Call center,2025-12-04,2,5,Y,Renewed 12 months
+RQ-000219,FWA-000131,2025-12-09,Renewal,Call center,2025-12-11,2,5,Y,Renewed 12 months
+RQ-000220,FWA-000132,2025-12-27,Renewal,Call center,2025-12-29,2,5,Y,"Declined, no contract"
+RQ-000221,FWA-000137,2025-12-27,Renewal,Call center,2025-12-29,2,5,Y,Renewed 12 months
+RQ-000222,FWA-000138,2025-12-19,Renewal,Call center,2025-12-21,2,5,Y,Renewed 12 months
+RQ-000223,FWA-000144,2025-12-07,Renewal,Call center,2025-12-09,2,5,Y,Renewed 12 months
+RQ-000224,FWA-000147,2025-12-04,Device fault,App,2025-12-06,2,3,Y,Device replaced
+RQ-000225,FWA-000153,2025-12-13,5G upgrade,Store,2025-12-14,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000226,FWA-000157,2025-12-01,5G upgrade,Store,2025-12-02,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000227,FWA-000159,2025-12-28,Device fault,Call center,2026-01-03,6,3,N,Fixed remotely
+RQ-000228,FWA-000171,2025-12-27,5G upgrade,Store,2025-12-28,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000229,FWA-000201,2025-12-24,5G upgrade,Store,2025-12-25,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000230,FWA-000205,2025-12-02,5G upgrade,Store,2025-12-03,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000231,FWA-000219,2025-12-08,5G upgrade,Store,2025-12-09,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000232,FWA-000231,2025-12-03,5G upgrade,Store,2025-12-04,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000233,FWA-000334,2025-12-11,5G upgrade,Store,2025-12-12,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000234,FWA-000350,2025-12-02,5G upgrade,Store,2025-12-03,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000235,FWA-000362,2025-12-02,Relocation,Call center,2025-12-09,7,7,N,"Moved, service working"
+RQ-000236,FWA-000387,2025-12-13,Relocation,Call center,2025-12-15,2,7,Y,"Moved, service working"
+RQ-000237,FWA-000391,2025-12-25,5G upgrade,Store,2025-12-26,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000238,FWA-000416,2025-12-07,Relocation,Store,2025-12-12,5,7,Y,"Moved, service working"
+RQ-000239,FWA-000445,2025-12-02,Device fault,App,2025-12-09,7,3,N,Fixed remotely
+RQ-000240,FWA-000451,2025-12-15,5G upgrade,Store,2025-12-16,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000241,FWA-000521,2025-12-11,5G upgrade,Store,2025-12-12,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000242,FWA-000541,2025-12-07,5G upgrade,Store,2025-12-08,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000243,FWA-000545,2025-12-22,5G upgrade,Store,2025-12-23,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000244,FWA-000562,2025-12-07,5G upgrade,Store,2025-12-08,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000245,FWA-000669,2025-12-20,Device fault,Store,2025-12-21,1,3,Y,Device replaced
+RQ-000246,FWA-000720,2025-12-10,5G upgrade,Store,2025-12-11,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000247,FWA-000748,2025-12-03,5G upgrade,Store,2025-12-04,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000248,FWA-000757,2025-12-12,5G upgrade,Store,2025-12-13,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000249,FWA-000761,2025-12-09,Relocation,App,2025-12-17,8,7,N,"Moved, service working"
+RQ-000250,FWA-000768,2025-12-25,5G upgrade,Store,2025-12-26,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000251,FWA-000774,2025-12-23,5G upgrade,Store,2025-12-24,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000252,FWA-000787,2025-12-27,5G upgrade,Store,2025-12-28,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000253,FWA-000882,2025-12-26,5G upgrade,Store,2025-12-27,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000254,FWA-000887,2025-12-14,5G upgrade,Store,2025-12-15,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000255,FWA-000890,2025-12-20,5G upgrade,Store,2025-12-21,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000256,FWA-000895,2025-12-08,5G upgrade,Store,2025-12-09,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000257,FWA-000933,2025-12-05,5G upgrade,Store,2025-12-06,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000258,FWA-001047,2025-12-25,Device fault,Store,2025-12-30,5,3,N,Device replaced
+RQ-000259,FWA-001093,2025-12-15,Device fault,App,2025-12-30,15,3,N,Fixed remotely
+RQ-000260,FWA-001156,2025-12-09,5G upgrade,Store,2025-12-10,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000261,FWA-001191,2025-12-24,5G upgrade,Store,2025-12-25,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000262,FWA-001201,2025-12-05,Relocation,App,2025-12-14,9,7,N,"Moved, service working"
+RQ-000263,FWA-001218,2025-12-12,5G upgrade,Store,2025-12-13,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000264,FWA-001248,2025-12-13,Device fault,Store,2025-12-16,3,3,N,Device replaced
+RQ-000265,FWA-001352,2025-12-11,Relocation,Call center,2025-12-13,2,7,Y,"Moved, service working"
+RQ-000266,FWA-001358,2025-12-12,5G upgrade,Store,2025-12-13,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000267,FWA-001368,2025-12-22,5G upgrade,Store,2025-12-23,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000268,FWA-001370,2025-12-06,5G upgrade,Store,2025-12-07,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000269,FWA-001525,2025-12-19,Device fault,Store,2025-12-19,0,3,Y,Device replaced
+RQ-000270,FWA-001607,2025-12-21,5G upgrade,Store,2025-12-22,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000271,FWA-001615,2025-12-13,5G upgrade,Store,2025-12-14,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000272,FWA-001706,2025-12-17,5G upgrade,Store,2025-12-18,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000273,FWA-001724,2025-12-17,Relocation,App,2025-12-29,12,7,N,"Moved, service working"
+RQ-000274,FWA-001739,2025-12-02,5G upgrade,App,2025-12-03,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000275,FWA-001762,2025-12-02,Device fault,Call center,2025-12-06,4,3,N,Fixed remotely
+RQ-000276,FWA-001809,2025-12-17,5G upgrade,App,2025-12-18,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000277,FWA-001860,2025-12-07,Device fault,Call center,2025-12-16,9,3,N,Device replaced
+RQ-000278,FWA-001878,2025-12-10,5G upgrade,App,2025-12-11,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000279,FWA-001882,2025-12-20,5G upgrade,Store,2025-12-21,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000280,FWA-001954,2025-12-05,5G upgrade,Store,2025-12-06,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000281,FWA-001985,2025-12-12,Device fault,App,2025-12-15,3,3,Y,Fixed remotely
+RQ-000282,FWA-002130,2025-12-25,Device fault,App,2025-12-29,4,3,N,Device replaced
+RQ-000283,FWA-002132,2025-12-24,Device fault,Store,2025-12-26,2,3,Y,Device replaced
+RQ-000284,FWA-002168,2025-12-01,Device fault,App,2025-12-03,2,3,Y,Device replaced
+RQ-000285,FWA-002188,2025-12-05,Device fault,App,2025-12-06,1,3,Y,Fixed remotely
+RQ-000286,FWA-000050,2026-01-23,5G upgrade,Store,2026-01-24,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000287,FWA-000070,2026-01-15,5G upgrade,Store,2026-01-16,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000288,FWA-000077,2026-01-20,5G upgrade,Store,2026-01-21,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000289,FWA-000144,2026-01-08,5G upgrade,Store,2026-01-09,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000290,FWA-000147,2026-01-08,Renewal,Call center,2026-01-10,2,5,Y,Renewed 12 months
+RQ-000291,FWA-000151,2026-01-11,Renewal,Call center,2026-01-13,2,5,Y,Renewed 12 months
+RQ-000292,FWA-000154,2026-01-21,Renewal,Call center,2026-01-23,2,5,Y,"Declined, no contract"
+RQ-000293,FWA-000155,2026-01-25,Renewal,Call center,2026-01-27,2,5,Y,"Declined, no contract"
+RQ-000294,FWA-000159,2026-01-28,Renewal,Call center,2026-01-30,2,5,Y,Renewed 12 months
+RQ-000295,FWA-000160,2026-01-05,Renewal,Call center,2026-01-07,2,5,Y,"Declined, no contract"
+RQ-000296,FWA-000162,2026-01-09,Renewal,Call center,2026-01-11,2,5,Y,Renewed 12 months
+RQ-000297,FWA-000165,2026-01-15,Renewal,Call center,2026-01-17,2,5,Y,Renewed 12 months
+RQ-000298,FWA-000169,2026-01-14,Renewal,Call center,2026-01-16,2,5,Y,"Declined, no contract"
+RQ-000299,FWA-000170,2026-01-19,Renewal,Call center,2026-01-21,2,5,Y,Renewed 12 months
+RQ-000300,FWA-000173,2026-01-09,Renewal,Call center,2026-01-11,2,5,Y,"Declined, no contract"
+RQ-000301,FWA-000178,2026-01-25,5G upgrade,App,2026-01-26,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000302,FWA-000184,2026-01-02,Renewal,Call center,2026-01-04,2,5,Y,"Declined, no contract"
+RQ-000303,FWA-000190,2026-01-10,Renewal,Call center,2026-01-12,2,5,Y,Renewed 12 months
+RQ-000304,FWA-000200,2026-01-14,Renewal,Call center,2026-01-16,2,5,Y,"Declined, no contract"
+RQ-000305,FWA-000201,2026-01-25,Renewal,Call center,2026-01-27,2,5,Y,Renewed 12 months
+RQ-000306,FWA-000202,2026-01-10,Renewal,Call center,2026-01-12,2,5,Y,"Declined, no contract"
+RQ-000307,FWA-000205,2026-01-21,Renewal,Call center,2026-01-23,2,5,Y,Renewed 12 months
+RQ-000308,FWA-000208,2026-01-25,Device fault,Call center,2026-01-28,3,3,Y,Fixed remotely
+RQ-000309,FWA-000208,2026-01-08,Renewal,Call center,2026-01-10,2,5,Y,"Declined, no contract"
+RQ-000310,FWA-000212,2026-01-04,Renewal,Call center,2026-01-06,2,5,Y,Renewed 12 months
+RQ-000311,FWA-000216,2026-01-05,Renewal,Call center,2026-01-07,2,5,Y,Renewed 12 months
+RQ-000312,FWA-000220,2026-01-12,Renewal,Call center,2026-01-14,2,5,Y,Renewed 12 months
+RQ-000313,FWA-000224,2026-01-15,Renewal,Call center,2026-01-17,2,5,Y,"Declined, no contract"
+RQ-000314,FWA-000226,2026-01-18,Renewal,Call center,2026-01-20,2,5,Y,"Declined, no contract"
+RQ-000315,FWA-000230,2026-01-03,5G upgrade,Store,2026-01-04,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000316,FWA-000231,2026-01-23,Renewal,Call center,2026-01-25,2,5,Y,Renewed 12 months
+RQ-000317,FWA-000233,2026-01-09,Renewal,Call center,2026-01-11,2,5,Y,Renewed 12 months
+RQ-000318,FWA-000238,2026-01-07,Renewal,Call center,2026-01-09,2,5,Y,Renewed 12 months
+RQ-000319,FWA-000239,2026-01-14,Renewal,Call center,2026-01-16,2,5,Y,Renewed 12 months
+RQ-000320,FWA-000250,2026-01-02,Renewal,Call center,2026-01-04,2,5,Y,"Declined, no contract"
+RQ-000321,FWA-000254,2026-01-24,Renewal,Call center,2026-01-26,2,5,Y,Renewed 12 months
+RQ-000322,FWA-000260,2026-01-10,Renewal,Call center,2026-01-12,2,5,Y,"Declined, no contract"
+RQ-000323,FWA-000260,2026-01-09,5G upgrade,Store,2026-01-10,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000324,FWA-000267,2026-01-08,Renewal,Call center,2026-01-10,2,5,Y,Renewed 12 months
+RQ-000325,FWA-000269,2026-01-21,Renewal,Call center,2026-01-23,2,5,Y,Renewed 12 months
+RQ-000326,FWA-000275,2026-01-22,Renewal,Call center,2026-01-24,2,5,Y,Renewed 12 months
+RQ-000327,FWA-000278,2026-01-13,Renewal,Call center,2026-01-15,2,5,Y,Renewed 12 months
+RQ-000328,FWA-000282,2026-01-21,Renewal,Call center,2026-01-23,2,5,Y,Renewed 12 months
+RQ-000329,FWA-000343,2026-01-15,Device fault,Store,2026-01-17,2,3,Y,Fixed remotely
+RQ-000330,FWA-000356,2026-01-07,5G upgrade,App,2026-01-08,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000331,FWA-000380,2026-01-27,Relocation,Store,2026-02-12,16,7,N,"Moved, service working"
+RQ-000332,FWA-000410,2026-01-27,5G upgrade,Store,2026-01-28,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000333,FWA-000464,2026-01-28,5G upgrade,Store,2026-01-29,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000334,FWA-000648,2026-01-08,5G upgrade,Store,2026-01-09,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000335,FWA-000655,2026-01-27,Device fault,Call center,2026-01-29,2,3,Y,Device replaced
+RQ-000336,FWA-000713,2026-01-28,5G upgrade,Store,2026-01-29,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000337,FWA-000721,2026-01-03,5G upgrade,Store,2026-01-04,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000338,FWA-000773,2026-01-24,5G upgrade,App,2026-01-25,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000339,FWA-000804,2026-01-20,5G upgrade,Store,2026-01-21,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000340,FWA-000805,2026-01-22,5G upgrade,Store,2026-01-23,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000341,FWA-000822,2026-01-23,5G upgrade,Store,2026-01-24,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000342,FWA-000840,2026-01-05,Device fault,Call center,2026-01-19,14,3,N,Fixed remotely
+RQ-000343,FWA-000857,2026-01-14,Device fault,Store,2026-01-18,4,3,N,Fixed remotely
+RQ-000344,FWA-000891,2026-01-18,5G upgrade,Store,2026-01-19,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000345,FWA-000914,2026-01-28,5G upgrade,Store,2026-01-29,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000346,FWA-000944,2026-01-07,Device fault,Call center,2026-01-08,1,3,Y,Device replaced
+RQ-000347,FWA-000960,2026-01-20,Relocation,Store,2026-02-20,31,7,N,"Moved, service working"
+RQ-000348,FWA-001078,2026-01-28,5G upgrade,Store,2026-01-29,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000349,FWA-001407,2026-01-07,Relocation,Call center,2026-01-09,2,7,Y,"Moved, service working"
+RQ-000350,FWA-001419,2026-01-06,5G upgrade,Store,2026-01-07,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000351,FWA-001477,2026-01-15,Device fault,Store,2026-01-20,5,3,N,Device replaced
+RQ-000352,FWA-001520,2026-01-17,Relocation,Call center,2026-01-20,3,7,Y,"Moved, service working"
+RQ-000353,FWA-001539,2026-01-24,5G upgrade,Store,2026-01-25,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000354,FWA-001544,2026-01-23,5G upgrade,Store,2026-01-24,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000355,FWA-001593,2026-01-01,Relocation,App,2026-01-17,16,7,N,"Moved, service working"
+RQ-000356,FWA-001772,2026-01-28,Relocation,App,2026-02-04,7,7,Y,"Moved, service working"
+RQ-000357,FWA-001793,2026-01-19,Relocation,App,2026-01-28,9,7,N,"Moved, service working"
+RQ-000358,FWA-001819,2026-01-16,5G upgrade,Store,2026-01-17,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000359,FWA-001891,2026-01-25,Relocation,App,2026-02-01,7,7,N,"Moved, service working"
+RQ-000360,FWA-001922,2026-01-15,5G upgrade,Store,2026-01-16,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000361,FWA-001941,2026-01-09,5G upgrade,Store,2026-01-10,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000362,FWA-001942,2026-01-04,5G upgrade,Store,2026-01-05,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000363,FWA-001953,2026-01-21,Device fault,Store,2026-01-26,5,3,N,Fixed remotely
+RQ-000364,FWA-002014,2026-01-06,Relocation,Store,2026-01-11,5,7,Y,"Moved, service working"
+RQ-000365,FWA-002016,2026-01-26,5G upgrade,Store,2026-01-27,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000366,FWA-002031,2026-01-14,5G upgrade,Store,2026-01-15,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000367,FWA-002098,2026-01-25,5G upgrade,Store,2026-01-26,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000368,FWA-002100,2026-01-02,5G upgrade,Store,2026-01-03,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000369,FWA-002142,2026-01-28,5G upgrade,Store,2026-01-29,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000370,FWA-002152,2026-01-16,Device fault,Call center,2026-01-23,7,3,N,Device replaced
+RQ-000371,FWA-002225,2026-01-03,Device fault,Call center,2026-01-17,14,3,N,Device replaced
+RQ-000372,FWA-002254,2026-01-19,Device fault,App,2026-01-19,0,3,Y,Device replaced
+RQ-000373,FWA-002333,2026-01-09,Device fault,Store,2026-01-12,3,3,Y,Device replaced
+RQ-000374,FWA-002343,2026-01-17,5G upgrade,App,2026-01-18,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000375,FWA-002382,2026-01-17,5G upgrade,Store,2026-01-18,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000376,FWA-002411,2026-01-23,Relocation,Call center,2026-01-24,1,7,Y,"Moved, service working"
+RQ-000377,FWA-002413,2026-01-17,Relocation,App,2026-01-20,3,7,Y,"Moved, service working"
+RQ-000378,FWA-000085,2026-02-03,Relocation,App,2026-02-17,14,7,N,"Moved, service working"
+RQ-000379,FWA-000094,2026-02-19,Device fault,Store,2026-02-23,4,3,N,Device replaced
+RQ-000380,FWA-000107,2026-02-08,5G upgrade,Store,2026-02-09,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000381,FWA-000124,2026-02-17,Relocation,Store,2026-03-10,21,7,N,"Moved, service working"
+RQ-000382,FWA-000126,2026-02-16,Relocation,Store,2026-02-19,3,7,Y,"Moved, service working"
+RQ-000383,FWA-000133,2026-02-06,5G upgrade,Store,2026-02-07,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000384,FWA-000155,2026-02-02,Relocation,App,2026-02-07,5,7,Y,"Moved, service working"
+RQ-000385,FWA-000172,2026-02-28,Relocation,Call center,2026-03-23,23,7,N,"Moved, service working"
+RQ-000386,FWA-000289,2026-02-17,Renewal,Call center,2026-02-19,2,5,Y,Renewed 12 months
+RQ-000387,FWA-000294,2026-02-22,Renewal,Call center,2026-02-24,2,5,Y,"Declined, no contract"
+RQ-000388,FWA-000297,2026-02-01,Renewal,Call center,2026-02-03,2,5,Y,"Declined, no contract"
+RQ-000389,FWA-000299,2026-02-11,Renewal,Call center,2026-02-13,2,5,Y,Renewed 12 months
+RQ-000390,FWA-000301,2026-02-25,Renewal,Call center,2026-02-27,2,5,Y,Renewed 12 months
+RQ-000391,FWA-000309,2026-02-03,5G upgrade,Store,2026-02-04,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000392,FWA-000315,2026-02-12,Renewal,Call center,2026-02-14,2,5,Y,Renewed 12 months
+RQ-000393,FWA-000316,2026-02-05,Renewal,Call center,2026-02-07,2,5,Y,Renewed 12 months
+RQ-000394,FWA-000317,2026-02-12,Renewal,Call center,2026-02-14,2,5,Y,Renewed 12 months
+RQ-000395,FWA-000319,2026-02-09,Renewal,Call center,2026-02-11,2,5,Y,Renewed 12 months
+RQ-000396,FWA-000320,2026-02-09,Renewal,Call center,2026-02-11,2,5,Y,Renewed 12 months
+RQ-000397,FWA-000327,2026-02-04,Renewal,Call center,2026-02-06,2,5,Y,Renewed 12 months
+RQ-000398,FWA-000328,2026-02-14,Renewal,Call center,2026-02-16,2,5,Y,Renewed 12 months
+RQ-000399,FWA-000332,2026-02-11,Renewal,Call center,2026-02-13,2,5,Y,Renewed 12 months
+RQ-000400,FWA-000333,2026-02-11,Renewal,Call center,2026-02-13,2,5,Y,"Declined, no contract"
+RQ-000401,FWA-000337,2026-02-13,Renewal,Call center,2026-02-15,2,5,Y,Renewed 12 months
+RQ-000402,FWA-000342,2026-02-11,Renewal,Call center,2026-02-13,2,5,Y,"Declined, no contract"
+RQ-000403,FWA-000343,2026-02-21,Renewal,Call center,2026-02-23,2,5,Y,"Declined, no contract"
+RQ-000404,FWA-000350,2026-02-26,Renewal,Call center,2026-02-28,2,5,Y,"Declined, no contract"
+RQ-000405,FWA-000352,2026-02-11,Renewal,Call center,2026-02-13,2,5,Y,Renewed 12 months
+RQ-000406,FWA-000354,2026-02-24,Renewal,Call center,2026-02-26,2,5,Y,"Declined, no contract"
+RQ-000407,FWA-000359,2026-02-28,Renewal,Call center,2026-03-02,2,5,Y,Renewed 12 months
+RQ-000408,FWA-000367,2026-02-04,Renewal,Call center,2026-02-06,2,5,Y,Renewed 12 months
+RQ-000409,FWA-000371,2026-02-24,Renewal,Call center,2026-02-26,2,5,Y,"Declined, no contract"
+RQ-000410,FWA-000374,2026-02-26,Renewal,Call center,2026-02-28,2,5,Y,Renewed 12 months
+RQ-000411,FWA-000375,2026-02-18,5G upgrade,Store,2026-02-19,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000412,FWA-000380,2026-02-03,Renewal,Call center,2026-02-05,2,5,Y,"Declined, no contract"
+RQ-000413,FWA-000384,2026-02-05,Renewal,Call center,2026-02-07,2,5,Y,Renewed 12 months
+RQ-000414,FWA-000387,2026-02-12,Renewal,Call center,2026-02-14,2,5,Y,Renewed 12 months
+RQ-000415,FWA-000389,2026-02-23,Renewal,Call center,2026-02-25,2,5,Y,"Declined, no contract"
+RQ-000416,FWA-000391,2026-02-10,Renewal,Call center,2026-02-12,2,5,Y,Renewed 12 months
+RQ-000417,FWA-000392,2026-02-03,Renewal,Call center,2026-02-05,2,5,Y,"Declined, no contract"
+RQ-000418,FWA-000394,2026-02-26,Renewal,Call center,2026-02-28,2,5,Y,Renewed 12 months
+RQ-000419,FWA-000396,2026-02-20,Renewal,Call center,2026-02-22,2,5,Y,Renewed 12 months
+RQ-000420,FWA-000397,2026-02-14,Renewal,Call center,2026-02-16,2,5,Y,Renewed 12 months
+RQ-000421,FWA-000402,2026-02-11,Renewal,Call center,2026-02-13,2,5,Y,Renewed 12 months
+RQ-000422,FWA-000410,2026-02-27,Renewal,Call center,2026-03-01,2,5,Y,Renewed 12 months
+RQ-000423,FWA-000415,2026-02-26,Renewal,Call center,2026-02-28,2,5,Y,Renewed 12 months
+RQ-000424,FWA-000416,2026-02-01,Renewal,Call center,2026-02-03,2,5,Y,"Declined, no contract"
+RQ-000425,FWA-000418,2026-02-21,Renewal,Call center,2026-02-23,2,5,Y,"Declined, no contract"
+RQ-000426,FWA-000419,2026-02-18,5G upgrade,Store,2026-02-19,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000427,FWA-000420,2026-02-27,Renewal,Call center,2026-03-01,2,5,Y,Renewed 12 months
+RQ-000428,FWA-000422,2026-02-27,Renewal,Call center,2026-03-01,2,5,Y,Renewed 12 months
+RQ-000429,FWA-000425,2026-02-07,Renewal,Call center,2026-02-09,2,5,Y,Renewed 12 months
+RQ-000430,FWA-000427,2026-02-08,Renewal,Call center,2026-02-10,2,5,Y,Renewed 12 months
+RQ-000431,FWA-000431,2026-02-21,Renewal,Call center,2026-02-23,2,5,Y,Renewed 12 months
+RQ-000432,FWA-000432,2026-02-08,Renewal,Call center,2026-02-10,2,5,Y,Renewed 12 months
+RQ-000433,FWA-000433,2026-02-07,Renewal,Call center,2026-02-09,2,5,Y,"Declined, no contract"
+RQ-000434,FWA-000445,2026-02-16,Renewal,Call center,2026-02-18,2,5,Y,Renewed 12 months
+RQ-000435,FWA-000446,2026-02-01,Renewal,Call center,2026-02-03,2,5,Y,"Declined, no contract"
+RQ-000436,FWA-000448,2026-02-16,5G upgrade,Store,2026-02-17,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000437,FWA-000452,2026-02-03,Renewal,Call center,2026-02-05,2,5,Y,"Declined, no contract"
+RQ-000438,FWA-000460,2026-02-12,Renewal,Call center,2026-02-14,2,5,Y,"Declined, no contract"
+RQ-000439,FWA-000463,2026-02-10,Renewal,Call center,2026-02-12,2,5,Y,Renewed 12 months
+RQ-000440,FWA-000464,2026-02-17,Renewal,Call center,2026-02-19,2,5,Y,Renewed 12 months
+RQ-000441,FWA-000474,2026-02-02,Renewal,Call center,2026-02-04,2,5,Y,Renewed 12 months
+RQ-000442,FWA-000478,2026-02-24,Renewal,Call center,2026-02-26,2,5,Y,Renewed 12 months
+RQ-000443,FWA-000480,2026-02-18,Renewal,Call center,2026-02-20,2,5,Y,"Declined, no contract"
+RQ-000444,FWA-000512,2026-02-17,Device fault,App,2026-02-18,1,3,Y,Device replaced
+RQ-000445,FWA-000565,2026-02-04,Device fault,App,2026-02-11,7,3,N,Fixed remotely
+RQ-000446,FWA-000670,2026-02-01,Device fault,App,2026-02-17,16,3,N,Fixed remotely
+RQ-000447,FWA-000690,2026-02-27,Device fault,Store,2026-03-05,6,3,N,Device replaced
+RQ-000448,FWA-000777,2026-02-12,Device fault,Call center,2026-02-14,2,3,Y,Device replaced
+RQ-000449,FWA-000836,2026-02-08,Relocation,App,2026-02-12,4,7,Y,"Moved, service working"
+RQ-000450,FWA-000868,2026-02-06,5G upgrade,Store,2026-02-07,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000451,FWA-000872,2026-02-08,Device fault,Call center,2026-02-12,4,3,N,Device replaced
+RQ-000452,FWA-000972,2026-02-18,Device fault,Store,2026-02-20,2,3,Y,Device replaced
+RQ-000453,FWA-000978,2026-02-21,Relocation,Store,2026-02-25,4,7,Y,"Moved, service working"
+RQ-000454,FWA-000995,2026-02-05,5G upgrade,Store,2026-02-06,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000455,FWA-001075,2026-02-06,5G upgrade,Store,2026-02-07,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000456,FWA-001084,2026-02-02,Device fault,App,2026-02-05,3,3,N,Fixed remotely
+RQ-000457,FWA-001142,2026-02-16,5G upgrade,Store,2026-02-17,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000458,FWA-001170,2026-02-25,Relocation,App,2026-03-08,11,7,N,"Moved, service working"
+RQ-000459,FWA-001190,2026-02-16,5G upgrade,Store,2026-02-17,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000460,FWA-001216,2026-02-10,5G upgrade,Store,2026-02-11,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000461,FWA-001259,2026-02-13,5G upgrade,Store,2026-02-14,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000462,FWA-001301,2026-02-01,Relocation,Call center,2026-03-12,39,7,N,"Moved, service working"
+RQ-000463,FWA-001306,2026-02-03,5G upgrade,App,2026-02-04,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000464,FWA-001320,2026-02-26,Device fault,App,2026-02-28,2,3,Y,Fixed remotely
+RQ-000465,FWA-001416,2026-02-05,Device fault,App,2026-02-06,1,3,Y,Fixed remotely
+RQ-000466,FWA-001465,2026-02-16,Device fault,Call center,2026-02-19,3,3,Y,Device replaced
+RQ-000467,FWA-001487,2026-02-26,Device fault,App,2026-02-27,1,3,Y,Fixed remotely
+RQ-000468,FWA-001495,2026-02-18,Device fault,App,2026-02-19,1,3,Y,Device replaced
+RQ-000469,FWA-001572,2026-02-01,5G upgrade,Store,2026-02-02,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000470,FWA-001592,2026-02-21,Device fault,Call center,2026-02-23,2,3,Y,Fixed remotely
+RQ-000471,FWA-001608,2026-02-16,Device fault,Store,2026-02-18,2,3,Y,Device replaced
+RQ-000472,FWA-001613,2026-02-16,5G upgrade,Store,2026-02-17,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000473,FWA-001673,2026-02-22,5G upgrade,Store,2026-02-23,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000474,FWA-001782,2026-02-01,Device fault,App,2026-02-03,2,3,Y,Fixed remotely
+RQ-000475,FWA-001826,2026-02-19,5G upgrade,Store,2026-02-20,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000476,FWA-001852,2026-02-01,5G upgrade,App,2026-02-02,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000477,FWA-001918,2026-02-23,5G upgrade,Store,2026-02-24,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000478,FWA-002017,2026-02-03,5G upgrade,Store,2026-02-04,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000479,FWA-002038,2026-02-25,Relocation,Store,2026-03-03,6,7,Y,"Moved, service working"
+RQ-000480,FWA-002069,2026-02-15,5G upgrade,Store,2026-02-16,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000481,FWA-002105,2026-02-24,5G upgrade,Store,2026-02-25,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000482,FWA-002119,2026-02-12,5G upgrade,Store,2026-02-13,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000483,FWA-002197,2026-02-25,Relocation,App,2026-04-06,40,7,N,"Moved, service working"
+RQ-000484,FWA-002203,2026-02-28,Relocation,Call center,2026-03-22,22,7,N,"Moved, service working"
+RQ-000485,FWA-002221,2026-02-01,5G upgrade,Store,2026-02-02,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000486,FWA-002240,2026-02-21,5G upgrade,Store,2026-02-22,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000487,FWA-002256,2026-02-28,5G upgrade,Store,2026-03-01,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000488,FWA-002283,2026-02-18,Device fault,App,2026-02-19,1,3,Y,Device replaced
+RQ-000489,FWA-002335,2026-02-17,5G upgrade,Store,2026-02-18,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000490,FWA-002345,2026-02-17,5G upgrade,Store,2026-02-18,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000491,FWA-002401,2026-02-05,5G upgrade,Store,2026-02-06,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000492,FWA-002436,2026-02-08,Device fault,Store,2026-02-10,2,3,Y,Device replaced
+RQ-000493,FWA-002441,2026-02-21,Relocation,Store,2026-03-10,17,7,N,"Moved, service working"
+RQ-000494,FWA-002472,2026-02-23,Device fault,Call center,2026-03-09,14,3,N,Device replaced
+RQ-000495,FWA-000014,2026-03-01,5G upgrade,Store,2026-03-02,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000496,FWA-000056,2026-03-02,Device fault,App,2026-03-04,2,3,Y,Fixed remotely
+RQ-000497,FWA-000092,2026-03-28,5G upgrade,Store,2026-03-29,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000498,FWA-000111,2026-03-23,Relocation,App,2026-03-29,6,7,Y,"Moved, service working"
+RQ-000499,FWA-000111,2026-03-15,5G upgrade,Store,2026-03-16,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000500,FWA-000147,2026-03-24,Device fault,App,2026-03-25,1,3,Y,Fixed remotely
+RQ-000501,FWA-000184,2026-03-01,5G upgrade,Store,2026-03-02,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000502,FWA-000202,2026-03-01,5G upgrade,Store,2026-03-02,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000503,FWA-000259,2026-03-08,5G upgrade,Store,2026-03-09,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000504,FWA-000275,2026-03-17,5G upgrade,Store,2026-03-18,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000505,FWA-000297,2026-03-06,Relocation,App,2026-03-09,3,7,Y,"Moved, service working"
+RQ-000506,FWA-000416,2026-03-25,5G upgrade,Store,2026-03-26,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000507,FWA-000456,2026-03-16,5G upgrade,Store,2026-03-17,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000508,FWA-000468,2026-03-14,5G upgrade,Store,2026-03-15,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000509,FWA-000493,2026-03-08,Renewal,Call center,2026-03-10,2,5,Y,Renewed 12 months
+RQ-000510,FWA-000505,2026-03-11,Renewal,Call center,2026-03-13,2,5,Y,Renewed 12 months
+RQ-000511,FWA-000506,2026-03-15,5G upgrade,Store,2026-03-16,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000512,FWA-000509,2026-03-13,Renewal,Call center,2026-03-15,2,5,Y,Renewed 12 months
+RQ-000513,FWA-000515,2026-03-23,Renewal,Call center,2026-03-25,2,5,Y,Renewed 12 months
+RQ-000514,FWA-000518,2026-03-03,Renewal,Call center,2026-03-05,2,5,Y,Renewed 12 months
+RQ-000515,FWA-000519,2026-03-28,Renewal,Call center,2026-03-30,2,5,Y,"Declined, no contract"
+RQ-000516,FWA-000523,2026-03-18,Renewal,Call center,2026-03-20,2,5,Y,Renewed 12 months
+RQ-000517,FWA-000524,2026-03-09,Renewal,Call center,2026-03-11,2,5,Y,Renewed 12 months
+RQ-000518,FWA-000527,2026-03-04,Relocation,App,2026-03-07,3,7,Y,"Moved, service working"
+RQ-000519,FWA-000528,2026-03-06,Renewal,Call center,2026-03-08,2,5,Y,"Declined, no contract"
+RQ-000520,FWA-000530,2026-03-09,Renewal,Call center,2026-03-11,2,5,Y,Renewed 12 months
+RQ-000521,FWA-000535,2026-03-11,Renewal,Call center,2026-03-13,2,5,Y,"Declined, no contract"
+RQ-000522,FWA-000544,2026-03-10,Renewal,Call center,2026-03-12,2,5,Y,"Declined, no contract"
+RQ-000523,FWA-000546,2026-03-08,Renewal,Call center,2026-03-10,2,5,Y,"Declined, no contract"
+RQ-000524,FWA-000558,2026-03-19,Renewal,Call center,2026-03-21,2,5,Y,"Declined, no contract"
+RQ-000525,FWA-000560,2026-03-07,Renewal,Call center,2026-03-09,2,5,Y,"Declined, no contract"
+RQ-000526,FWA-000562,2026-03-01,Renewal,Call center,2026-03-03,2,5,Y,"Declined, no contract"
+RQ-000527,FWA-000566,2026-03-15,Renewal,Call center,2026-03-17,2,5,Y,"Declined, no contract"
+RQ-000528,FWA-000567,2026-03-22,Renewal,Call center,2026-03-24,2,5,Y,"Declined, no contract"
+RQ-000529,FWA-000569,2026-03-15,Renewal,Call center,2026-03-17,2,5,Y,Renewed 12 months
+RQ-000530,FWA-000570,2026-03-17,Renewal,Call center,2026-03-19,2,5,Y,"Declined, no contract"
+RQ-000531,FWA-000572,2026-03-25,Renewal,Call center,2026-03-27,2,5,Y,Renewed 12 months
+RQ-000532,FWA-000573,2026-03-20,Renewal,Call center,2026-03-22,2,5,Y,Renewed 12 months
+RQ-000533,FWA-000581,2026-03-13,Renewal,Call center,2026-03-15,2,5,Y,Renewed 12 months
+RQ-000534,FWA-000581,2026-03-13,5G upgrade,Store,2026-03-14,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000535,FWA-000583,2026-03-13,Renewal,Call center,2026-03-15,2,5,Y,Renewed 12 months
+RQ-000536,FWA-000584,2026-03-06,Renewal,Call center,2026-03-08,2,5,Y,"Declined, no contract"
+RQ-000537,FWA-000586,2026-03-25,Renewal,Call center,2026-03-27,2,5,Y,"Declined, no contract"
+RQ-000538,FWA-000589,2026-03-16,Renewal,Call center,2026-03-18,2,5,Y,"Declined, no contract"
+RQ-000539,FWA-000590,2026-03-25,5G upgrade,Store,2026-03-26,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000540,FWA-000600,2026-03-17,Renewal,Call center,2026-03-19,2,5,Y,"Declined, no contract"
+RQ-000541,FWA-000601,2026-03-08,Renewal,Call center,2026-03-10,2,5,Y,"Declined, no contract"
+RQ-000542,FWA-000601,2026-03-22,5G upgrade,Store,2026-03-23,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000543,FWA-000604,2026-03-08,Renewal,Call center,2026-03-10,2,5,Y,"Declined, no contract"
+RQ-000544,FWA-000605,2026-03-23,Renewal,Call center,2026-03-25,2,5,Y,Renewed 12 months
+RQ-000545,FWA-000614,2026-03-23,5G upgrade,Store,2026-03-24,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000546,FWA-000616,2026-03-04,Renewal,Call center,2026-03-06,2,5,Y,"Declined, no contract"
+RQ-000547,FWA-000621,2026-03-16,Renewal,Call center,2026-03-18,2,5,Y,"Declined, no contract"
+RQ-000548,FWA-000626,2026-03-07,Renewal,Call center,2026-03-09,2,5,Y,Renewed 12 months
+RQ-000549,FWA-000627,2026-03-11,Renewal,Call center,2026-03-13,2,5,Y,"Declined, no contract"
+RQ-000550,FWA-000629,2026-03-03,Renewal,Call center,2026-03-05,2,5,Y,Renewed 12 months
+RQ-000551,FWA-000639,2026-03-09,Renewal,Call center,2026-03-11,2,5,Y,"Declined, no contract"
+RQ-000552,FWA-000654,2026-03-03,Renewal,Call center,2026-03-05,2,5,Y,Renewed 12 months
+RQ-000553,FWA-000658,2026-03-07,Renewal,Call center,2026-03-09,2,5,Y,Renewed 12 months
+RQ-000554,FWA-000684,2026-03-27,Device fault,App,2026-03-31,4,3,N,Fixed remotely
+RQ-000555,FWA-000841,2026-03-13,5G upgrade,Store,2026-03-14,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000556,FWA-000920,2026-03-18,5G upgrade,Store,2026-03-19,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000557,FWA-000923,2026-03-03,5G upgrade,Store,2026-03-04,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000558,FWA-000955,2026-03-23,5G upgrade,App,2026-03-24,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000559,FWA-000964,2026-03-11,Device fault,App,2026-03-13,2,3,Y,Fixed remotely
+RQ-000560,FWA-000991,2026-03-14,Device fault,Store,2026-03-20,6,3,N,Device replaced
+RQ-000561,FWA-001002,2026-03-19,5G upgrade,Store,2026-03-20,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000562,FWA-001061,2026-03-08,Relocation,Store,2026-03-15,7,7,N,"Moved, service working"
+RQ-000563,FWA-001079,2026-03-08,5G upgrade,Store,2026-03-09,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000564,FWA-001173,2026-03-27,5G upgrade,Store,2026-03-28,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000565,FWA-001297,2026-03-22,5G upgrade,Store,2026-03-23,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000566,FWA-001315,2026-03-05,Device fault,App,2026-03-07,2,3,Y,Fixed remotely
+RQ-000567,FWA-001316,2026-03-05,5G upgrade,Store,2026-03-06,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000568,FWA-001327,2026-03-19,Relocation,App,2026-04-04,16,7,N,"Moved, service working"
+RQ-000569,FWA-001374,2026-03-07,5G upgrade,Store,2026-03-08,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000570,FWA-001425,2026-03-01,Relocation,App,2026-03-06,5,7,Y,"Moved, service working"
+RQ-000571,FWA-001434,2026-03-02,Device fault,App,2026-03-03,1,3,Y,Device replaced
+RQ-000572,FWA-001451,2026-03-28,5G upgrade,Store,2026-03-29,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000573,FWA-001495,2026-03-22,Relocation,Call center,2026-03-27,5,7,Y,"Moved, service working"
+RQ-000574,FWA-001508,2026-03-13,Relocation,App,2026-03-19,6,7,Y,"Moved, service working"
+RQ-000575,FWA-001546,2026-03-21,5G upgrade,Store,2026-03-22,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000576,FWA-001554,2026-03-03,5G upgrade,Store,2026-03-04,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000577,FWA-001578,2026-03-24,5G upgrade,Store,2026-03-25,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000578,FWA-001653,2026-03-02,Device fault,Store,2026-03-07,5,3,N,Fixed remotely
+RQ-000579,FWA-001657,2026-03-14,Device fault,Store,2026-03-18,4,3,N,Device replaced
+RQ-000580,FWA-001658,2026-03-05,5G upgrade,Store,2026-03-06,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000581,FWA-001689,2026-03-18,5G upgrade,Store,2026-03-19,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000582,FWA-001766,2026-03-14,Relocation,App,2026-03-21,7,7,N,"Moved, service working"
+RQ-000583,FWA-001859,2026-03-13,Device fault,Store,2026-03-14,1,3,Y,Device replaced
+RQ-000584,FWA-001965,2026-03-26,Device fault,Store,2026-03-28,2,3,Y,Fixed remotely
+RQ-000585,FWA-001979,2026-03-11,5G upgrade,Store,2026-03-12,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000586,FWA-002154,2026-03-13,Device fault,Store,2026-04-03,21,3,N,Device replaced
+RQ-000587,FWA-002163,2026-03-04,Device fault,App,2026-03-06,2,3,Y,Fixed remotely
+RQ-000588,FWA-002210,2026-03-12,Device fault,Call center,2026-03-14,2,3,Y,Fixed remotely
+RQ-000589,FWA-002224,2026-03-07,Relocation,App,2026-03-10,3,7,Y,"Moved, service working"
+RQ-000590,FWA-002241,2026-03-14,Device fault,App,2026-03-16,2,3,Y,Device replaced
+RQ-000591,FWA-002270,2026-03-09,5G upgrade,Store,2026-03-10,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000592,FWA-002318,2026-03-23,Relocation,Call center,2026-03-28,5,7,Y,"Moved, service working"
+RQ-000593,FWA-002323,2026-03-24,5G upgrade,Store,2026-03-25,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000594,FWA-002399,2026-03-02,Relocation,Store,2026-03-08,6,7,Y,"Moved, service working"
+RQ-000595,FWA-002434,2026-03-03,Relocation,App,2026-03-08,5,7,Y,"Moved, service working"
+RQ-000596,FWA-002462,2026-03-04,Device fault,Store,2026-03-06,2,3,Y,Fixed remotely
+RQ-000597,FWA-002479,2026-03-10,5G upgrade,Store,2026-03-11,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000598,FWA-002489,2026-03-06,5G upgrade,Store,2026-03-07,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000599,FWA-002555,2026-03-14,5G upgrade,Store,2026-03-15,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000600,FWA-002608,2026-03-05,5G upgrade,Store,2026-03-06,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000601,FWA-002612,2026-03-07,5G upgrade,Store,2026-03-08,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000602,FWA-002650,2026-03-24,5G upgrade,Store,2026-03-25,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000603,FWA-002788,2026-03-09,Relocation,Store,2026-03-17,8,7,N,"Moved, service working"
+RQ-000604,FWA-002809,2026-03-05,Device fault,Call center,2026-03-06,1,3,Y,Device replaced
+RQ-000605,FWA-002891,2026-03-12,Device fault,Store,2026-03-13,1,3,Y,Fixed remotely
+RQ-000606,FWA-002941,2026-03-17,Relocation,Call center,2026-03-27,10,7,N,"Moved, service working"
+RQ-000607,FWA-000019,2026-04-11,5G upgrade,Store,2026-04-12,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000608,FWA-000106,2026-04-16,5G upgrade,Store,2026-04-17,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000609,FWA-000156,2026-04-16,5G upgrade,Store,2026-04-17,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000610,FWA-000169,2026-04-16,Device fault,Store,2026-04-19,3,3,Y,Fixed remotely
+RQ-000611,FWA-000170,2026-04-25,Device fault,App,2026-04-28,3,3,N,Fixed remotely
+RQ-000612,FWA-000174,2026-04-09,Device fault,App,2026-05-13,34,3,N,Fixed remotely
+RQ-000613,FWA-000174,2026-04-27,5G upgrade,Store,2026-04-28,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000614,FWA-000184,2026-04-23,Relocation,Store,2026-05-09,16,7,N,"Moved, service working"
+RQ-000615,FWA-000239,2026-04-11,Relocation,App,2026-04-15,4,7,Y,"Moved, service working"
+RQ-000616,FWA-000394,2026-04-03,5G upgrade,App,2026-04-04,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000617,FWA-000433,2026-04-14,5G upgrade,App,2026-04-15,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000618,FWA-000515,2026-04-24,Relocation,App,2026-04-27,3,7,Y,"Moved, service working"
+RQ-000619,FWA-000569,2026-04-21,5G upgrade,Store,2026-04-22,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000620,FWA-000603,2026-04-02,Device fault,Store,2026-04-03,1,3,Y,Fixed remotely
+RQ-000621,FWA-000658,2026-04-12,5G upgrade,Store,2026-04-13,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000622,FWA-000662,2026-04-26,Renewal,Call center,2026-04-28,2,5,Y,Renewed 12 months
+RQ-000623,FWA-000664,2026-04-24,Renewal,Call center,2026-04-26,2,5,Y,Renewed 12 months
+RQ-000624,FWA-000665,2026-04-16,Renewal,Call center,2026-04-18,2,5,Y,"Declined, no contract"
+RQ-000625,FWA-000670,2026-04-04,Renewal,Call center,2026-04-06,2,5,Y,"Declined, no contract"
+RQ-000626,FWA-000672,2026-04-17,Renewal,Call center,2026-04-19,2,5,Y,"Declined, no contract"
+RQ-000627,FWA-000679,2026-04-12,Renewal,Call center,2026-04-14,2,5,Y,Renewed 12 months
+RQ-000628,FWA-000689,2026-04-04,Renewal,Call center,2026-04-06,2,5,Y,Renewed 12 months
+RQ-000629,FWA-000712,2026-04-06,Renewal,Call center,2026-04-08,2,5,Y,"Declined, no contract"
+RQ-000630,FWA-000714,2026-04-08,Renewal,Call center,2026-04-10,2,5,Y,Renewed 12 months
+RQ-000631,FWA-000715,2026-04-03,Renewal,Call center,2026-04-05,2,5,Y,Renewed 12 months
+RQ-000632,FWA-000718,2026-04-12,Renewal,Call center,2026-04-14,2,5,Y,"Declined, no contract"
+RQ-000633,FWA-000719,2026-04-13,Renewal,Call center,2026-04-15,2,5,Y,Renewed 12 months
+RQ-000634,FWA-000724,2026-04-07,Renewal,Call center,2026-04-09,2,5,Y,"Declined, no contract"
+RQ-000635,FWA-000725,2026-04-08,Renewal,Call center,2026-04-10,2,5,Y,"Declined, no contract"
+RQ-000636,FWA-000731,2026-04-04,Renewal,Call center,2026-04-06,2,5,Y,"Declined, no contract"
+RQ-000637,FWA-000740,2026-04-28,Renewal,Call center,2026-04-30,2,5,Y,Renewed 12 months
+RQ-000638,FWA-000744,2026-04-13,Renewal,Call center,2026-04-15,2,5,Y,Renewed 12 months
+RQ-000639,FWA-000745,2026-04-11,Renewal,Call center,2026-04-13,2,5,Y,Renewed 12 months
+RQ-000640,FWA-000750,2026-04-19,Renewal,Call center,2026-04-21,2,5,Y,Renewed 12 months
+RQ-000641,FWA-000752,2026-04-09,Renewal,Call center,2026-04-11,2,5,Y,"Declined, no contract"
+RQ-000642,FWA-000755,2026-04-05,Renewal,Call center,2026-04-07,2,5,Y,"Declined, no contract"
+RQ-000643,FWA-000756,2026-04-10,Renewal,Call center,2026-04-12,2,5,Y,Renewed 12 months
+RQ-000644,FWA-000761,2026-04-22,Renewal,Call center,2026-04-24,2,5,Y,Renewed 12 months
+RQ-000645,FWA-000763,2026-04-02,Renewal,Call center,2026-04-04,2,5,Y,"Declined, no contract"
+RQ-000646,FWA-000768,2026-04-20,Renewal,Call center,2026-04-22,2,5,Y,Renewed 12 months
+RQ-000647,FWA-000769,2026-04-09,Renewal,Call center,2026-04-11,2,5,Y,"Declined, no contract"
+RQ-000648,FWA-000773,2026-04-02,Renewal,Call center,2026-04-04,2,5,Y,Renewed 12 months
+RQ-000649,FWA-000775,2026-04-10,Renewal,Call center,2026-04-12,2,5,Y,"Declined, no contract"
+RQ-000650,FWA-000784,2026-04-12,Renewal,Call center,2026-04-14,2,5,Y,"Declined, no contract"
+RQ-000651,FWA-000788,2026-04-06,Renewal,Call center,2026-04-08,2,5,Y,"Declined, no contract"
+RQ-000652,FWA-000792,2026-04-15,Renewal,Call center,2026-04-17,2,5,Y,Renewed 12 months
+RQ-000653,FWA-000794,2026-04-24,Renewal,Call center,2026-04-26,2,5,Y,"Declined, no contract"
+RQ-000654,FWA-000803,2026-04-10,Renewal,Call center,2026-04-12,2,5,Y,Renewed 12 months
+RQ-000655,FWA-000804,2026-04-08,Renewal,Call center,2026-04-10,2,5,Y,Renewed 12 months
+RQ-000656,FWA-000809,2026-04-12,Renewal,Call center,2026-04-14,2,5,Y,"Declined, no contract"
+RQ-000657,FWA-000811,2026-04-06,Renewal,Call center,2026-04-08,2,5,Y,Renewed 12 months
+RQ-000658,FWA-000818,2026-04-03,Renewal,Call center,2026-04-05,2,5,Y,"Declined, no contract"
+RQ-000659,FWA-000819,2026-04-04,Renewal,Call center,2026-04-06,2,5,Y,Renewed 12 months
+RQ-000660,FWA-000829,2026-04-10,5G upgrade,Store,2026-04-11,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000661,FWA-000835,2026-04-12,Device fault,Call center,2026-04-14,2,3,Y,Device replaced
+RQ-000662,FWA-000889,2026-04-17,5G upgrade,Store,2026-04-18,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000663,FWA-000940,2026-04-16,5G upgrade,Store,2026-04-17,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000664,FWA-001068,2026-04-04,5G upgrade,Store,2026-04-05,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000665,FWA-001183,2026-04-22,Relocation,Call center,2026-05-15,23,7,N,"Moved, service working"
+RQ-000666,FWA-001195,2026-04-10,5G upgrade,Store,2026-04-11,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000667,FWA-001264,2026-04-12,5G upgrade,Store,2026-04-13,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000668,FWA-001290,2026-04-02,5G upgrade,App,2026-04-03,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000669,FWA-001330,2026-04-10,5G upgrade,Store,2026-04-11,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000670,FWA-001436,2026-04-09,Device fault,Call center,2026-04-13,4,3,N,Fixed remotely
+RQ-000671,FWA-001441,2026-04-23,Device fault,Store,2026-04-23,0,3,Y,Fixed remotely
+RQ-000672,FWA-001488,2026-04-19,Device fault,App,2026-04-24,5,3,N,Device replaced
+RQ-000673,FWA-001514,2026-04-18,Relocation,Store,2026-04-23,5,7,Y,"Moved, service working"
+RQ-000674,FWA-001584,2026-04-17,5G upgrade,App,2026-04-18,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000675,FWA-001753,2026-04-10,Relocation,Store,2026-04-14,4,7,Y,"Moved, service working"
+RQ-000676,FWA-001763,2026-04-23,5G upgrade,Store,2026-04-24,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000677,FWA-001764,2026-04-19,5G upgrade,Store,2026-04-20,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000678,FWA-001811,2026-04-17,Device fault,App,2026-04-19,2,3,Y,Fixed remotely
+RQ-000679,FWA-001843,2026-04-21,5G upgrade,Store,2026-04-22,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000680,FWA-001844,2026-04-22,Relocation,Store,2026-04-25,3,7,Y,"Moved, service working"
+RQ-000681,FWA-001859,2026-04-04,5G upgrade,Store,2026-04-05,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000682,FWA-001874,2026-04-24,5G upgrade,Store,2026-04-25,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000683,FWA-001886,2026-04-21,Device fault,Store,2026-04-23,2,3,Y,Fixed remotely
+RQ-000684,FWA-001901,2026-04-22,5G upgrade,Store,2026-04-23,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000685,FWA-002034,2026-04-16,5G upgrade,Store,2026-04-17,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000686,FWA-002063,2026-04-28,Relocation,Call center,2026-05-01,3,7,Y,"Moved, service working"
+RQ-000687,FWA-002129,2026-04-09,Device fault,App,2026-04-17,8,3,N,Device replaced
+RQ-000688,FWA-002188,2026-04-13,5G upgrade,Store,2026-04-14,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000689,FWA-002266,2026-04-23,Relocation,App,2026-05-01,8,7,N,"Moved, service working"
+RQ-000690,FWA-002304,2026-04-10,Relocation,Call center,2026-04-12,2,7,Y,"Moved, service working"
+RQ-000691,FWA-002332,2026-04-10,5G upgrade,Store,2026-04-11,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000692,FWA-002385,2026-04-07,Relocation,App,2026-05-07,30,7,N,"Moved, service working"
+RQ-000693,FWA-002425,2026-04-12,5G upgrade,App,2026-04-13,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000694,FWA-002480,2026-04-01,5G upgrade,Store,2026-04-02,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000695,FWA-002553,2026-04-06,5G upgrade,App,2026-04-07,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000696,FWA-002564,2026-04-12,5G upgrade,App,2026-04-13,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000697,FWA-002599,2026-04-17,Relocation,Store,2026-04-22,5,7,Y,"Moved, service working"
+RQ-000698,FWA-002622,2026-04-05,5G upgrade,Store,2026-04-06,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000699,FWA-002625,2026-04-13,5G upgrade,Store,2026-04-14,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000700,FWA-002670,2026-04-15,5G upgrade,App,2026-04-16,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000701,FWA-002687,2026-04-24,Relocation,App,2026-05-10,16,7,N,"Moved, service working"
+RQ-000702,FWA-002723,2026-04-21,5G upgrade,Store,2026-04-22,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000703,FWA-002750,2026-04-07,Device fault,App,2026-04-13,6,3,N,Fixed remotely
+RQ-000704,FWA-002782,2026-04-12,5G upgrade,Store,2026-04-13,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000705,FWA-002811,2026-04-19,Device fault,Store,2026-04-23,4,3,N,Device replaced
+RQ-000706,FWA-002879,2026-04-03,5G upgrade,Store,2026-04-04,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000707,FWA-002892,2026-04-04,5G upgrade,Store,2026-04-05,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000708,FWA-002922,2026-04-04,Device fault,Call center,2026-04-06,2,3,Y,Fixed remotely
+RQ-000709,FWA-002922,2026-04-08,5G upgrade,Store,2026-04-09,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000710,FWA-002945,2026-04-09,5G upgrade,App,2026-04-10,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000711,FWA-002946,2026-04-11,5G upgrade,App,2026-04-12,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000712,FWA-002958,2026-04-19,5G upgrade,App,2026-04-20,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000713,FWA-003007,2026-04-16,Relocation,Call center,2026-04-20,4,7,Y,"Moved, service working"
+RQ-000714,FWA-003082,2026-04-24,5G upgrade,Store,2026-04-25,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000715,FWA-003091,2026-04-04,Device fault,Call center,2026-04-06,2,3,Y,Device replaced
+RQ-000716,FWA-000042,2026-05-27,5G upgrade,Store,2026-05-28,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000717,FWA-000095,2026-05-18,5G upgrade,Store,2026-05-19,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000718,FWA-000113,2026-05-27,5G upgrade,Store,2026-05-28,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000719,FWA-000138,2026-05-11,5G upgrade,Store,2026-05-12,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000720,FWA-000144,2026-05-05,Device fault,Store,2026-05-09,4,3,N,Device replaced
+RQ-000721,FWA-000267,2026-05-07,5G upgrade,Store,2026-05-08,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000722,FWA-000280,2026-05-12,Relocation,Call center,2026-05-29,17,7,N,"Moved, service working"
+RQ-000723,FWA-000315,2026-05-25,5G upgrade,Store,2026-05-26,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000724,FWA-000366,2026-05-13,Relocation,App,2026-05-20,7,7,Y,"Moved, service working"
+RQ-000725,FWA-000377,2026-05-20,Device fault,Store,2026-05-26,6,3,N,Device replaced
+RQ-000726,FWA-000405,2026-05-02,Device fault,Call center,2026-05-04,2,3,Y,Device replaced
+RQ-000727,FWA-000423,2026-05-06,5G upgrade,Store,2026-05-07,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000728,FWA-000433,2026-05-01,Device fault,Store,2026-05-03,2,3,Y,Device replaced
+RQ-000729,FWA-000462,2026-05-16,Device fault,App,2026-05-22,6,3,N,Device replaced
+RQ-000730,FWA-000573,2026-05-28,5G upgrade,App,2026-05-29,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000731,FWA-000724,2026-05-09,Relocation,App,2026-05-13,4,7,Y,"Moved, service working"
+RQ-000732,FWA-000727,2026-05-24,5G upgrade,Store,2026-05-25,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000733,FWA-000793,2026-05-02,Relocation,Store,2026-05-12,10,7,N,"Moved, service working"
+RQ-000734,FWA-000794,2026-05-15,Relocation,App,2026-05-16,1,7,Y,"Moved, service working"
+RQ-000735,FWA-000818,2026-05-25,Relocation,Store,2026-06-12,18,7,N,"Moved, service working"
+RQ-000736,FWA-000823,2026-05-18,Renewal,Call center,2026-05-20,2,5,Y,Renewed 12 months
+RQ-000737,FWA-000824,2026-05-27,Renewal,Call center,2026-05-29,2,5,Y,Renewed 12 months
+RQ-000738,FWA-000825,2026-05-20,Renewal,Call center,2026-05-22,2,5,Y,Renewed 12 months
+RQ-000739,FWA-000826,2026-05-24,Renewal,Call center,2026-05-26,2,5,Y,"Declined, no contract"
+RQ-000740,FWA-000829,2026-05-10,Renewal,Call center,2026-05-12,2,5,Y,Renewed 12 months
+RQ-000741,FWA-000841,2026-05-22,Renewal,Call center,2026-05-24,2,5,Y,"Declined, no contract"
+RQ-000742,FWA-000847,2026-05-23,Renewal,Call center,2026-05-25,2,5,Y,Renewed 12 months
+RQ-000743,FWA-000847,2026-05-11,5G upgrade,Store,2026-05-12,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000744,FWA-000849,2026-05-15,5G upgrade,Store,2026-05-16,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000745,FWA-000858,2026-05-05,Renewal,Call center,2026-05-07,2,5,Y,"Declined, no contract"
+RQ-000746,FWA-000868,2026-05-24,Renewal,Call center,2026-05-26,2,5,Y,Renewed 12 months
+RQ-000747,FWA-000871,2026-05-10,Renewal,Call center,2026-05-12,2,5,Y,Renewed 12 months
+RQ-000748,FWA-000887,2026-05-17,Renewal,Call center,2026-05-19,2,5,Y,Renewed 12 months
+RQ-000749,FWA-000898,2026-05-09,5G upgrade,Store,2026-05-10,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000750,FWA-000900,2026-05-04,Renewal,Call center,2026-05-06,2,5,Y,Renewed 12 months
+RQ-000751,FWA-000904,2026-05-13,Renewal,Call center,2026-05-15,2,5,Y,Renewed 12 months
+RQ-000752,FWA-000907,2026-05-26,Renewal,Call center,2026-05-28,2,5,Y,Renewed 12 months
+RQ-000753,FWA-000910,2026-05-07,Renewal,Call center,2026-05-09,2,5,Y,Renewed 12 months
+RQ-000754,FWA-000914,2026-05-12,Renewal,Call center,2026-05-14,2,5,Y,Renewed 12 months
+RQ-000755,FWA-000917,2026-05-27,Renewal,Call center,2026-05-29,2,5,Y,"Declined, no contract"
+RQ-000756,FWA-000922,2026-05-01,Renewal,Call center,2026-05-03,2,5,Y,"Declined, no contract"
+RQ-000757,FWA-000935,2026-05-20,Renewal,Call center,2026-05-22,2,5,Y,Renewed 12 months
+RQ-000758,FWA-000936,2026-05-02,Relocation,App,2026-05-15,13,7,N,"Moved, service working"
+RQ-000759,FWA-000936,2026-05-27,Renewal,Call center,2026-05-29,2,5,Y,"Declined, no contract"
+RQ-000760,FWA-000940,2026-05-10,Renewal,Call center,2026-05-12,2,5,Y,Renewed 12 months
+RQ-000761,FWA-000943,2026-05-03,Renewal,Call center,2026-05-05,2,5,Y,Renewed 12 months
+RQ-000762,FWA-000946,2026-05-03,Renewal,Call center,2026-05-05,2,5,Y,Renewed 12 months
+RQ-000763,FWA-000958,2026-05-08,Renewal,Call center,2026-05-10,2,5,Y,Renewed 12 months
+RQ-000764,FWA-000962,2026-05-20,Renewal,Call center,2026-05-22,2,5,Y,Renewed 12 months
+RQ-000765,FWA-000963,2026-05-26,Renewal,Call center,2026-05-28,2,5,Y,Renewed 12 months
+RQ-000766,FWA-000965,2026-05-23,Device fault,App,2026-05-24,1,3,Y,Device replaced
+RQ-000767,FWA-000967,2026-05-26,Renewal,Call center,2026-05-28,2,5,Y,Renewed 12 months
+RQ-000768,FWA-000973,2026-05-20,Renewal,Call center,2026-05-22,2,5,Y,Renewed 12 months
+RQ-000769,FWA-000976,2026-05-15,Renewal,Call center,2026-05-17,2,5,Y,"Declined, no contract"
+RQ-000770,FWA-000983,2026-05-07,Renewal,Call center,2026-05-09,2,5,Y,Renewed 12 months
+RQ-000771,FWA-000984,2026-05-18,Renewal,Call center,2026-05-20,2,5,Y,Renewed 12 months
+RQ-000772,FWA-000985,2026-05-03,Renewal,Call center,2026-05-05,2,5,Y,Renewed 12 months
+RQ-000773,FWA-000987,2026-05-26,Renewal,Call center,2026-05-28,2,5,Y,"Declined, no contract"
+RQ-000774,FWA-000990,2026-05-05,Renewal,Call center,2026-05-07,2,5,Y,Renewed 12 months
+RQ-000775,FWA-000996,2026-05-28,Renewal,Call center,2026-05-30,2,5,Y,"Declined, no contract"
+RQ-000776,FWA-001002,2026-05-18,Renewal,Call center,2026-05-20,2,5,Y,"Declined, no contract"
+RQ-000777,FWA-001004,2026-05-09,Renewal,Call center,2026-05-11,2,5,Y,"Declined, no contract"
+RQ-000778,FWA-001006,2026-05-23,Renewal,Call center,2026-05-25,2,5,Y,Renewed 12 months
+RQ-000779,FWA-001017,2026-05-22,5G upgrade,Store,2026-05-23,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000780,FWA-001033,2026-05-22,Relocation,Store,2026-05-24,2,7,Y,"Moved, service working"
+RQ-000781,FWA-001051,2026-05-19,Relocation,App,2026-06-10,22,7,N,"Moved, service working"
+RQ-000782,FWA-001070,2026-05-22,Device fault,Call center,2026-05-24,2,3,Y,Device replaced
+RQ-000783,FWA-001132,2026-05-19,5G upgrade,Store,2026-05-20,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000784,FWA-001134,2026-05-19,5G upgrade,Store,2026-05-20,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000785,FWA-001141,2026-05-20,Device fault,App,2026-05-22,2,3,Y,Fixed remotely
+RQ-000786,FWA-001148,2026-05-26,5G upgrade,App,2026-05-27,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000787,FWA-001157,2026-05-21,Relocation,App,2026-05-28,7,7,N,"Moved, service working"
+RQ-000788,FWA-001185,2026-05-08,5G upgrade,Store,2026-05-09,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000789,FWA-001329,2026-05-03,Relocation,Store,2026-05-07,4,7,Y,"Moved, service working"
+RQ-000790,FWA-001329,2026-05-09,Device fault,Store,2026-05-13,4,3,N,Device replaced
+RQ-000791,FWA-001405,2026-05-06,5G upgrade,Store,2026-05-07,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000792,FWA-001432,2026-05-28,Relocation,Call center,2026-05-29,1,7,Y,"Moved, service working"
+RQ-000793,FWA-001494,2026-05-13,5G upgrade,Store,2026-05-14,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000794,FWA-001593,2026-05-27,Device fault,App,2026-06-05,9,3,N,Fixed remotely
+RQ-000795,FWA-001607,2026-05-28,Device fault,Call center,2026-05-29,1,3,Y,Device replaced
+RQ-000796,FWA-001676,2026-05-07,5G upgrade,Store,2026-05-08,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000797,FWA-001804,2026-05-06,Device fault,Store,2026-05-07,1,3,Y,Device replaced
+RQ-000798,FWA-001812,2026-05-26,5G upgrade,Store,2026-05-27,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000799,FWA-001886,2026-05-24,5G upgrade,Store,2026-05-25,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000800,FWA-001970,2026-05-26,Relocation,Call center,2026-06-29,34,7,N,"Moved, service working"
+RQ-000801,FWA-001992,2026-05-17,Device fault,Store,2026-05-18,1,3,Y,Device replaced
+RQ-000802,FWA-002043,2026-05-01,Relocation,Store,2026-05-08,7,7,Y,"Moved, service working"
+RQ-000803,FWA-002101,2026-05-22,Relocation,Call center,2026-05-24,2,7,Y,"Moved, service working"
+RQ-000804,FWA-002173,2026-05-19,5G upgrade,Store,2026-05-20,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000805,FWA-002216,2026-05-28,5G upgrade,Store,2026-05-29,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000806,FWA-002229,2026-05-06,5G upgrade,Store,2026-05-07,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000807,FWA-002234,2026-05-20,Device fault,Call center,2026-05-21,1,3,Y,Fixed remotely
+RQ-000808,FWA-002283,2026-05-22,Device fault,App,2026-05-26,4,3,N,Device replaced
+RQ-000809,FWA-002400,2026-05-07,5G upgrade,Store,2026-05-08,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000810,FWA-002426,2026-05-17,Relocation,Call center,2026-05-23,6,7,Y,"Moved, service working"
+RQ-000811,FWA-002582,2026-05-19,Relocation,Call center,2026-05-21,2,7,Y,"Moved, service working"
+RQ-000812,FWA-002609,2026-05-03,Device fault,Call center,2026-05-06,3,3,N,Fixed remotely
+RQ-000813,FWA-002640,2026-05-12,5G upgrade,App,2026-05-13,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000814,FWA-002717,2026-05-25,Relocation,App,2026-06-22,28,7,N,"Moved, service working"
+RQ-000815,FWA-002733,2026-05-18,5G upgrade,Store,2026-05-19,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000816,FWA-002760,2026-05-02,5G upgrade,Store,2026-05-03,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000817,FWA-002781,2026-05-03,5G upgrade,Store,2026-05-04,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000818,FWA-002813,2026-05-06,Relocation,Store,2026-05-12,6,7,Y,"Moved, service working"
+RQ-000819,FWA-002814,2026-05-08,5G upgrade,Store,2026-05-09,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000820,FWA-002821,2026-05-23,Device fault,App,2026-05-27,4,3,N,Fixed remotely
+RQ-000821,FWA-002869,2026-05-08,5G upgrade,Store,2026-05-09,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000822,FWA-002871,2026-05-04,5G upgrade,App,2026-05-05,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000823,FWA-002888,2026-05-26,Device fault,Store,2026-05-27,1,3,Y,Device replaced
+RQ-000824,FWA-002910,2026-05-04,5G upgrade,Store,2026-05-05,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000825,FWA-002953,2026-05-21,5G upgrade,Store,2026-05-22,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000826,FWA-003032,2026-05-08,5G upgrade,Store,2026-05-09,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000827,FWA-003047,2026-05-21,5G upgrade,Store,2026-05-22,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000828,FWA-003062,2026-05-24,5G upgrade,App,2026-05-25,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000829,FWA-003065,2026-05-12,5G upgrade,Store,2026-05-13,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000830,FWA-003086,2026-05-28,Device fault,Call center,2026-05-29,1,3,Y,Fixed remotely
+RQ-000831,FWA-003112,2026-05-23,5G upgrade,Store,2026-05-24,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000832,FWA-003129,2026-05-27,Device fault,App,2026-06-03,7,3,N,Fixed remotely
+RQ-000833,FWA-003165,2026-05-26,5G upgrade,Store,2026-05-27,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000834,FWA-003182,2026-05-20,Relocation,Store,2026-05-24,4,7,Y,"Moved, service working"
+RQ-000835,FWA-003200,2026-05-25,Relocation,Call center,2026-05-28,3,7,Y,"Moved, service working"
+RQ-000836,FWA-003216,2026-05-26,Device fault,App,2026-05-29,3,3,N,Fixed remotely
+RQ-000837,FWA-003236,2026-05-22,Relocation,App,2026-05-26,4,7,Y,"Moved, service working"
+RQ-000838,FWA-003259,2026-05-09,Device fault,Store,2026-05-10,1,3,Y,Fixed remotely
+RQ-000839,FWA-003278,2026-05-22,Relocation,Store,2026-05-26,4,7,Y,"Moved, service working"
+RQ-000840,FWA-003279,2026-05-05,5G upgrade,App,2026-05-06,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000841,FWA-003325,2026-05-19,Device fault,Store,2026-05-22,3,3,N,Device replaced
+RQ-000842,FWA-003363,2026-05-19,Device fault,Call center,2026-05-20,1,3,Y,Fixed remotely
+RQ-000843,FWA-003366,2026-05-08,5G upgrade,App,2026-05-09,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000844,FWA-003367,2026-05-20,5G upgrade,Store,2026-05-21,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000845,FWA-000015,2026-06-25,5G upgrade,Store,2026-06-26,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000846,FWA-000023,2026-06-01,5G upgrade,Store,2026-06-02,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000847,FWA-000105,2026-06-19,Device fault,Store,2026-06-20,1,3,Y,Device replaced
+RQ-000848,FWA-000108,2026-06-18,5G upgrade,App,2026-06-19,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000849,FWA-000137,2026-06-18,5G upgrade,App,2026-06-19,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000850,FWA-000205,2026-06-24,Relocation,Call center,2026-06-28,4,7,Y,"Moved, service working"
+RQ-000851,FWA-000210,2026-06-11,5G upgrade,Store,2026-06-12,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000852,FWA-000216,2026-06-21,Device fault,App,2026-07-04,13,3,N,Device replaced
+RQ-000853,FWA-000220,2026-06-01,Relocation,Store,2026-06-07,6,7,Y,"Moved, service working"
+RQ-000854,FWA-000228,2026-06-26,5G upgrade,Store,2026-06-27,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000855,FWA-000359,2026-06-17,5G upgrade,Store,2026-06-18,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000856,FWA-000372,2026-06-28,Device fault,App,2026-06-30,2,3,Y,Fixed remotely
+RQ-000857,FWA-000384,2026-06-25,5G upgrade,Store,2026-06-26,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000858,FWA-000437,2026-06-24,5G upgrade,Store,2026-06-25,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000859,FWA-000486,2026-06-02,5G upgrade,App,2026-06-03,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000860,FWA-000728,2026-06-05,Device fault,Call center,2026-06-08,3,3,N,Device replaced
+RQ-000861,FWA-000729,2026-06-23,5G upgrade,Store,2026-06-24,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000862,FWA-000793,2026-06-18,5G upgrade,Store,2026-06-19,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000863,FWA-000904,2026-06-16,5G upgrade,Store,2026-06-17,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000864,FWA-000999,2026-06-05,5G upgrade,Store,2026-06-06,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000865,FWA-001013,2026-06-08,Renewal,Call center,2026-06-10,2,5,Y,"Declined, no contract"
+RQ-000866,FWA-001014,2026-06-07,Renewal,Call center,2026-06-09,2,5,Y,Renewed 12 months
+RQ-000867,FWA-001017,2026-06-02,Renewal,Call center,2026-06-04,2,5,Y,"Declined, no contract"
+RQ-000868,FWA-001033,2026-06-02,Renewal,Call center,2026-06-04,2,5,Y,Renewed 12 months
+RQ-000869,FWA-001036,2026-06-15,Renewal,Call center,2026-06-17,2,5,Y,Renewed 12 months
+RQ-000870,FWA-001040,2026-06-23,Renewal,Call center,2026-06-25,2,5,Y,"Declined, no contract"
+RQ-000871,FWA-001040,2026-06-10,5G upgrade,Store,2026-06-11,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000872,FWA-001041,2026-06-01,Renewal,Call center,2026-06-03,2,5,Y,"Declined, no contract"
+RQ-000873,FWA-001047,2026-06-22,Renewal,Call center,2026-06-24,2,5,Y,Renewed 12 months
+RQ-000874,FWA-001050,2026-06-02,Renewal,Call center,2026-06-04,2,5,Y,Renewed 12 months
+RQ-000875,FWA-001051,2026-06-05,Device fault,App,2026-06-08,3,3,Y,Fixed remotely
+RQ-000876,FWA-001060,2026-06-07,Renewal,Call center,2026-06-09,2,5,Y,"Declined, no contract"
+RQ-000877,FWA-001062,2026-06-28,Renewal,Call center,2026-06-30,2,5,Y,"Declined, no contract"
+RQ-000878,FWA-001068,2026-06-23,Renewal,Call center,2026-06-25,2,5,Y,"Declined, no contract"
+RQ-000879,FWA-001075,2026-06-05,Renewal,Call center,2026-06-07,2,5,Y,"Declined, no contract"
+RQ-000880,FWA-001079,2026-06-22,Renewal,Call center,2026-06-24,2,5,Y,Renewed 12 months
+RQ-000881,FWA-001081,2026-06-13,Renewal,Call center,2026-06-15,2,5,Y,"Declined, no contract"
+RQ-000882,FWA-001082,2026-06-08,Renewal,Call center,2026-06-10,2,5,Y,"Declined, no contract"
+RQ-000883,FWA-001087,2026-06-16,Renewal,Call center,2026-06-18,2,5,Y,"Declined, no contract"
+RQ-000884,FWA-001088,2026-06-21,Renewal,Call center,2026-06-23,2,5,Y,Renewed 12 months
+RQ-000885,FWA-001089,2026-06-28,Renewal,Call center,2026-06-30,2,5,Y,Renewed 12 months
+RQ-000886,FWA-001091,2026-06-23,Renewal,Call center,2026-06-25,2,5,Y,Renewed 12 months
+RQ-000887,FWA-001092,2026-06-16,Renewal,Call center,2026-06-18,2,5,Y,"Declined, no contract"
+RQ-000888,FWA-001099,2026-06-14,Renewal,Call center,2026-06-16,2,5,Y,Renewed 12 months
+RQ-000889,FWA-001101,2026-06-04,Renewal,Call center,2026-06-06,2,5,Y,"Declined, no contract"
+RQ-000890,FWA-001106,2026-06-01,Renewal,Call center,2026-06-03,2,5,Y,"Declined, no contract"
+RQ-000891,FWA-001111,2026-06-04,Renewal,Call center,2026-06-06,2,5,Y,Renewed 12 months
+RQ-000892,FWA-001118,2026-06-26,Renewal,Call center,2026-06-28,2,5,Y,"Declined, no contract"
+RQ-000893,FWA-001119,2026-06-15,5G upgrade,Store,2026-06-16,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000894,FWA-001120,2026-06-21,Renewal,Call center,2026-06-23,2,5,Y,"Declined, no contract"
+RQ-000895,FWA-001125,2026-06-12,Renewal,Call center,2026-06-14,2,5,Y,Renewed 12 months
+RQ-000896,FWA-001126,2026-06-20,Renewal,Call center,2026-06-22,2,5,Y,"Declined, no contract"
+RQ-000897,FWA-001130,2026-06-05,Renewal,Call center,2026-06-07,2,5,Y,"Declined, no contract"
+RQ-000898,FWA-001132,2026-06-05,Renewal,Call center,2026-06-07,2,5,Y,"Declined, no contract"
+RQ-000899,FWA-001134,2026-06-13,Renewal,Call center,2026-06-15,2,5,Y,Renewed 12 months
+RQ-000900,FWA-001135,2026-06-17,Renewal,Call center,2026-06-19,2,5,Y,Renewed 12 months
+RQ-000901,FWA-001139,2026-06-26,Relocation,App,2026-07-06,10,7,N,"Moved, service working"
+RQ-000902,FWA-001140,2026-06-17,Renewal,Call center,2026-06-19,2,5,Y,Renewed 12 months
+RQ-000903,FWA-001141,2026-06-03,Renewal,Call center,2026-06-05,2,5,Y,"Declined, no contract"
+RQ-000904,FWA-001142,2026-06-13,Renewal,Call center,2026-06-15,2,5,Y,Renewed 12 months
+RQ-000905,FWA-001145,2026-06-28,Device fault,Store,2026-06-29,1,3,Y,Fixed remotely
+RQ-000906,FWA-001145,2026-06-17,Renewal,Call center,2026-06-19,2,5,Y,Renewed 12 months
+RQ-000907,FWA-001147,2026-06-16,Renewal,Call center,2026-06-18,2,5,Y,"Declined, no contract"
+RQ-000908,FWA-001147,2026-06-12,5G upgrade,Store,2026-06-13,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000909,FWA-001151,2026-06-21,Renewal,Call center,2026-06-23,2,5,Y,"Declined, no contract"
+RQ-000910,FWA-001165,2026-06-17,Device fault,Store,2026-06-20,3,3,Y,Fixed remotely
+RQ-000911,FWA-001165,2026-06-28,Renewal,Call center,2026-06-30,2,5,Y,Renewed 12 months
+RQ-000912,FWA-001168,2026-06-02,Renewal,Call center,2026-06-04,2,5,Y,"Declined, no contract"
+RQ-000913,FWA-001171,2026-06-09,Renewal,Call center,2026-06-11,2,5,Y,Renewed 12 months
+RQ-000914,FWA-001174,2026-06-03,Renewal,Call center,2026-06-05,2,5,Y,Renewed 12 months
+RQ-000915,FWA-001177,2026-06-13,Renewal,Call center,2026-06-15,2,5,Y,Renewed 12 months
+RQ-000916,FWA-001265,2026-06-25,Relocation,App,2026-07-02,7,7,Y,"Moved, service working"
+RQ-000917,FWA-001421,2026-06-21,Device fault,Store,2026-06-23,2,3,Y,Device replaced
+RQ-000918,FWA-001507,2026-06-19,5G upgrade,Store,2026-06-20,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000919,FWA-001593,2026-06-03,5G upgrade,Store,2026-06-04,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000920,FWA-001614,2026-06-15,5G upgrade,Store,2026-06-16,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000921,FWA-001634,2026-06-18,5G upgrade,Store,2026-06-19,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000922,FWA-001663,2026-06-11,Device fault,Store,2026-06-15,4,3,N,Fixed remotely
+RQ-000923,FWA-001707,2026-06-04,5G upgrade,Store,2026-06-05,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000924,FWA-001708,2026-06-09,5G upgrade,Store,2026-06-10,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000925,FWA-001721,2026-06-19,Device fault,Store,2026-06-19,0,3,Y,Fixed remotely
+RQ-000926,FWA-001781,2026-06-03,Device fault,Call center,2026-06-07,4,3,N,Fixed remotely
+RQ-000927,FWA-001804,2026-06-21,Relocation,App,2026-06-29,8,7,N,"Moved, service working"
+RQ-000928,FWA-001815,2026-06-23,Device fault,Call center,2026-07-01,8,3,N,Fixed remotely
+RQ-000929,FWA-001818,2026-06-20,5G upgrade,Store,2026-06-21,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000930,FWA-001900,2026-06-20,5G upgrade,Store,2026-06-21,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000931,FWA-002025,2026-06-28,5G upgrade,Store,2026-06-29,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000932,FWA-002049,2026-06-22,5G upgrade,App,2026-06-23,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000933,FWA-002071,2026-06-24,Device fault,Call center,2026-06-30,6,3,N,Device replaced
+RQ-000934,FWA-002078,2026-06-15,5G upgrade,Store,2026-06-16,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000935,FWA-002310,2026-06-01,Relocation,App,2026-06-04,3,7,Y,"Moved, service working"
+RQ-000936,FWA-002325,2026-06-13,Relocation,Call center,2026-06-16,3,7,Y,"Moved, service working"
+RQ-000937,FWA-002356,2026-06-04,5G upgrade,Store,2026-06-05,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000938,FWA-002435,2026-06-09,Device fault,Store,2026-06-10,1,3,Y,Fixed remotely
+RQ-000939,FWA-002459,2026-06-01,5G upgrade,Store,2026-06-02,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000940,FWA-002490,2026-06-04,Device fault,App,2026-06-06,2,3,Y,Fixed remotely
+RQ-000941,FWA-002558,2026-06-07,5G upgrade,Store,2026-06-08,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000942,FWA-002567,2026-06-24,5G upgrade,Store,2026-06-25,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000943,FWA-002620,2026-06-26,Relocation,Call center,2026-07-19,23,7,N,"Moved, service working"
+RQ-000944,FWA-002621,2026-06-18,5G upgrade,Store,2026-06-19,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000945,FWA-002656,2026-06-02,5G upgrade,Store,2026-06-03,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000946,FWA-002738,2026-06-19,5G upgrade,Store,2026-06-20,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000947,FWA-002759,2026-06-27,5G upgrade,App,2026-06-28,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000948,FWA-002855,2026-06-04,Device fault,Call center,2026-06-10,6,3,N,Fixed remotely
+RQ-000949,FWA-002907,2026-06-17,5G upgrade,App,2026-06-18,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000950,FWA-002909,2026-06-06,Relocation,Call center,2026-06-27,21,7,N,"Moved, service working"
+RQ-000951,FWA-002992,2026-06-07,5G upgrade,Store,2026-06-08,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000952,FWA-003032,2026-06-06,Relocation,App,2026-06-25,19,7,N,"Moved, service working"
+RQ-000953,FWA-003079,2026-06-15,Relocation,Call center,2026-06-22,7,7,Y,"Moved, service working"
+RQ-000954,FWA-003106,2026-06-05,5G upgrade,Store,2026-06-06,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000955,FWA-003120,2026-06-28,Relocation,App,2026-07-03,5,7,Y,"Moved, service working"
+RQ-000956,FWA-003128,2026-06-18,5G upgrade,Store,2026-06-19,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000957,FWA-003141,2026-06-10,Relocation,App,2026-06-18,8,7,N,"Moved, service working"
+RQ-000958,FWA-003231,2026-06-19,Relocation,App,2026-06-22,3,7,Y,"Moved, service working"
+RQ-000959,FWA-003284,2026-06-09,Device fault,Store,2026-06-11,2,3,Y,Device replaced
+RQ-000960,FWA-003334,2026-06-08,Device fault,Store,2026-06-09,1,3,Y,Fixed remotely
+RQ-000961,FWA-003356,2026-06-17,Relocation,App,2026-07-24,37,7,N,"Moved, service working"
+RQ-000962,FWA-003403,2026-06-06,Relocation,Store,2026-06-24,18,7,N,"Moved, service working"
+RQ-000963,FWA-003403,2026-06-09,5G upgrade,Store,2026-06-10,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000964,FWA-003466,2026-06-17,5G upgrade,Store,2026-06-18,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000965,FWA-003474,2026-06-22,Relocation,Call center,2026-06-23,1,7,Y,"Moved, service working"
+RQ-000966,FWA-003524,2026-06-16,5G upgrade,App,2026-06-17,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000967,FWA-003553,2026-06-23,Device fault,Store,2026-06-24,1,3,Y,Fixed remotely
+RQ-000968,FWA-003558,2026-06-08,Device fault,Store,2026-06-18,10,3,N,Device replaced
+RQ-000969,FWA-003581,2026-06-07,5G upgrade,App,2026-06-08,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000970,FWA-000126,2026-07-10,Device fault,App,2026-07-13,3,3,N,Device replaced
+RQ-000971,FWA-000156,2026-07-15,Device fault,App,2026-07-16,1,3,Y,Fixed remotely
+RQ-000972,FWA-000255,2026-07-18,Device fault,Store,2026-07-21,3,3,N,Fixed remotely
+RQ-000973,FWA-000257,2026-07-25,5G upgrade,Store,2026-07-26,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000974,FWA-000401,2026-07-22,Relocation,App,2026-07-28,6,7,Y,"Moved, service working"
+RQ-000975,FWA-000401,2026-07-05,Device fault,Store,2026-07-07,2,3,Y,Fixed remotely
+RQ-000976,FWA-000484,2026-07-04,5G upgrade,Store,2026-07-05,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000977,FWA-000489,2026-07-25,5G upgrade,Store,2026-07-26,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000978,FWA-000495,2026-07-03,5G upgrade,Store,2026-07-04,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000979,FWA-000564,2026-07-17,5G upgrade,Store,2026-07-18,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000980,FWA-000570,2026-07-17,5G upgrade,Store,2026-07-18,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000981,FWA-000623,2026-07-27,5G upgrade,Store,2026-07-28,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000982,FWA-000656,2026-07-12,5G upgrade,Store,2026-07-13,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000983,FWA-000675,2026-07-06,Device fault,App,2026-07-07,1,3,Y,Device replaced
+RQ-000984,FWA-000754,2026-07-27,5G upgrade,Store,2026-07-28,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000985,FWA-000766,2026-07-10,Device fault,Store,2026-07-13,3,3,Y,Fixed remotely
+RQ-000986,FWA-000793,2026-07-09,Device fault,Call center,2026-07-12,3,3,N,Fixed remotely
+RQ-000987,FWA-000798,2026-07-27,Device fault,Store,2026-07-30,3,3,N,Fixed remotely
+RQ-000988,FWA-000884,2026-07-08,5G upgrade,Store,2026-07-09,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000989,FWA-000993,2026-07-25,Device fault,Call center,2026-07-28,3,3,N,Fixed remotely
+RQ-000990,FWA-001002,2026-07-19,Relocation,Call center,2026-07-24,5,7,Y,"Moved, service working"
+RQ-000991,FWA-001003,2026-07-10,5G upgrade,App,2026-07-11,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-000992,FWA-001180,2026-07-15,Renewal,Call center,2026-07-17,2,5,Y,Renewed 12 months
+RQ-000993,FWA-001183,2026-07-09,Renewal,Call center,2026-07-11,2,5,Y,"Declined, no contract"
+RQ-000994,FWA-001186,2026-07-13,Renewal,Call center,2026-07-15,2,5,Y,"Declined, no contract"
+RQ-000995,FWA-001187,2026-07-14,Device fault,Store,2026-07-19,5,3,N,Device replaced
+RQ-000996,FWA-001191,2026-07-12,Renewal,Call center,2026-07-14,2,5,Y,Renewed 12 months
+RQ-000997,FWA-001193,2026-07-11,Renewal,Call center,2026-07-13,2,5,Y,Renewed 12 months
+RQ-000998,FWA-001194,2026-07-23,Renewal,Call center,2026-07-25,2,5,Y,"Declined, no contract"
+RQ-000999,FWA-001199,2026-07-08,Renewal,Call center,2026-07-10,2,5,Y,"Declined, no contract"
+RQ-001000,FWA-001201,2026-07-09,Renewal,Call center,2026-07-11,2,5,Y,"Declined, no contract"
+RQ-001001,FWA-001201,2026-07-20,5G upgrade,Store,2026-07-21,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001002,FWA-001214,2026-07-03,Renewal,Call center,2026-07-05,2,5,Y,Renewed 12 months
+RQ-001003,FWA-001216,2026-07-27,Renewal,Call center,2026-07-29,2,5,Y,Renewed 12 months
+RQ-001004,FWA-001219,2026-07-21,Renewal,Call center,2026-07-23,2,5,Y,"Declined, no contract"
+RQ-001005,FWA-001227,2026-07-28,Renewal,Call center,2026-07-30,2,5,Y,"Declined, no contract"
+RQ-001006,FWA-001234,2026-07-10,Renewal,Call center,2026-07-12,2,5,Y,Renewed 12 months
+RQ-001007,FWA-001242,2026-07-07,Renewal,Call center,2026-07-09,2,5,Y,Renewed 12 months
+RQ-001008,FWA-001245,2026-07-27,Renewal,Call center,2026-07-29,2,5,Y,Renewed 12 months
+RQ-001009,FWA-001246,2026-07-05,Renewal,Call center,2026-07-07,2,5,Y,Renewed 12 months
+RQ-001010,FWA-001249,2026-07-14,Renewal,Call center,2026-07-16,2,5,Y,Renewed 12 months
+RQ-001011,FWA-001250,2026-07-01,Renewal,Call center,2026-07-03,2,5,Y,"Declined, no contract"
+RQ-001012,FWA-001251,2026-07-25,Renewal,Call center,2026-07-27,2,5,Y,"Declined, no contract"
+RQ-001013,FWA-001252,2026-07-16,Renewal,Call center,2026-07-18,2,5,Y,"Declined, no contract"
+RQ-001014,FWA-001262,2026-07-08,Renewal,Call center,2026-07-10,2,5,Y,Renewed 12 months
+RQ-001015,FWA-001264,2026-07-08,Renewal,Call center,2026-07-10,2,5,Y,Renewed 12 months
+RQ-001016,FWA-001266,2026-07-15,Renewal,Call center,2026-07-17,2,5,Y,"Declined, no contract"
+RQ-001017,FWA-001271,2026-07-20,Renewal,Call center,2026-07-22,2,5,Y,Renewed 12 months
+RQ-001018,FWA-001275,2026-07-09,Renewal,Call center,2026-07-11,2,5,Y,"Declined, no contract"
+RQ-001019,FWA-001277,2026-07-16,Renewal,Call center,2026-07-18,2,5,Y,Renewed 12 months
+RQ-001020,FWA-001278,2026-07-08,Renewal,Call center,2026-07-10,2,5,Y,Renewed 12 months
+RQ-001021,FWA-001280,2026-07-05,Renewal,Call center,2026-07-07,2,5,Y,"Declined, no contract"
+RQ-001022,FWA-001281,2026-07-04,Renewal,Call center,2026-07-06,2,5,Y,"Declined, no contract"
+RQ-001023,FWA-001289,2026-07-12,Renewal,Call center,2026-07-14,2,5,Y,"Declined, no contract"
+RQ-001024,FWA-001296,2026-07-17,Renewal,Call center,2026-07-19,2,5,Y,Renewed 12 months
+RQ-001025,FWA-001300,2026-07-16,Renewal,Call center,2026-07-18,2,5,Y,"Declined, no contract"
+RQ-001026,FWA-001306,2026-07-17,Renewal,Call center,2026-07-19,2,5,Y,Renewed 12 months
+RQ-001027,FWA-001313,2026-07-07,Renewal,Call center,2026-07-09,2,5,Y,Renewed 12 months
+RQ-001028,FWA-001321,2026-07-15,Renewal,Call center,2026-07-17,2,5,Y,"Declined, no contract"
+RQ-001029,FWA-001322,2026-07-16,Renewal,Call center,2026-07-18,2,5,Y,"Declined, no contract"
+RQ-001030,FWA-001325,2026-07-23,Device fault,Call center,2026-07-25,2,3,Y,Fixed remotely
+RQ-001031,FWA-001325,2026-07-16,Renewal,Call center,2026-07-18,2,5,Y,Renewed 12 months
+RQ-001032,FWA-001327,2026-07-01,Renewal,Call center,2026-07-03,2,5,Y,Renewed 12 months
+RQ-001033,FWA-001328,2026-07-19,Renewal,Call center,2026-07-21,2,5,Y,Renewed 12 months
+RQ-001034,FWA-001331,2026-07-26,Renewal,Call center,2026-07-28,2,5,Y,"Declined, no contract"
+RQ-001035,FWA-001333,2026-07-04,Renewal,Call center,2026-07-06,2,5,Y,Renewed 12 months
+RQ-001036,FWA-001337,2026-07-06,Renewal,Call center,2026-07-08,2,5,Y,Renewed 12 months
+RQ-001037,FWA-001338,2026-07-28,Renewal,Call center,2026-07-30,2,5,Y,Renewed 12 months
+RQ-001038,FWA-001339,2026-07-19,Renewal,Call center,2026-07-21,2,5,Y,"Declined, no contract"
+RQ-001039,FWA-001344,2026-07-28,Renewal,Call center,2026-07-30,2,5,Y,"Declined, no contract"
+RQ-001040,FWA-001346,2026-07-10,Renewal,Call center,2026-07-12,2,5,Y,"Declined, no contract"
+RQ-001041,FWA-001347,2026-07-19,Renewal,Call center,2026-07-21,2,5,Y,"Declined, no contract"
+RQ-001042,FWA-001350,2026-07-11,Renewal,Call center,2026-07-13,2,5,Y,"Declined, no contract"
+RQ-001043,FWA-001352,2026-07-19,Renewal,Call center,2026-07-21,2,5,Y,Renewed 12 months
+RQ-001044,FWA-001358,2026-07-18,Renewal,Call center,2026-07-20,2,5,Y,Renewed 12 months
+RQ-001045,FWA-001361,2026-07-19,Renewal,Call center,2026-07-21,2,5,Y,"Declined, no contract"
+RQ-001046,FWA-001363,2026-07-19,Renewal,Call center,2026-07-21,2,5,Y,Renewed 12 months
+RQ-001047,FWA-001364,2026-07-23,Renewal,Call center,2026-07-25,2,5,Y,"Declined, no contract"
+RQ-001048,FWA-001381,2026-07-07,Relocation,Store,2026-07-10,3,7,Y,"Moved, service working"
+RQ-001049,FWA-001420,2026-07-18,5G upgrade,Store,2026-07-19,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001050,FWA-001539,2026-07-19,Relocation,Call center,2026-08-03,15,7,N,"Moved, service working"
+RQ-001051,FWA-001574,2026-07-24,Relocation,Call center,2026-08-07,14,7,N,"Moved, service working"
+RQ-001052,FWA-001588,2026-07-10,Device fault,Call center,2026-07-12,2,3,Y,Device replaced
+RQ-001053,FWA-001610,2026-07-01,5G upgrade,App,2026-07-02,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001054,FWA-001653,2026-07-04,Device fault,Store,2026-07-10,6,3,N,Device replaced
+RQ-001055,FWA-001757,2026-07-16,Relocation,App,2026-07-20,4,7,Y,"Moved, service working"
+RQ-001056,FWA-001788,2026-07-05,Device fault,Store,2026-07-14,9,3,N,Device replaced
+RQ-001057,FWA-001835,2026-07-12,Relocation,Call center,2026-07-13,1,7,Y,"Moved, service working"
+RQ-001058,FWA-002024,2026-07-09,Relocation,Call center,2026-08-01,23,7,N,"Moved, service working"
+RQ-001059,FWA-002063,2026-07-20,Device fault,Call center,2026-08-05,16,3,N,Device replaced
+RQ-001060,FWA-002107,2026-07-22,Device fault,App,2026-07-25,3,3,N,Device replaced
+RQ-001061,FWA-002109,2026-07-18,5G upgrade,Store,2026-07-19,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001062,FWA-002129,2026-07-14,5G upgrade,Store,2026-07-15,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001063,FWA-002147,2026-07-03,5G upgrade,Store,2026-07-04,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001064,FWA-002164,2026-07-05,Relocation,Call center,2026-07-10,5,7,Y,"Moved, service working"
+RQ-001065,FWA-002333,2026-07-14,Relocation,App,2026-07-22,8,7,N,"Moved, service working"
+RQ-001066,FWA-002341,2026-07-14,5G upgrade,Store,2026-07-15,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001067,FWA-002409,2026-07-23,Relocation,App,2026-07-30,7,7,Y,"Moved, service working"
+RQ-001068,FWA-002430,2026-07-26,5G upgrade,Store,2026-07-27,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001069,FWA-002437,2026-07-26,5G upgrade,Store,2026-07-27,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001070,FWA-002491,2026-07-02,5G upgrade,App,2026-07-03,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001071,FWA-002597,2026-07-20,5G upgrade,Store,2026-07-21,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001072,FWA-002614,2026-07-24,Device fault,Call center,2026-07-26,2,3,Y,Fixed remotely
+RQ-001073,FWA-002664,2026-07-15,Relocation,Store,2026-07-22,7,7,Y,"Moved, service working"
+RQ-001074,FWA-002670,2026-07-10,Device fault,Store,2026-07-13,3,3,Y,Fixed remotely
+RQ-001075,FWA-002701,2026-07-06,5G upgrade,Store,2026-07-07,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001076,FWA-002762,2026-07-16,5G upgrade,Store,2026-07-17,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001077,FWA-002794,2026-07-27,Device fault,Store,2026-07-28,1,3,Y,Fixed remotely
+RQ-001078,FWA-002914,2026-07-02,5G upgrade,Store,2026-07-03,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001079,FWA-002921,2026-07-07,5G upgrade,Store,2026-07-08,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001080,FWA-003151,2026-07-20,Device fault,Store,2026-07-24,4,3,N,Device replaced
+RQ-001081,FWA-003181,2026-07-04,5G upgrade,Store,2026-07-05,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001082,FWA-003293,2026-07-10,5G upgrade,Store,2026-07-11,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001083,FWA-003336,2026-07-10,5G upgrade,Store,2026-07-11,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001084,FWA-003348,2026-07-07,5G upgrade,Store,2026-07-08,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001085,FWA-003369,2026-07-05,Relocation,Store,2026-07-09,4,7,Y,"Moved, service working"
+RQ-001086,FWA-003451,2026-07-26,5G upgrade,Store,2026-07-27,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001087,FWA-003483,2026-07-22,Device fault,App,2026-07-29,7,3,N,Device replaced
+RQ-001088,FWA-003511,2026-07-05,Device fault,App,2026-07-12,7,3,N,Device replaced
+RQ-001089,FWA-003559,2026-07-24,5G upgrade,Store,2026-07-25,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001090,FWA-003644,2026-07-26,5G upgrade,Store,2026-07-27,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001091,FWA-003702,2026-07-25,5G upgrade,Store,2026-07-26,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001092,FWA-003716,2026-07-09,5G upgrade,App,2026-07-10,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001093,FWA-003760,2026-07-03,Relocation,Call center,2026-07-13,10,7,N,"Moved, service working"
+RQ-001094,FWA-000011,2026-08-14,Device fault,Store,2026-08-16,2,3,Y,Device replaced
+RQ-001095,FWA-000109,2026-08-23,5G upgrade,Store,2026-08-24,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001096,FWA-000117,2026-08-26,Device fault,App,2026-08-28,2,3,Y,Fixed remotely
+RQ-001097,FWA-000151,2026-08-17,Relocation,Call center,2026-08-18,1,7,Y,"Moved, service working"
+RQ-001098,FWA-000212,2026-08-07,Device fault,Call center,2026-08-08,1,3,Y,Device replaced
+RQ-001099,FWA-000320,2026-08-05,Relocation,Store,2026-08-12,7,7,Y,"Moved, service working"
+RQ-001100,FWA-000342,2026-08-12,Device fault,App,2026-08-13,1,3,Y,Fixed remotely
+RQ-001101,FWA-000343,2026-08-26,Device fault,Call center,2026-08-30,4,3,N,Fixed remotely
+RQ-001102,FWA-000391,2026-08-01,Relocation,Store,2026-08-07,6,7,Y,"Moved, service working"
+RQ-001103,FWA-000545,2026-08-14,Device fault,Call center,2026-08-15,1,3,Y,Device replaced
+RQ-001104,FWA-000576,2026-08-10,5G upgrade,Store,2026-08-11,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001105,FWA-000609,2026-08-06,Device fault,App,2026-08-06,0,3,Y,Fixed remotely
+RQ-001106,FWA-000664,2026-08-25,Device fault,Store,2026-08-28,3,3,N,Fixed remotely
+RQ-001107,FWA-000714,2026-08-09,Device fault,App,2026-08-19,10,3,N,Device replaced
+RQ-001108,FWA-000764,2026-08-21,5G upgrade,Store,2026-08-22,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001109,FWA-000871,2026-08-16,Device fault,App,2026-08-25,9,3,N,Fixed remotely
+RQ-001110,FWA-000890,2026-08-18,Device fault,Store,2026-08-28,10,3,N,Device replaced
+RQ-001111,FWA-001002,2026-08-12,Device fault,App,2026-08-14,2,3,Y,Fixed remotely
+RQ-001112,FWA-001120,2026-08-20,Relocation,Call center,2026-08-24,4,7,Y,"Moved, service working"
+RQ-001113,FWA-001130,2026-08-10,Device fault,Call center,2026-08-14,4,3,N,Fixed remotely
+RQ-001114,FWA-001186,2026-08-05,Relocation,Store,2026-08-08,3,7,Y,"Moved, service working"
+RQ-001115,FWA-001329,2026-08-28,Relocation,Store,2026-09-17,20,7,N,"Moved, service working"
+RQ-001116,FWA-001363,2026-08-07,5G upgrade,Store,2026-08-08,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001117,FWA-001376,2026-08-19,Renewal,Call center,2026-08-21,2,5,Y,Renewed 12 months
+RQ-001118,FWA-001385,2026-08-22,Renewal,Call center,2026-08-24,2,5,Y,Renewed 12 months
+RQ-001119,FWA-001392,2026-08-26,Renewal,Call center,2026-08-28,2,5,Y,"Declined, no contract"
+RQ-001120,FWA-001396,2026-08-01,5G upgrade,Store,2026-08-02,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001121,FWA-001403,2026-08-25,Renewal,Call center,2026-08-27,2,5,Y,Renewed 12 months
+RQ-001122,FWA-001404,2026-08-25,Renewal,Call center,2026-08-27,2,5,Y,Renewed 12 months
+RQ-001123,FWA-001405,2026-08-28,Renewal,Call center,2026-08-30,2,5,Y,"Declined, no contract"
+RQ-001124,FWA-001406,2026-08-16,Renewal,Call center,2026-08-18,2,5,Y,"Declined, no contract"
+RQ-001125,FWA-001410,2026-08-18,Renewal,Call center,2026-08-20,2,5,Y,Renewed 12 months
+RQ-001126,FWA-001414,2026-08-27,Renewal,Call center,2026-08-29,2,5,Y,Renewed 12 months
+RQ-001127,FWA-001416,2026-08-05,Device fault,Store,2026-08-06,1,3,Y,Device replaced
+RQ-001128,FWA-001422,2026-08-06,Renewal,Call center,2026-08-08,2,5,Y,"Declined, no contract"
+RQ-001129,FWA-001423,2026-08-13,Renewal,Call center,2026-08-15,2,5,Y,"Declined, no contract"
+RQ-001130,FWA-001426,2026-08-03,Renewal,Call center,2026-08-05,2,5,Y,Renewed 12 months
+RQ-001131,FWA-001431,2026-08-17,Device fault,Store,2026-08-19,2,3,Y,Fixed remotely
+RQ-001132,FWA-001431,2026-08-05,Renewal,Call center,2026-08-07,2,5,Y,"Declined, no contract"
+RQ-001133,FWA-001432,2026-08-17,Renewal,Call center,2026-08-19,2,5,Y,Renewed 12 months
+RQ-001134,FWA-001434,2026-08-16,Renewal,Call center,2026-08-18,2,5,Y,Renewed 12 months
+RQ-001135,FWA-001435,2026-08-23,Renewal,Call center,2026-08-25,2,5,Y,"Declined, no contract"
+RQ-001136,FWA-001443,2026-08-12,Renewal,Call center,2026-08-14,2,5,Y,Renewed 12 months
+RQ-001137,FWA-001449,2026-08-15,Renewal,Call center,2026-08-17,2,5,Y,"Declined, no contract"
+RQ-001138,FWA-001451,2026-08-03,Renewal,Call center,2026-08-05,2,5,Y,Renewed 12 months
+RQ-001139,FWA-001458,2026-08-20,Renewal,Call center,2026-08-22,2,5,Y,"Declined, no contract"
+RQ-001140,FWA-001459,2026-08-07,Renewal,Call center,2026-08-09,2,5,Y,Renewed 12 months
+RQ-001141,FWA-001462,2026-08-07,Relocation,Call center,2026-08-17,10,7,N,"Moved, service working"
+RQ-001142,FWA-001464,2026-08-26,Renewal,Call center,2026-08-28,2,5,Y,"Declined, no contract"
+RQ-001143,FWA-001465,2026-08-07,Renewal,Call center,2026-08-09,2,5,Y,Renewed 12 months
+RQ-001144,FWA-001468,2026-08-27,Renewal,Call center,2026-08-29,2,5,Y,Renewed 12 months
+RQ-001145,FWA-001469,2026-08-19,Renewal,Call center,2026-08-21,2,5,Y,Renewed 12 months
+RQ-001146,FWA-001471,2026-08-05,Renewal,Call center,2026-08-07,2,5,Y,Renewed 12 months
+RQ-001147,FWA-001472,2026-08-11,Renewal,Call center,2026-08-13,2,5,Y,Renewed 12 months
+RQ-001148,FWA-001473,2026-08-21,Renewal,Call center,2026-08-23,2,5,Y,"Declined, no contract"
+RQ-001149,FWA-001475,2026-08-06,Renewal,Call center,2026-08-08,2,5,Y,"Declined, no contract"
+RQ-001150,FWA-001479,2026-08-02,Renewal,Call center,2026-08-04,2,5,Y,Renewed 12 months
+RQ-001151,FWA-001486,2026-08-27,Renewal,Call center,2026-08-29,2,5,Y,"Declined, no contract"
+RQ-001152,FWA-001487,2026-08-03,Renewal,Call center,2026-08-05,2,5,Y,"Declined, no contract"
+RQ-001153,FWA-001488,2026-08-21,Renewal,Call center,2026-08-23,2,5,Y,Renewed 12 months
+RQ-001154,FWA-001492,2026-08-28,Renewal,Call center,2026-08-30,2,5,Y,Renewed 12 months
+RQ-001155,FWA-001501,2026-08-11,Renewal,Call center,2026-08-13,2,5,Y,Renewed 12 months
+RQ-001156,FWA-001504,2026-08-06,Renewal,Call center,2026-08-08,2,5,Y,Renewed 12 months
+RQ-001157,FWA-001504,2026-08-05,5G upgrade,Store,2026-08-06,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001158,FWA-001505,2026-08-22,Renewal,Call center,2026-08-24,2,5,Y,Renewed 12 months
+RQ-001159,FWA-001507,2026-08-16,Renewal,Call center,2026-08-18,2,5,Y,Renewed 12 months
+RQ-001160,FWA-001511,2026-08-28,Renewal,Call center,2026-08-30,2,5,Y,"Declined, no contract"
+RQ-001161,FWA-001512,2026-08-05,Renewal,Call center,2026-08-07,2,5,Y,"Declined, no contract"
+RQ-001162,FWA-001516,2026-08-14,Renewal,Call center,2026-08-16,2,5,Y,"Declined, no contract"
+RQ-001163,FWA-001518,2026-08-06,Renewal,Call center,2026-08-08,2,5,Y,"Declined, no contract"
+RQ-001164,FWA-001526,2026-08-22,Renewal,Call center,2026-08-24,2,5,Y,"Declined, no contract"
+RQ-001165,FWA-001544,2026-08-22,Renewal,Call center,2026-08-24,2,5,Y,"Declined, no contract"
+RQ-001166,FWA-001547,2026-08-25,Renewal,Call center,2026-08-27,2,5,Y,Renewed 12 months
+RQ-001167,FWA-001553,2026-08-23,Renewal,Call center,2026-08-25,2,5,Y,Renewed 12 months
+RQ-001168,FWA-001554,2026-08-09,Renewal,Call center,2026-08-11,2,5,Y,Renewed 12 months
+RQ-001169,FWA-001555,2026-08-09,Renewal,Call center,2026-08-11,2,5,Y,"Declined, no contract"
+RQ-001170,FWA-001558,2026-08-06,Renewal,Call center,2026-08-08,2,5,Y,"Declined, no contract"
+RQ-001171,FWA-001563,2026-08-10,Renewal,Call center,2026-08-12,2,5,Y,"Declined, no contract"
+RQ-001172,FWA-001566,2026-08-13,Renewal,Call center,2026-08-15,2,5,Y,Renewed 12 months
+RQ-001173,FWA-001611,2026-08-04,Device fault,Store,2026-08-06,2,3,Y,Fixed remotely
+RQ-001174,FWA-001620,2026-08-15,Device fault,Call center,2026-08-17,2,3,Y,Fixed remotely
+RQ-001175,FWA-001658,2026-08-10,Device fault,App,2026-08-29,19,3,N,Fixed remotely
+RQ-001176,FWA-001669,2026-08-18,Relocation,Call center,2026-08-23,5,7,Y,"Moved, service working"
+RQ-001177,FWA-001671,2026-08-08,5G upgrade,Store,2026-08-09,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001178,FWA-001827,2026-08-18,Relocation,App,2026-09-01,14,7,N,"Moved, service working"
+RQ-001179,FWA-001835,2026-08-07,Device fault,Store,2026-08-10,3,3,Y,Device replaced
+RQ-001180,FWA-001857,2026-08-04,5G upgrade,Store,2026-08-05,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001181,FWA-001911,2026-08-20,5G upgrade,Store,2026-08-21,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001182,FWA-002052,2026-08-18,Device fault,Call center,2026-08-20,2,3,Y,Fixed remotely
+RQ-001183,FWA-002081,2026-08-12,Relocation,Store,2026-08-16,4,7,Y,"Moved, service working"
+RQ-001184,FWA-002229,2026-08-11,Relocation,Store,2026-08-23,12,7,N,"Moved, service working"
+RQ-001185,FWA-002230,2026-08-08,5G upgrade,Store,2026-08-09,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001186,FWA-002242,2026-08-13,Device fault,Call center,2026-08-16,3,3,Y,Device replaced
+RQ-001187,FWA-002264,2026-08-03,Relocation,Store,2026-08-05,2,7,Y,"Moved, service working"
+RQ-001188,FWA-002558,2026-08-26,Device fault,Call center,2026-08-29,3,3,N,Device replaced
+RQ-001189,FWA-002584,2026-08-11,Device fault,Store,2026-08-12,1,3,Y,Fixed remotely
+RQ-001190,FWA-002594,2026-08-11,Relocation,Store,2026-08-17,6,7,Y,"Moved, service working"
+RQ-001191,FWA-002706,2026-08-17,Relocation,Store,2026-09-18,32,7,N,"Moved, service working"
+RQ-001192,FWA-002711,2026-08-16,5G upgrade,Store,2026-08-17,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001193,FWA-002735,2026-08-11,Device fault,App,2026-08-19,8,3,N,Fixed remotely
+RQ-001194,FWA-002912,2026-08-06,Relocation,App,2026-08-19,13,7,N,"Moved, service working"
+RQ-001195,FWA-002957,2026-08-24,Device fault,Call center,2026-09-02,9,3,N,Device replaced
+RQ-001196,FWA-002987,2026-08-22,Device fault,Store,2026-08-23,1,3,Y,Device replaced
+RQ-001197,FWA-003002,2026-08-16,5G upgrade,Store,2026-08-17,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001198,FWA-003020,2026-08-21,Relocation,Store,2026-08-26,5,7,Y,"Moved, service working"
+RQ-001199,FWA-003066,2026-08-02,5G upgrade,Store,2026-08-03,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001200,FWA-003077,2026-08-16,5G upgrade,Store,2026-08-17,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001201,FWA-003114,2026-08-25,5G upgrade,App,2026-08-26,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001202,FWA-003148,2026-08-01,Relocation,Store,2026-08-11,10,7,N,"Moved, service working"
+RQ-001203,FWA-003374,2026-08-07,Device fault,Call center,2026-08-09,2,3,Y,Fixed remotely
+RQ-001204,FWA-003390,2026-08-11,5G upgrade,Store,2026-08-12,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001205,FWA-003395,2026-08-03,5G upgrade,Store,2026-08-04,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001206,FWA-003398,2026-08-20,Relocation,App,2026-09-02,13,7,N,"Moved, service working"
+RQ-001207,FWA-003407,2026-08-09,5G upgrade,Store,2026-08-10,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001208,FWA-003413,2026-08-05,5G upgrade,Store,2026-08-06,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001209,FWA-003467,2026-08-09,Relocation,App,2026-08-14,5,7,Y,"Moved, service working"
+RQ-001210,FWA-003485,2026-08-01,Device fault,App,2026-08-02,1,3,Y,Fixed remotely
+RQ-001211,FWA-003490,2026-08-22,Relocation,Store,2026-08-25,3,7,Y,"Moved, service working"
+RQ-001212,FWA-003540,2026-08-16,Device fault,App,2026-08-20,4,3,N,Device replaced
+RQ-001213,FWA-003542,2026-08-01,Device fault,Store,2026-08-02,1,3,Y,Device replaced
+RQ-001214,FWA-003579,2026-08-21,Device fault,Call center,2026-08-28,7,3,N,Fixed remotely
+RQ-001215,FWA-003623,2026-08-14,5G upgrade,Store,2026-08-15,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001216,FWA-003633,2026-08-15,5G upgrade,Store,2026-08-16,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001217,FWA-003649,2026-08-07,Relocation,Call center,2026-08-14,7,7,Y,"Moved, service working"
+RQ-001218,FWA-003653,2026-08-16,5G upgrade,App,2026-08-17,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001219,FWA-003697,2026-08-25,Relocation,Call center,2026-08-30,5,7,Y,"Moved, service working"
+RQ-001220,FWA-003705,2026-08-05,Device fault,Store,2026-08-06,1,3,Y,Device replaced
+RQ-001221,FWA-003725,2026-08-16,5G upgrade,Store,2026-08-17,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001222,FWA-003749,2026-08-24,5G upgrade,Store,2026-08-25,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001223,FWA-003762,2026-08-05,Device fault,Store,2026-08-11,6,3,N,Fixed remotely
+RQ-001224,FWA-003778,2026-08-19,5G upgrade,Store,2026-08-20,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001225,FWA-003820,2026-08-28,Relocation,Call center,2026-08-30,2,7,Y,"Moved, service working"
+RQ-001226,FWA-003821,2026-08-24,Device fault,Store,2026-09-01,8,3,N,Device replaced
+RQ-001227,FWA-003825,2026-08-06,Device fault,Store,2026-08-07,1,3,Y,Fixed remotely
+RQ-001228,FWA-003860,2026-08-23,5G upgrade,Store,2026-08-24,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001229,FWA-003876,2026-08-26,5G upgrade,Store,2026-08-27,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001230,FWA-003919,2026-08-03,Relocation,Store,2026-08-26,23,7,N,"Moved, service working"
+RQ-001231,FWA-004032,2026-08-02,5G upgrade,Store,2026-08-03,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001232,FWA-004096,2026-08-05,Device fault,App,2026-08-07,2,3,Y,Fixed remotely
+RQ-001233,FWA-004110,2026-08-03,Relocation,Call center,2026-08-20,17,7,N,"Moved, service working"
+RQ-001234,FWA-004111,2026-08-11,5G upgrade,App,2026-08-12,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001235,FWA-000084,2026-09-26,5G upgrade,Store,2026-09-27,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001236,FWA-000250,2026-09-17,Relocation,Call center,2026-09-28,11,7,N,"Moved, service working"
+RQ-001237,FWA-000369,2026-09-26,Device fault,Call center,2026-09-28,2,3,Y,Fixed remotely
+RQ-001238,FWA-000544,2026-09-15,5G upgrade,Store,2026-09-16,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001239,FWA-000572,2026-09-14,5G upgrade,Store,2026-09-15,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001240,FWA-000600,2026-09-01,5G upgrade,App,2026-09-02,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001241,FWA-000783,2026-09-12,Relocation,App,2026-09-16,4,7,Y,"Moved, service working"
+RQ-001242,FWA-000838,2026-09-07,Device fault,Store,2026-09-10,3,3,N,Fixed remotely
+RQ-001243,FWA-000843,2026-09-06,Device fault,App,2026-09-07,1,3,Y,Device replaced
+RQ-001244,FWA-000947,2026-09-23,Device fault,App,2026-09-24,1,3,Y,Fixed remotely
+RQ-001245,FWA-000985,2026-09-10,5G upgrade,App,2026-09-11,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001246,FWA-001013,2026-09-15,Device fault,Store,2026-09-16,1,3,Y,Device replaced
+RQ-001247,FWA-001080,2026-09-20,Device fault,Store,2026-09-21,1,3,Y,Fixed remotely
+RQ-001248,FWA-001102,2026-09-09,Device fault,Store,2026-09-16,7,3,N,Device replaced
+RQ-001249,FWA-001194,2026-09-11,Device fault,Store,2026-09-15,4,3,N,Device replaced
+RQ-001250,FWA-001253,2026-09-12,Device fault,Call center,2026-09-13,1,3,Y,Device replaced
+RQ-001251,FWA-001288,2026-09-07,Device fault,App,2026-09-09,2,3,Y,Device replaced
+RQ-001252,FWA-001366,2026-09-26,5G upgrade,Store,2026-09-27,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001253,FWA-001429,2026-09-02,5G upgrade,App,2026-09-03,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001254,FWA-001488,2026-09-06,5G upgrade,App,2026-09-07,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001255,FWA-001577,2026-09-25,Renewal,Call center,2026-09-27,2,5,Y,"Declined, no contract"
+RQ-001256,FWA-001580,2026-09-20,Renewal,Call center,2026-09-22,2,5,Y,Renewed 12 months
+RQ-001257,FWA-001581,2026-09-10,Renewal,Call center,2026-09-12,2,5,Y,"Declined, no contract"
+RQ-001258,FWA-001590,2026-09-06,Renewal,Call center,2026-09-08,2,5,Y,Renewed 12 months
+RQ-001259,FWA-001591,2026-09-02,Renewal,Call center,2026-09-04,2,5,Y,Renewed 12 months
+RQ-001260,FWA-001603,2026-09-18,Renewal,Call center,2026-09-20,2,5,Y,"Declined, no contract"
+RQ-001261,FWA-001610,2026-09-16,Renewal,Call center,2026-09-18,2,5,Y,"Declined, no contract"
+RQ-001262,FWA-001614,2026-09-01,Relocation,App,2026-09-04,3,7,Y,"Moved, service working"
+RQ-001263,FWA-001615,2026-09-27,Renewal,Call center,2026-09-29,2,5,Y,"Declined, no contract"
+RQ-001264,FWA-001617,2026-09-13,Renewal,Call center,2026-09-15,2,5,Y,"Declined, no contract"
+RQ-001265,FWA-001619,2026-09-03,Renewal,Call center,2026-09-05,2,5,Y,Renewed 12 months
+RQ-001266,FWA-001622,2026-09-17,Renewal,Call center,2026-09-19,2,5,Y,Renewed 12 months
+RQ-001267,FWA-001628,2026-09-25,Renewal,Call center,2026-09-27,2,5,Y,Renewed 12 months
+RQ-001268,FWA-001629,2026-09-04,Renewal,Call center,2026-09-06,2,5,Y,Renewed 12 months
+RQ-001269,FWA-001632,2026-09-10,Renewal,Call center,2026-09-12,2,5,Y,Renewed 12 months
+RQ-001270,FWA-001634,2026-09-25,Renewal,Call center,2026-09-27,2,5,Y,Renewed 12 months
+RQ-001271,FWA-001636,2026-09-02,Renewal,Call center,2026-09-04,2,5,Y,"Declined, no contract"
+RQ-001272,FWA-001647,2026-09-17,Renewal,Call center,2026-09-19,2,5,Y,Renewed 12 months
+RQ-001273,FWA-001648,2026-09-03,Renewal,Call center,2026-09-05,2,5,Y,Renewed 12 months
+RQ-001274,FWA-001649,2026-09-26,Renewal,Call center,2026-09-28,2,5,Y,Renewed 12 months
+RQ-001275,FWA-001651,2026-09-01,Renewal,Call center,2026-09-03,2,5,Y,"Declined, no contract"
+RQ-001276,FWA-001658,2026-09-04,Renewal,Call center,2026-09-06,2,5,Y,"Declined, no contract"
+RQ-001277,FWA-001660,2026-09-13,Renewal,Call center,2026-09-15,2,5,Y,Renewed 12 months
+RQ-001278,FWA-001672,2026-09-04,Renewal,Call center,2026-09-06,2,5,Y,"Declined, no contract"
+RQ-001279,FWA-001685,2026-09-13,Renewal,Call center,2026-09-15,2,5,Y,Renewed 12 months
+RQ-001280,FWA-001689,2026-09-25,Renewal,Call center,2026-09-27,2,5,Y,Renewed 12 months
+RQ-001281,FWA-001690,2026-09-02,Renewal,Call center,2026-09-04,2,5,Y,Renewed 12 months
+RQ-001282,FWA-001696,2026-09-10,Renewal,Call center,2026-09-12,2,5,Y,"Declined, no contract"
+RQ-001283,FWA-001705,2026-09-22,Renewal,Call center,2026-09-24,2,5,Y,Renewed 12 months
+RQ-001284,FWA-001712,2026-09-09,Renewal,Call center,2026-09-11,2,5,Y,Renewed 12 months
+RQ-001285,FWA-001718,2026-09-06,Renewal,Call center,2026-09-08,2,5,Y,"Declined, no contract"
+RQ-001286,FWA-001722,2026-09-23,Renewal,Call center,2026-09-25,2,5,Y,Renewed 12 months
+RQ-001287,FWA-001723,2026-09-08,Renewal,Call center,2026-09-10,2,5,Y,Renewed 12 months
+RQ-001288,FWA-001728,2026-09-23,Renewal,Call center,2026-09-25,2,5,Y,Renewed 12 months
+RQ-001289,FWA-001730,2026-09-01,Renewal,Call center,2026-09-03,2,5,Y,"Declined, no contract"
+RQ-001290,FWA-001739,2026-09-25,Renewal,Call center,2026-09-27,2,5,Y,Renewed 12 months
+RQ-001291,FWA-001744,2026-09-02,Renewal,Call center,2026-09-04,2,5,Y,Renewed 12 months
+RQ-001292,FWA-001748,2026-09-28,Renewal,Call center,2026-09-30,2,5,Y,Renewed 12 months
+RQ-001293,FWA-001749,2026-09-19,Renewal,Call center,2026-09-21,2,5,Y,Renewed 12 months
+RQ-001294,FWA-001758,2026-09-26,Renewal,Call center,2026-09-28,2,5,Y,"Declined, no contract"
+RQ-001295,FWA-001775,2026-09-07,Device fault,Call center,2026-09-09,2,3,Y,Device replaced
+RQ-001296,FWA-001790,2026-09-22,5G upgrade,Store,2026-09-23,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001297,FWA-001823,2026-09-03,5G upgrade,Store,2026-09-04,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001298,FWA-001833,2026-09-04,5G upgrade,Store,2026-09-05,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001299,FWA-002022,2026-09-08,Device fault,App,2026-09-09,1,3,Y,Device replaced
+RQ-001300,FWA-002049,2026-09-04,Device fault,Store,2026-09-06,2,3,Y,Fixed remotely
+RQ-001301,FWA-002165,2026-09-17,5G upgrade,Store,2026-09-18,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001302,FWA-002168,2026-09-01,Device fault,App,2026-09-04,3,3,Y,Device replaced
+RQ-001303,FWA-002217,2026-09-07,5G upgrade,Store,2026-09-08,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001304,FWA-002298,2026-09-16,Device fault,App,2026-09-17,1,3,Y,Fixed remotely
+RQ-001305,FWA-002313,2026-09-02,5G upgrade,Store,2026-09-03,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001306,FWA-002330,2026-09-06,5G upgrade,Store,2026-09-07,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001307,FWA-002397,2026-09-11,Device fault,Call center,2026-09-12,1,3,Y,Device replaced
+RQ-001308,FWA-002399,2026-09-14,Relocation,Store,2026-09-18,4,7,Y,"Moved, service working"
+RQ-001309,FWA-002480,2026-09-07,Device fault,Store,2026-09-10,3,3,N,Fixed remotely
+RQ-001310,FWA-002534,2026-09-06,Relocation,Store,2026-09-12,6,7,Y,"Moved, service working"
+RQ-001311,FWA-002572,2026-09-23,5G upgrade,App,2026-09-24,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001312,FWA-002618,2026-09-11,Device fault,Store,2026-09-12,1,3,Y,Fixed remotely
+RQ-001313,FWA-002700,2026-09-11,Device fault,App,2026-09-13,2,3,Y,Fixed remotely
+RQ-001314,FWA-002830,2026-09-10,5G upgrade,Store,2026-09-11,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001315,FWA-002839,2026-09-20,Relocation,App,2026-09-24,4,7,Y,"Moved, service working"
+RQ-001316,FWA-002925,2026-09-07,Relocation,Call center,2026-09-19,12,7,N,"Moved, service working"
+RQ-001317,FWA-002960,2026-09-17,Device fault,Store,2026-09-22,5,3,N,Device replaced
+RQ-001318,FWA-003085,2026-09-19,5G upgrade,Store,2026-09-20,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001319,FWA-003105,2026-09-22,Relocation,App,2026-10-08,16,7,N,"Moved, service working"
+RQ-001320,FWA-003136,2026-09-14,Device fault,App,2026-09-20,6,3,N,Device replaced
+RQ-001321,FWA-003181,2026-09-20,Device fault,App,2026-09-22,2,3,Y,Device replaced
+RQ-001322,FWA-003233,2026-09-16,Relocation,Call center,2026-09-17,1,7,Y,"Moved, service working"
+RQ-001323,FWA-003341,2026-09-08,Device fault,Call center,2026-09-11,3,3,N,Fixed remotely
+RQ-001324,FWA-003352,2026-09-13,Device fault,Store,2026-09-20,7,3,N,Fixed remotely
+RQ-001325,FWA-003352,2026-09-13,5G upgrade,Store,2026-09-14,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001326,FWA-003460,2026-09-14,Relocation,Call center,2026-09-21,7,7,N,"Moved, service working"
+RQ-001327,FWA-003476,2026-09-08,Relocation,App,2026-09-20,12,7,N,"Moved, service working"
+RQ-001328,FWA-003627,2026-09-06,Relocation,App,2026-09-21,15,7,N,"Moved, service working"
+RQ-001329,FWA-003654,2026-09-06,Device fault,Store,2026-09-08,2,3,Y,Fixed remotely
+RQ-001330,FWA-003741,2026-09-09,Relocation,App,2026-09-14,5,7,Y,"Moved, service working"
+RQ-001331,FWA-003743,2026-09-28,5G upgrade,Store,2026-09-29,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001332,FWA-003810,2026-09-21,Device fault,Store,2026-09-23,2,3,Y,Fixed remotely
+RQ-001333,FWA-003813,2026-09-04,Device fault,App,2026-09-06,2,3,Y,Fixed remotely
+RQ-001334,FWA-003816,2026-09-01,5G upgrade,App,2026-09-02,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001335,FWA-003840,2026-09-20,Relocation,Store,2026-09-30,10,7,N,"Moved, service working"
+RQ-001336,FWA-003888,2026-09-05,Device fault,Store,2026-09-06,1,3,Y,Device replaced
+RQ-001337,FWA-003947,2026-09-26,Device fault,Call center,2026-10-02,6,3,N,Device replaced
+RQ-001338,FWA-003990,2026-09-27,Relocation,App,2026-10-02,5,7,Y,"Moved, service working"
+RQ-001339,FWA-004012,2026-09-28,5G upgrade,Store,2026-09-29,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001340,FWA-004133,2026-09-18,5G upgrade,Store,2026-09-19,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001341,FWA-004166,2026-09-13,5G upgrade,Store,2026-09-14,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001342,FWA-004225,2026-09-03,5G upgrade,App,2026-09-04,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001343,FWA-004245,2026-09-07,Device fault,Store,2026-09-08,1,3,Y,Device replaced
+RQ-001344,FWA-004257,2026-09-01,5G upgrade,Store,2026-09-02,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001345,FWA-004316,2026-09-14,5G upgrade,App,2026-09-15,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001346,FWA-004374,2026-09-02,Device fault,Store,2026-09-03,1,3,Y,Fixed remotely
+RQ-001347,FWA-004396,2026-09-07,5G upgrade,App,2026-09-08,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001348,FWA-004407,2026-09-14,5G upgrade,App,2026-09-15,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001349,FWA-000080,2026-10-18,Relocation,Call center,2026-10-27,9,7,N,"Moved, service working"
+RQ-001350,FWA-000129,2026-10-10,Device fault,Call center,2026-10-13,3,3,N,Device replaced
+RQ-001351,FWA-000148,2026-10-28,5G upgrade,Store,2026-10-29,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001352,FWA-000169,2026-10-15,Device fault,App,2026-10-17,2,3,Y,Device replaced
+RQ-001353,FWA-000238,2026-10-27,5G upgrade,Store,2026-10-28,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001354,FWA-000350,2026-10-28,Relocation,App,2026-10-30,2,7,Y,"Moved, service working"
+RQ-001355,FWA-000372,2026-10-04,Relocation,App,2026-10-08,4,7,Y,"Moved, service working"
+RQ-001356,FWA-000427,2026-10-15,Device fault,Store,2026-10-24,9,3,N,Device replaced
+RQ-001357,FWA-000431,2026-10-21,Device fault,App,2026-10-23,2,3,Y,Fixed remotely
+RQ-001358,FWA-000439,2026-10-15,Device fault,Store,2026-10-21,6,3,N,Device replaced
+RQ-001359,FWA-000667,2026-10-11,5G upgrade,Store,2026-10-12,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001360,FWA-000688,2026-10-23,Relocation,App,2026-10-27,4,7,Y,"Moved, service working"
+RQ-001361,FWA-000809,2026-10-16,5G upgrade,App,2026-10-17,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001362,FWA-000825,2026-10-26,5G upgrade,Store,2026-10-27,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001363,FWA-000833,2026-10-02,Device fault,Call center,2026-10-04,2,3,Y,Fixed remotely
+RQ-001364,FWA-000857,2026-10-21,5G upgrade,Store,2026-10-22,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001365,FWA-000862,2026-10-09,5G upgrade,Store,2026-10-10,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001366,FWA-000941,2026-10-09,5G upgrade,Store,2026-10-10,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001367,FWA-001016,2026-10-14,Relocation,App,2026-10-17,3,7,Y,"Moved, service working"
+RQ-001368,FWA-001182,2026-10-17,Relocation,Call center,2026-10-29,12,7,N,"Moved, service working"
+RQ-001369,FWA-001212,2026-10-02,Device fault,Store,2026-10-04,2,3,Y,Fixed remotely
+RQ-001370,FWA-001224,2026-10-02,Device fault,Store,2026-10-04,2,3,Y,Fixed remotely
+RQ-001371,FWA-001228,2026-10-18,Device fault,Call center,2026-10-20,2,3,Y,Device replaced
+RQ-001372,FWA-001245,2026-10-12,Device fault,Store,2026-10-17,5,3,N,Device replaced
+RQ-001373,FWA-001430,2026-10-04,5G upgrade,Store,2026-10-05,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001374,FWA-001492,2026-10-12,Relocation,Call center,2026-10-19,7,7,Y,"Moved, service working"
+RQ-001375,FWA-001679,2026-10-03,Device fault,Store,2026-10-04,1,3,Y,Device replaced
+RQ-001376,FWA-001762,2026-10-08,Renewal,Call center,2026-10-10,2,5,Y,Renewed 12 months
+RQ-001377,FWA-001768,2026-10-02,Renewal,Call center,2026-10-04,2,5,Y,Renewed 12 months
+RQ-001378,FWA-001771,2026-10-14,Renewal,Call center,2026-10-16,2,5,Y,Renewed 12 months
+RQ-001379,FWA-001777,2026-10-13,Renewal,Call center,2026-10-15,2,5,Y,Renewed 12 months
+RQ-001380,FWA-001781,2026-10-16,Renewal,Call center,2026-10-18,2,5,Y,"Declined, no contract"
+RQ-001381,FWA-001791,2026-10-13,Renewal,Call center,2026-10-15,2,5,Y,Renewed 12 months
+RQ-001382,FWA-001801,2026-10-20,Device fault,App,2026-10-25,5,3,N,Fixed remotely
+RQ-001383,FWA-001801,2026-10-09,Renewal,Call center,2026-10-11,2,5,Y,Renewed 12 months
+RQ-001384,FWA-001807,2026-10-05,Renewal,Call center,2026-10-07,2,5,Y,Renewed 12 months
+RQ-001385,FWA-001809,2026-10-17,Renewal,Call center,2026-10-19,2,5,Y,Renewed 12 months
+RQ-001386,FWA-001818,2026-10-19,Renewal,Call center,2026-10-21,2,5,Y,Renewed 12 months
+RQ-001387,FWA-001823,2026-10-15,Renewal,Call center,2026-10-17,2,5,Y,"Declined, no contract"
+RQ-001388,FWA-001827,2026-10-01,Renewal,Call center,2026-10-03,2,5,Y,Renewed 12 months
+RQ-001389,FWA-001828,2026-10-03,Renewal,Call center,2026-10-05,2,5,Y,Renewed 12 months
+RQ-001390,FWA-001830,2026-10-21,Renewal,Call center,2026-10-23,2,5,Y,Renewed 12 months
+RQ-001391,FWA-001836,2026-10-18,Relocation,Call center,2026-10-25,7,7,Y,"Moved, service working"
+RQ-001392,FWA-001836,2026-10-11,Renewal,Call center,2026-10-13,2,5,Y,Renewed 12 months
+RQ-001393,FWA-001844,2026-10-12,Renewal,Call center,2026-10-14,2,5,Y,Renewed 12 months
+RQ-001394,FWA-001849,2026-10-02,Renewal,Call center,2026-10-04,2,5,Y,Renewed 12 months
+RQ-001395,FWA-001853,2026-10-15,Renewal,Call center,2026-10-17,2,5,Y,Renewed 12 months
+RQ-001396,FWA-001854,2026-10-10,Renewal,Call center,2026-10-12,2,5,Y,Renewed 12 months
+RQ-001397,FWA-001866,2026-10-18,Renewal,Call center,2026-10-20,2,5,Y,"Declined, no contract"
+RQ-001398,FWA-001867,2026-10-27,Renewal,Call center,2026-10-29,2,5,Y,Renewed 12 months
+RQ-001399,FWA-001869,2026-10-25,Renewal,Call center,2026-10-27,2,5,Y,Renewed 12 months
+RQ-001400,FWA-001873,2026-10-07,Renewal,Call center,2026-10-09,2,5,Y,Renewed 12 months
+RQ-001401,FWA-001874,2026-10-02,Renewal,Call center,2026-10-04,2,5,Y,"Declined, no contract"
+RQ-001402,FWA-001886,2026-10-27,Renewal,Call center,2026-10-29,2,5,Y,Renewed 12 months
+RQ-001403,FWA-001889,2026-10-24,Renewal,Call center,2026-10-26,2,5,Y,"Declined, no contract"
+RQ-001404,FWA-001890,2026-10-21,Renewal,Call center,2026-10-23,2,5,Y,"Declined, no contract"
+RQ-001405,FWA-001892,2026-10-18,Renewal,Call center,2026-10-20,2,5,Y,"Declined, no contract"
+RQ-001406,FWA-001894,2026-10-23,Renewal,Call center,2026-10-25,2,5,Y,Renewed 12 months
+RQ-001407,FWA-001897,2026-10-28,Renewal,Call center,2026-10-30,2,5,Y,"Declined, no contract"
+RQ-001408,FWA-001901,2026-10-06,Renewal,Call center,2026-10-08,2,5,Y,"Declined, no contract"
+RQ-001409,FWA-001902,2026-10-23,Renewal,Call center,2026-10-25,2,5,Y,Renewed 12 months
+RQ-001410,FWA-001905,2026-10-17,Renewal,Call center,2026-10-19,2,5,Y,"Declined, no contract"
+RQ-001411,FWA-001908,2026-10-03,Renewal,Call center,2026-10-05,2,5,Y,"Declined, no contract"
+RQ-001412,FWA-001912,2026-10-10,Renewal,Call center,2026-10-12,2,5,Y,"Declined, no contract"
+RQ-001413,FWA-001916,2026-10-23,Renewal,Call center,2026-10-25,2,5,Y,Renewed 12 months
+RQ-001414,FWA-001926,2026-10-24,Renewal,Call center,2026-10-26,2,5,Y,"Declined, no contract"
+RQ-001415,FWA-001929,2026-10-18,Device fault,Store,2026-10-21,3,3,N,Fixed remotely
+RQ-001416,FWA-001931,2026-10-24,Renewal,Call center,2026-10-26,2,5,Y,Renewed 12 months
+RQ-001417,FWA-001932,2026-10-20,Renewal,Call center,2026-10-22,2,5,Y,Renewed 12 months
+RQ-001418,FWA-001933,2026-10-15,Renewal,Call center,2026-10-17,2,5,Y,Renewed 12 months
+RQ-001419,FWA-001936,2026-10-28,Renewal,Call center,2026-10-30,2,5,Y,Renewed 12 months
+RQ-001420,FWA-001945,2026-10-21,Renewal,Call center,2026-10-23,2,5,Y,Renewed 12 months
+RQ-001421,FWA-001947,2026-10-05,Renewal,Call center,2026-10-07,2,5,Y,Renewed 12 months
+RQ-001422,FWA-001949,2026-10-19,5G upgrade,Store,2026-10-20,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001423,FWA-001951,2026-10-13,Renewal,Call center,2026-10-15,2,5,Y,"Declined, no contract"
+RQ-001424,FWA-001954,2026-10-19,Renewal,Call center,2026-10-21,2,5,Y,"Declined, no contract"
+RQ-001425,FWA-001957,2026-10-01,Renewal,Call center,2026-10-03,2,5,Y,"Declined, no contract"
+RQ-001426,FWA-001961,2026-10-07,Renewal,Call center,2026-10-09,2,5,Y,Renewed 12 months
+RQ-001427,FWA-001965,2026-10-13,5G upgrade,Store,2026-10-14,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001428,FWA-001968,2026-10-24,Renewal,Call center,2026-10-26,2,5,Y,"Declined, no contract"
+RQ-001429,FWA-001971,2026-10-17,Renewal,Call center,2026-10-19,2,5,Y,Renewed 12 months
+RQ-001430,FWA-001979,2026-10-24,Renewal,Call center,2026-10-26,2,5,Y,"Declined, no contract"
+RQ-001431,FWA-001988,2026-10-22,5G upgrade,Store,2026-10-23,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001432,FWA-002031,2026-10-11,Device fault,Store,2026-10-13,2,3,Y,Fixed remotely
+RQ-001433,FWA-002133,2026-10-05,5G upgrade,App,2026-10-06,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001434,FWA-002195,2026-10-24,Relocation,Call center,2026-10-28,4,7,Y,"Moved, service working"
+RQ-001435,FWA-002243,2026-10-09,Relocation,App,2026-10-17,8,7,N,"Moved, service working"
+RQ-001436,FWA-002298,2026-10-11,Relocation,Call center,2026-10-14,3,7,Y,"Moved, service working"
+RQ-001437,FWA-002338,2026-10-18,Device fault,App,2026-10-20,2,3,Y,Fixed remotely
+RQ-001438,FWA-002388,2026-10-10,Relocation,Store,2026-10-12,2,7,Y,"Moved, service working"
+RQ-001439,FWA-002472,2026-10-03,Relocation,App,2026-10-16,13,7,N,"Moved, service working"
+RQ-001440,FWA-002493,2026-10-19,Device fault,Store,2026-10-24,5,3,N,Fixed remotely
+RQ-001441,FWA-002649,2026-10-23,5G upgrade,Store,2026-10-24,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001442,FWA-002682,2026-10-07,Relocation,Call center,2026-10-09,2,7,Y,"Moved, service working"
+RQ-001443,FWA-002764,2026-10-20,5G upgrade,Store,2026-10-21,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001444,FWA-002779,2026-10-14,5G upgrade,Store,2026-10-15,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001445,FWA-002785,2026-10-02,5G upgrade,Store,2026-10-03,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001446,FWA-002833,2026-10-17,Device fault,App,2026-10-19,2,3,Y,Device replaced
+RQ-001447,FWA-002892,2026-10-18,Device fault,Store,2026-10-20,2,3,Y,Device replaced
+RQ-001448,FWA-002899,2026-10-15,Device fault,Store,2026-10-16,1,3,Y,Device replaced
+RQ-001449,FWA-002936,2026-10-21,5G upgrade,Store,2026-10-22,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001450,FWA-002952,2026-10-13,Relocation,Store,2026-10-19,6,7,Y,"Moved, service working"
+RQ-001451,FWA-003196,2026-10-26,5G upgrade,Store,2026-10-27,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001452,FWA-003239,2026-10-22,Relocation,App,,,7,,Open
+RQ-001453,FWA-003266,2026-10-07,Device fault,Call center,2026-10-10,3,3,Y,Fixed remotely
+RQ-001454,FWA-003284,2026-10-04,Relocation,Call center,2026-10-07,3,7,Y,"Moved, service working"
+RQ-001455,FWA-003301,2026-10-27,Relocation,Store,2026-10-30,3,7,Y,"Moved, service working"
+RQ-001456,FWA-003330,2026-10-08,5G upgrade,Store,2026-10-09,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001457,FWA-003473,2026-10-09,Device fault,App,2026-10-12,3,3,N,Fixed remotely
+RQ-001458,FWA-003552,2026-10-24,5G upgrade,App,2026-10-25,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001459,FWA-003579,2026-10-28,Relocation,App,,,7,,Open
+RQ-001460,FWA-003628,2026-10-18,Device fault,App,2026-10-19,1,3,Y,Device replaced
+RQ-001461,FWA-003633,2026-10-25,Relocation,Store,2026-10-30,5,7,Y,"Moved, service working"
+RQ-001462,FWA-003659,2026-10-01,Relocation,Store,2026-10-10,9,7,N,"Moved, service working"
+RQ-001463,FWA-003715,2026-10-11,Device fault,App,2026-10-13,2,3,Y,Device replaced
+RQ-001464,FWA-003751,2026-10-18,Device fault,Store,2026-10-21,3,3,N,Fixed remotely
+RQ-001465,FWA-003876,2026-10-28,Device fault,Call center,,,3,,Open
+RQ-001466,FWA-003909,2026-10-16,5G upgrade,Store,2026-10-17,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001467,FWA-003910,2026-10-26,5G upgrade,Store,2026-10-27,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001468,FWA-003916,2026-10-06,Device fault,App,2026-10-07,1,3,Y,Fixed remotely
+RQ-001469,FWA-003936,2026-10-07,Relocation,Call center,2026-10-14,7,7,N,"Moved, service working"
+RQ-001470,FWA-003954,2026-10-27,5G upgrade,Store,2026-10-28,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001471,FWA-003986,2026-10-17,5G upgrade,Store,2026-10-18,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001472,FWA-003991,2026-10-18,Device fault,Store,2026-10-23,5,3,N,Fixed remotely
+RQ-001473,FWA-004056,2026-10-12,Device fault,Store,2026-10-29,17,3,N,Fixed remotely
+RQ-001474,FWA-004076,2026-10-21,5G upgrade,Store,2026-10-22,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001475,FWA-004161,2026-10-28,5G upgrade,Store,2026-10-29,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001476,FWA-004186,2026-10-11,5G upgrade,Store,2026-10-12,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001477,FWA-004210,2026-10-02,Device fault,App,2026-10-04,2,3,Y,Device replaced
+RQ-001478,FWA-004284,2026-10-04,5G upgrade,Store,2026-10-05,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001479,FWA-004287,2026-10-17,5G upgrade,Store,2026-10-18,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001480,FWA-004306,2026-10-22,5G upgrade,Store,2026-10-23,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001481,FWA-004338,2026-10-21,5G upgrade,App,2026-10-22,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001482,FWA-004361,2026-10-07,Relocation,Call center,2026-10-08,1,7,Y,"Moved, service working"
+RQ-001483,FWA-004368,2026-10-09,5G upgrade,Store,2026-10-10,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001484,FWA-004476,2026-10-26,Relocation,App,,,7,,Open
+RQ-001485,FWA-004500,2026-10-02,Relocation,App,,,7,,Open
+RQ-001486,FWA-004560,2026-10-02,5G upgrade,Store,2026-10-03,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001487,FWA-004578,2026-10-14,5G upgrade,App,2026-10-15,1,3,Y,Moved to Home 5G 100 Mbps
+RQ-001488,FWA-004652,2026-10-12,5G upgrade,App,2026-10-13,1,3,Y,Moved to Home 5G 100 Mbps

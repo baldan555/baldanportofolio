@@ -1,0 +1,59 @@
+{
+ "source": "UCI Online Retail (CC BY 4.0), rows copied from the file; customer IDs left out",
+ "rows": [
+  {
+   "invoice": "536365",
+   "stock": "85123A",
+   "description": "White Hanging Heart T-Light Holder",
+   "quantity": 6,
+   "date": "2010-12-01 08:26",
+   "price": 2.55,
+   "country": "United Kingdom"
+  },
+  {
+   "invoice": "536365",
+   "stock": "71053",
+   "description": "White Metal Lantern",
+   "quantity": 6,
+   "date": "2010-12-01 08:26",
+   "price": 3.39,
+   "country": "United Kingdom"
+  },
+  {
+   "invoice": "536365",
+   "stock": "84406B",
+   "description": "Cream Cupid Hearts Coat Hanger",
+   "quantity": 8,
+   "date": "2010-12-01 08:26",
+   "price": 2.75,
+   "country": "United Kingdom"
+  },
+  {
+   "invoice": "536365",
+   "stock": "84029G",
+   "description": "Knitted Union Flag Hot Water Bottle",
+   "quantity": 6,
+   "date": "2010-12-01 08:26",
+   "price": 3.39,
+   "country": "United Kingdom"
+  },
+  {
+   "invoice": "C536379",
+   "stock": "D",
+   "description": "Discount",
+   "quantity": -1,
+   "date": "2010-12-01 09:41",
+   "price": 27.5,
+   "country": "United Kingdom"
+  },
+  {
+   "invoice": "536370",
+   "stock": "POST",
+   "description": "Postage",
+   "quantity": 3,
+   "date": "2010-12-01 08:45",
+   "price": 18.0,
+   "country": "France"
+  }
+ ]
+}

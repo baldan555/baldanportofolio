@@ -1,0 +1,1005 @@
+{
+ "dataset": {
+  "name": "IBM Telco Customer Churn",
+  "source": "https://github.com/IBM/telco-customer-churn-on-icp4d",
+  "raw_rows": 7043,
+  "raw_cols": 21,
+  "rows": 7032,
+  "dropped_rows": 11,
+  "churn_rate": 0.266,
+  "features_used": [
+   "tenure",
+   "MonthlyCharges",
+   "Contract",
+   "InternetService",
+   "PaymentMethod",
+   "TechSupport",
+   "OnlineSecurity",
+   "PaperlessBilling",
+   "SeniorCitizen"
+  ],
+  "encoded_cols": 22
+ },
+ "split": {
+  "test_size": 0.2,
+  "train": 5625,
+  "test": 1407
+ },
+ "comparison": [
+  {
+   "model": "Logistic Regression",
+   "roc_auc": 0.8347,
+   "f1": 0.5887,
+   "accuracy": 0.7974
+  },
+  {
+   "model": "Random Forest",
+   "roc_auc": 0.8318,
+   "f1": 0.5706,
+   "accuracy": 0.7946
+  },
+  {
+   "model": "Gradient Boosting",
+   "roc_auc": 0.839,
+   "f1": 0.5785,
+   "accuracy": 0.7939
+  }
+ ],
+ "chosen": "Logistic Regression",
+ "metrics": {
+  "roc_auc": 0.8347,
+  "accuracy": 0.7974,
+  "precision": 0.6395,
+  "recall": 0.5455,
+  "f1": 0.5887,
+  "confusion": {
+   "tn": 918,
+   "fp": 115,
+   "fn": 170,
+   "tp": 204
+  }
+ },
+ "model": {
+  "intercept": -0.573263,
+  "numeric": {
+   "tenure": {
+    "mean": 32.562311,
+    "scale": 24.54024,
+    "coef": -0.742326
+   },
+   "MonthlyCharges": {
+    "mean": 64.999316,
+    "scale": 30.105965,
+    "coef": 0.359746
+   }
+  },
+  "categorical": {
+   "Contract": {
+    "Month-to-month": 0.526533,
+    "One year": -0.232067,
+    "Two year": -0.841033
+   },
+   "InternetService": {
+    "DSL": -0.364383,
+    "Fiber optic": 0.124856,
+    "No": -0.307041
+   },
+   "PaymentMethod": {
+    "Bank transfer (automatic)": -0.285281,
+    "Credit card (automatic)": -0.234518,
+    "Electronic check": 0.156885,
+    "Mailed check": -0.183653
+   },
+   "TechSupport": {
+    "No": 0.088128,
+    "No internet service": -0.307041,
+    "Yes": -0.327655
+   },
+   "OnlineSecurity": {
+    "No": 0.137365,
+    "No internet service": -0.307041,
+    "Yes": -0.376892
+   },
+   "PaperlessBilling": {
+    "No": -0.439111,
+    "Yes": -0.107456
+   },
+   "SeniorCitizen": {
+    "No": -0.414811,
+    "Yes": -0.131756
+   }
+  }
+ },
+ "options": {
+  "Contract": [
+   "Month-to-month",
+   "One year",
+   "Two year"
+  ],
+  "InternetService": [
+   "DSL",
+   "Fiber optic",
+   "No"
+  ],
+  "PaymentMethod": [
+   "Bank transfer (automatic)",
+   "Credit card (automatic)",
+   "Electronic check",
+   "Mailed check"
+  ],
+  "TechSupport": [
+   "No",
+   "No internet service",
+   "Yes"
+  ],
+  "OnlineSecurity": [
+   "No",
+   "No internet service",
+   "Yes"
+  ],
+  "PaperlessBilling": [
+   "No",
+   "Yes"
+  ],
+  "SeniorCitizen": [
+   "No",
+   "Yes"
+  ]
+ },
+ "ranges": {
+  "tenure": [
+   1.0,
+   72.0
+  ],
+  "MonthlyCharges": [
+   18.25,
+   118.75
+  ]
+ },
+ "samples": [
+  {
+   "id": "2907-ILJBN",
+   "tenure": 11,
+   "MonthlyCharges": 20.6,
+   "Contract": "One year",
+   "InternetService": "No",
+   "PaymentMethod": "Mailed check",
+   "TechSupport": "No internet service",
+   "OnlineSecurity": "No internet service",
+   "PaperlessBilling": "No",
+   "SeniorCitizen": "No",
+   "actual": "No",
+   "predicted": 0.066
+  },
+  {
+   "id": "0742-MOABM",
+   "tenure": 4,
+   "MonthlyCharges": 50.05,
+   "Contract": "Month-to-month",
+   "InternetService": "DSL",
+   "PaymentMethod": "Mailed check",
+   "TechSupport": "Yes",
+   "OnlineSecurity": "No",
+   "PaperlessBilling": "No",
+   "SeniorCitizen": "No",
+   "actual": "Yes",
+   "predicted": 0.278
+  },
+  {
+   "id": "2985-FMWYF",
+   "tenure": 23,
+   "MonthlyCharges": 93.5,
+   "Contract": "Month-to-month",
+   "InternetService": "Fiber optic",
+   "PaymentMethod": "Electronic check",
+   "TechSupport": "No",
+   "OnlineSecurity": "No",
+   "PaperlessBilling": "Yes",
+   "SeniorCitizen": "No",
+   "actual": "No",
+   "predicted": 0.638
+  },
+  {
+   "id": "0778-NELLA",
+   "tenure": 9,
+   "MonthlyCharges": 34.7,
+   "Contract": "Month-to-month",
+   "InternetService": "DSL",
+   "PaymentMethod": "Credit card (automatic)",
+   "TechSupport": "No",
+   "OnlineSecurity": "No",
+   "PaperlessBilling": "Yes",
+   "SeniorCitizen": "No",
+   "actual": "Yes",
+   "predicted": 0.356
+  },
+  {
+   "id": "6704-UTUKK",
+   "tenure": 29,
+   "MonthlyCharges": 45.9,
+   "Contract": "Month-to-month",
+   "InternetService": "DSL",
+   "PaymentMethod": "Electronic check",
+   "TechSupport": "No",
+   "OnlineSecurity": "No",
+   "PaperlessBilling": "Yes",
+   "SeniorCitizen": "No",
+   "actual": "No",
+   "predicted": 0.338
+  },
+  {
+   "id": "3707-GNWHM",
+   "tenure": 1,
+   "MonthlyCharges": 74.25,
+   "Contract": "Month-to-month",
+   "InternetService": "Fiber optic",
+   "PaymentMethod": "Mailed check",
+   "TechSupport": "No",
+   "OnlineSecurity": "No",
+   "PaperlessBilling": "Yes",
+   "SeniorCitizen": "No",
+   "actual": "Yes",
+   "predicted": 0.66
+  },
+  {
+   "id": "7695-PKLCZ",
+   "tenure": 68,
+   "MonthlyCharges": 20.5,
+   "Contract": "Two year",
+   "InternetService": "No",
+   "PaymentMethod": "Credit card (automatic)",
+   "TechSupport": "No internet service",
+   "OnlineSecurity": "No internet service",
+   "PaperlessBilling": "No",
+   "SeniorCitizen": "No",
+   "actual": "No",
+   "predicted": 0.007
+  },
+  {
+   "id": "1550-LOAHA",
+   "tenure": 32,
+   "MonthlyCharges": 84.15,
+   "Contract": "Month-to-month",
+   "InternetService": "Fiber optic",
+   "PaymentMethod": "Bank transfer (automatic)",
+   "TechSupport": "No",
+   "OnlineSecurity": "No",
+   "PaperlessBilling": "No",
+   "SeniorCitizen": "No",
+   "actual": "Yes",
+   "predicted": 0.357
+  },
+  {
+   "id": "0876-WDUUZ",
+   "tenure": 5,
+   "MonthlyCharges": 85.4,
+   "Contract": "Month-to-month",
+   "InternetService": "Fiber optic",
+   "PaymentMethod": "Credit card (automatic)",
+   "TechSupport": "Yes",
+   "OnlineSecurity": "No",
+   "PaperlessBilling": "Yes",
+   "SeniorCitizen": "No",
+   "actual": "Yes",
+   "predicted": 0.552
+  },
+  {
+   "id": "9364-YKUVW",
+   "tenure": 15,
+   "MonthlyCharges": 19.8,
+   "Contract": "Month-to-month",
+   "InternetService": "No",
+   "PaymentMethod": "Mailed check",
+   "TechSupport": "No internet service",
+   "OnlineSecurity": "No internet service",
+   "PaperlessBilling": "Yes",
+   "SeniorCitizen": "No",
+   "actual": "No",
+   "predicted": 0.157
+  }
+ ],
+ "eda": {
+  "churn_by_contract": [
+   {
+    "label": "Month-to-month",
+    "rate": 0.427,
+    "n": 3875
+   },
+   {
+    "label": "One year",
+    "rate": 0.113,
+    "n": 1472
+   },
+   {
+    "label": "Two year",
+    "rate": 0.028,
+    "n": 1685
+   }
+  ],
+  "churn_by_internet": [
+   {
+    "label": "DSL",
+    "rate": 0.19,
+    "n": 2416
+   },
+   {
+    "label": "Fiber optic",
+    "rate": 0.419,
+    "n": 3096
+   },
+   {
+    "label": "No",
+    "rate": 0.074,
+    "n": 1520
+   }
+  ],
+  "churn_by_payment": [
+   {
+    "label": "Bank transfer (automatic)",
+    "rate": 0.167,
+    "n": 1542
+   },
+   {
+    "label": "Credit card (automatic)",
+    "rate": 0.153,
+    "n": 1521
+   },
+   {
+    "label": "Electronic check",
+    "rate": 0.453,
+    "n": 2365
+   },
+   {
+    "label": "Mailed check",
+    "rate": 0.192,
+    "n": 1604
+   }
+  ],
+  "churn_by_tenure": [
+   {
+    "label": "0–6",
+    "rate": 0.533,
+    "n": 1470
+   },
+   {
+    "label": "7–12",
+    "rate": 0.359,
+    "n": 705
+   },
+   {
+    "label": "13–24",
+    "rate": 0.287,
+    "n": 1024
+   },
+   {
+    "label": "25–48",
+    "rate": 0.204,
+    "n": 1594
+   },
+   {
+    "label": "49–72",
+    "rate": 0.095,
+    "n": 2239
+   }
+  ],
+  "monthly_hist": {
+   "bins": [
+    15.0,
+    25.0,
+    35.0,
+    45.0,
+    55.0,
+    65.0,
+    75.0,
+    85.0,
+    95.0,
+    105.0,
+    115.0,
+    125.0
+   ],
+   "series": {
+    "Stayed": [
+     0.2437,
+     0.054,
+     0.0409,
+     0.0835,
+     0.0846,
+     0.0976,
+     0.1147,
+     0.1094,
+     0.0914,
+     0.0688,
+     0.0114
+    ],
+    "Churned": [
+     0.068,
+     0.0326,
+     0.0412,
+     0.0904,
+     0.0428,
+     0.145,
+     0.1814,
+     0.1728,
+     0.1659,
+     0.0567,
+     0.0032
+    ]
+   }
+  }
+ },
+ "eval": {
+  "roc": {
+   "Logistic Regression": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.004,
+     0.032
+    ],
+    [
+     0.007,
+     0.078
+    ],
+    [
+     0.013,
+     0.091
+    ],
+    [
+     0.015,
+     0.134
+    ],
+    [
+     0.019,
+     0.163
+    ],
+    [
+     0.022,
+     0.174
+    ],
+    [
+     0.026,
+     0.19
+    ],
+    [
+     0.032,
+     0.203
+    ],
+    [
+     0.037,
+     0.278
+    ],
+    [
+     0.044,
+     0.31
+    ],
+    [
+     0.053,
+     0.329
+    ],
+    [
+     0.061,
+     0.356
+    ],
+    [
+     0.064,
+     0.377
+    ],
+    [
+     0.068,
+     0.39
+    ],
+    [
+     0.073,
+     0.409
+    ],
+    [
+     0.078,
+     0.42
+    ],
+    [
+     0.086,
+     0.455
+    ],
+    [
+     0.091,
+     0.465
+    ],
+    [
+     0.099,
+     0.484
+    ],
+    [
+     0.106,
+     0.505
+    ],
+    [
+     0.111,
+     0.527
+    ],
+    [
+     0.118,
+     0.57
+    ],
+    [
+     0.128,
+     0.591
+    ],
+    [
+     0.138,
+     0.61
+    ],
+    [
+     0.145,
+     0.618
+    ],
+    [
+     0.154,
+     0.647
+    ],
+    [
+     0.16,
+     0.655
+    ],
+    [
+     0.173,
+     0.663
+    ],
+    [
+     0.178,
+     0.674
+    ],
+    [
+     0.19,
+     0.687
+    ],
+    [
+     0.199,
+     0.698
+    ],
+    [
+     0.211,
+     0.722
+    ],
+    [
+     0.215,
+     0.733
+    ],
+    [
+     0.236,
+     0.741
+    ],
+    [
+     0.243,
+     0.749
+    ],
+    [
+     0.252,
+     0.767
+    ],
+    [
+     0.265,
+     0.778
+    ],
+    [
+     0.279,
+     0.786
+    ],
+    [
+     0.291,
+     0.797
+    ],
+    [
+     0.305,
+     0.807
+    ],
+    [
+     0.311,
+     0.816
+    ],
+    [
+     0.335,
+     0.826
+    ],
+    [
+     0.341,
+     0.834
+    ],
+    [
+     0.353,
+     0.848
+    ],
+    [
+     0.366,
+     0.858
+    ],
+    [
+     0.401,
+     0.866
+    ],
+    [
+     0.408,
+     0.877
+    ],
+    [
+     0.417,
+     0.888
+    ],
+    [
+     0.449,
+     0.901
+    ],
+    [
+     0.465,
+     0.909
+    ],
+    [
+     0.472,
+     0.917
+    ],
+    [
+     0.521,
+     0.93
+    ],
+    [
+     0.542,
+     0.939
+    ],
+    [
+     0.552,
+     0.952
+    ],
+    [
+     0.562,
+     0.968
+    ],
+    [
+     0.601,
+     0.976
+    ],
+    [
+     0.639,
+     0.981
+    ],
+    [
+     0.685,
+     0.992
+    ],
+    [
+     1.0,
+     1.0
+    ]
+   ],
+   "Gradient Boosting": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.002,
+     0.075
+    ],
+    [
+     0.006,
+     0.15
+    ],
+    [
+     0.012,
+     0.166
+    ],
+    [
+     0.021,
+     0.184
+    ],
+    [
+     0.029,
+     0.214
+    ],
+    [
+     0.033,
+     0.23
+    ],
+    [
+     0.039,
+     0.281
+    ],
+    [
+     0.051,
+     0.313
+    ],
+    [
+     0.054,
+     0.34
+    ],
+    [
+     0.058,
+     0.353
+    ],
+    [
+     0.065,
+     0.385
+    ],
+    [
+     0.073,
+     0.425
+    ],
+    [
+     0.077,
+     0.449
+    ],
+    [
+     0.084,
+     0.46
+    ],
+    [
+     0.094,
+     0.476
+    ],
+    [
+     0.102,
+     0.505
+    ],
+    [
+     0.111,
+     0.532
+    ],
+    [
+     0.115,
+     0.553
+    ],
+    [
+     0.127,
+     0.57
+    ],
+    [
+     0.133,
+     0.591
+    ],
+    [
+     0.139,
+     0.602
+    ],
+    [
+     0.144,
+     0.623
+    ],
+    [
+     0.152,
+     0.644
+    ],
+    [
+     0.164,
+     0.655
+    ],
+    [
+     0.174,
+     0.668
+    ],
+    [
+     0.188,
+     0.687
+    ],
+    [
+     0.196,
+     0.706
+    ],
+    [
+     0.211,
+     0.722
+    ],
+    [
+     0.22,
+     0.746
+    ],
+    [
+     0.24,
+     0.757
+    ],
+    [
+     0.245,
+     0.773
+    ],
+    [
+     0.273,
+     0.783
+    ],
+    [
+     0.279,
+     0.794
+    ],
+    [
+     0.292,
+     0.807
+    ],
+    [
+     0.308,
+     0.824
+    ],
+    [
+     0.327,
+     0.837
+    ],
+    [
+     0.347,
+     0.853
+    ],
+    [
+     0.369,
+     0.864
+    ],
+    [
+     0.387,
+     0.877
+    ],
+    [
+     0.403,
+     0.885
+    ],
+    [
+     0.424,
+     0.896
+    ],
+    [
+     0.433,
+     0.909
+    ],
+    [
+     0.471,
+     0.917
+    ],
+    [
+     0.482,
+     0.93
+    ],
+    [
+     0.512,
+     0.941
+    ],
+    [
+     0.552,
+     0.952
+    ],
+    [
+     0.585,
+     0.96
+    ],
+    [
+     0.615,
+     0.973
+    ],
+    [
+     0.642,
+     0.984
+    ],
+    [
+     0.7,
+     0.989
+    ],
+    [
+     0.757,
+     0.995
+    ],
+    [
+     0.818,
+     0.995
+    ],
+    [
+     0.837,
+     1.0
+    ],
+    [
+     0.874,
+     1.0
+    ],
+    [
+     0.904,
+     1.0
+    ],
+    [
+     0.926,
+     1.0
+    ],
+    [
+     0.944,
+     1.0
+    ],
+    [
+     0.972,
+     1.0
+    ],
+    [
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "thresholds": [
+   {
+    "t": 0.1,
+    "precision": 0.386,
+    "recall": 0.933
+   },
+   {
+    "t": 0.15,
+    "precision": 0.42,
+    "recall": 0.898
+   },
+   {
+    "t": 0.2,
+    "precision": 0.459,
+    "recall": 0.861
+   },
+   {
+    "t": 0.25,
+    "precision": 0.492,
+    "recall": 0.807
+   },
+   {
+    "t": 0.3,
+    "precision": 0.524,
+    "recall": 0.765
+   },
+   {
+    "t": 0.35,
+    "precision": 0.551,
+    "recall": 0.735
+   },
+   {
+    "t": 0.4,
+    "precision": 0.579,
+    "recall": 0.668
+   },
+   {
+    "t": 0.45,
+    "precision": 0.614,
+    "recall": 0.612
+   },
+   {
+    "t": 0.5,
+    "precision": 0.639,
+    "recall": 0.545
+   },
+   {
+    "t": 0.55,
+    "precision": 0.654,
+    "recall": 0.476
+   },
+   {
+    "t": 0.6,
+    "precision": 0.679,
+    "recall": 0.38
+   },
+   {
+    "t": 0.65,
+    "precision": 0.72,
+    "recall": 0.302
+   },
+   {
+    "t": 0.7,
+    "precision": 0.723,
+    "recall": 0.182
+   },
+   {
+    "t": 0.75,
+    "precision": 0.788,
+    "recall": 0.07
+   },
+   {
+    "t": 0.8,
+    "precision": 0.8,
+    "recall": 0.011
+   },
+   {
+    "t": 0.85,
+    "precision": 0.0,
+    "recall": 0.0
+   },
+   {
+    "t": 0.9,
+    "precision": 0.0,
+    "recall": 0.0
+   }
+  ]
+ }
+}
