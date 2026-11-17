@@ -8,6 +8,7 @@ import { useRef } from "react";
 import automationShot from "@/assets/works/automation/fusion-preview.webp";
 import budgetShot from "@/assets/works/budgettower/dashboard.webp";
 import dashboardsShot from "@/assets/works/dashboards/kpi-tv.webp";
+import devopsShot from "@/assets/works/devops/actions-run.webp";
 import embedhubShot from "@/assets/works/embedhub/admin.webp";
 import fulfillmentShot from "@/assets/works/fulfillment/dashboard.webp";
 import inventoryShot from "@/assets/works/inventory/dashboard.webp";
@@ -27,6 +28,12 @@ type Shot =
   | { kind: "phones"; srcs: [StaticImageData, StaticImageData, StaticImageData]; alt: string };
 
 const SHOTS: Record<string, Shot> = {
+  devops: {
+    kind: "browser",
+    src: devopsShot,
+    label: "github.com/baldan555/baldanportofolio/actions",
+    alt: "GitHub Actions page of this site's repository: lint and build, Terraform format and validate, then build image and deploy, all green in 6m 14s",
+  },
   gatherinsight: {
     kind: "browser",
     src: gatherinsightShot,
@@ -187,6 +194,16 @@ const THEMES = {
     cta: "bg-[#0b5cad] text-white shadow-[0_8px_20px_-10px_rgba(11,92,173,0.7)] hover:bg-[#0a4f96]",
     ghost: "border border-[#0b5cad]/30 bg-white/70 text-[#0b4a8a] hover:bg-white",
   },
+  // This site's pipeline: GitHub's near-black and its "success" green, from the Actions page
+  actions: {
+    card: "bg-gradient-to-br from-[#f6f8fa] to-[#e1e9e3]",
+    badge: "bg-[#1f2328] text-white",
+    tag: "border-[#1a7f37]/30 text-[#1a7f37]",
+    rule: "border-[#1f2328]/15",
+    panel: "bg-gradient-to-br from-white to-[#eef2f5]",
+    cta: "bg-[#1f2328] text-white shadow-[0_8px_20px_-10px_rgba(31,35,40,0.7)] hover:bg-black",
+    ghost: "border border-[#1f2328]/25 bg-white/70 text-[#1f2328] hover:bg-white",
+  },
   // PROTRACK: IM3 magenta and gold, from the app's own stylesheet
   magenta: {
     card: "bg-gradient-to-br from-[#fffaf0] to-[#fce4f0]",
@@ -274,7 +291,7 @@ function WorkCard({
         <div className="grid gap-6 p-6 sm:p-9 md:grid-cols-[1.05fr_1fr] md:gap-10 md:p-12">
           <div className="flex flex-col">
             <div className="flex items-center gap-3 font-mono text-[12px] text-ink/50">
-              <span className={`rounded-full px-2.5 py-1 ${t.badge}`}>0{index + 1}</span>
+              <span className={`rounded-full px-2.5 py-1 ${t.badge}`}>{String(index + 1).padStart(2, "0")}</span>
               <span>{work.org}</span>
               <span>·</span>
               <span className="whitespace-nowrap">{work.year}</span>
@@ -301,7 +318,7 @@ function WorkCard({
                     data-cursor="Visit"
                     className={`inline-flex w-fit items-center gap-2 rounded-full px-5 py-2.5 text-[14px] font-semibold transition ${t.cta}`}
                   >
-                    Visit {name}
+                    {work.urlLabel ?? `Visit ${name}`}
                     <ArrowUpRight className="h-4 w-4" />
                   </a>
                 )}
@@ -330,7 +347,7 @@ function WorkCard({
           {/* a screenshot panel sizes to its frame on phones; drawn visuals keep the 4:3 box */}
           <div className={`relative overflow-hidden rounded-[22px] md:min-h-[400px] ${shot?.kind === "browser" ? "" : "aspect-[4/3] md:aspect-auto"} ${t.panel}`}>
             {shot?.kind === "browser" ? (
-              <ShotVisual shot={shot} url={work.url} host={host || shot.label || ""} theme={work.theme ?? "blue"} />
+              <ShotVisual shot={shot} url={work.url} host={shot.label || host} chip={work.urlChip} theme={work.theme ?? "blue"} />
             ) : shot?.kind === "phones" && (work.case || work.url) ? (
               <PhoneShots shot={shot} href={(work.case || work.url)!} label={`How ${work.title.split(":")[0]} works`} />
             ) : (
@@ -569,6 +586,37 @@ function Backdrop({ theme }: { theme: string }) {
       </svg>
     );
   }
+  if (theme === "actions") {
+    // This site's pipeline: the job graph of the GitHub Actions page, job boxes with a green check joined by "needs" lines
+    const jobs: [number, number][] = [
+      [18, 40],
+      [18, 200],
+      [232, 40],
+      [232, 200],
+    ];
+    return (
+      <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" className={svg} aria-hidden>
+        {["M168 61H232", "M168 221H232", "M168 61C200 61 200 221 232 221"].map((d, i) => (
+          <motion.path
+            key={d}
+            d={d}
+            fill="none"
+            stroke="#1f2328"
+            strokeOpacity={0.14}
+            strokeWidth={3}
+            variants={{ hidden: { pathLength: 0 }, show: { pathLength: 1, transition: { duration: 0.9, delay: 0.25 + i * 0.12, ease } } }}
+          />
+        ))}
+        {jobs.map(([x, y], i) => (
+          <motion.g key={i} variants={{ hidden: { opacity: 0, y: 8 }, show: { opacity: 1, y: 0, transition: { duration: 0.6, delay: i * 0.08, ease } } }}>
+            <rect x={x} y={y} width={150} height={42} rx={9} fill="#ffffff" fillOpacity={0.55} stroke="#1f2328" strokeOpacity={0.1} />
+            <circle cx={x + 20} cy={y + 21} r={7} fill="#1a7f37" fillOpacity={0.35} />
+            <rect x={x + 36} y={y + 18} width={64 + (i % 2) * 22} height={6} rx={3} fill="#1f2328" fillOpacity={0.1} />
+          </motion.g>
+        ))}
+      </svg>
+    );
+  }
   // GatherInsight: its three diagonal stripes
   return (
     <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" className={svg} aria-hidden>
@@ -599,12 +647,13 @@ const FRAMES = {
   receipt: { border: "border-[#0f172b]/12", bar: "bg-[#f8fafc] border-[#0f172b]/10", dot: "bg-[#0f172b]/25", text: "text-[#334155]", shadow: "shadow-[0_24px_60px_-28px_rgba(15,23,43,0.5)]" },
   lavender: { border: "border-[#7c6cf0]/15", bar: "bg-[#fafaff] border-[#7c6cf0]/10", dot: "bg-[#e56bb5]/30", text: "text-[#5b4bd6]", shadow: "shadow-[0_24px_60px_-28px_rgba(91,75,214,0.45)]" },
   gold: { border: "border-[#94700a]/15", bar: "bg-[#f8f5ec] border-[#94700a]/12", dot: "bg-[#d9ae32]/40", text: "text-[#7a5a08]", shadow: "shadow-[0_24px_60px_-28px_rgba(64,46,4,0.5)]" },
+  actions: { border: "border-[#1f2328]/12", bar: "bg-[#f6f8fa] border-[#1f2328]/10", dot: "bg-[#1a7f37]/30", text: "text-[#1f2328]", shadow: "shadow-[0_24px_60px_-28px_rgba(31,35,40,0.5)]" },
   navy: { border: "border-[#0b5cad]/15", bar: "bg-[#f3f6fa] border-[#0b5cad]/10", dot: "bg-[#0b5cad]/20", text: "text-[#0b4a8a]", shadow: "shadow-[0_24px_60px_-28px_rgba(11,60,120,0.55)]" },
 } as const;
 
 /** A real screenshot in a browser frame on the product's own backdrop (diagonal stripes in its colour). With a live site the whole
  * panel opens it; an internal app shows the same frame, marked as running on demo data. */
-function ShotVisual({ shot, url, host, theme }: { shot: Extract<Shot, { kind: "browser" }>; url?: string; host: string; theme: string }) {
+function ShotVisual({ shot, url, host, chip = "live site", theme }: { shot: Extract<Shot, { kind: "browser" }>; url?: string; host: string; chip?: string; theme: string }) {
   const f = FRAMES[theme as keyof typeof FRAMES] ?? FRAMES.blue;
   const Wrap = url ? motion.a : motion.div;
   const linkProps = url ? { href: url, target: "_blank", rel: "noopener noreferrer", "aria-label": `Open ${host} in a new tab`, "data-cursor": "Visit" } : {};
@@ -624,7 +673,7 @@ function ShotVisual({ shot, url, host, theme }: { shot: Extract<Shot, { kind: "b
             <span className="relative flex h-1.5 w-1.5 text-live">
               <span className="pulse-ring relative h-1.5 w-1.5 rounded-full bg-live" />
             </span>
-            live site
+            {chip}
           </>
         ) : (
           "real app · demo data"

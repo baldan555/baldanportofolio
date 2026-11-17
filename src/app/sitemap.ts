@@ -5,6 +5,7 @@ import { SITE_URL } from "@/lib/site";
 
 /** Every public page, for search engines. Keep in step with the routes under src/app/skills. */
 const PAGES = [
+  "/work/devops",
   "/work/protrack",
   "/work/gatherinsight",
   "/work/portals",

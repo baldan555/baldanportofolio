@@ -28,6 +28,7 @@ export function Contact() {
 
   const links = [
     { label: "LinkedIn", href: profile.linkedin },
+    { label: "GitHub", href: profile.github },
     { label: "WhatsApp", href: profile.whatsapp },
   ];
   const cell =
@@ -97,7 +98,7 @@ export function Contact() {
           </Magnetic>
         </div>
 
-        <div className="mt-20 grid grid-cols-2 border-t border-white/10 md:grid-cols-3">
+        <div className="mt-20 grid grid-cols-2 border-t border-white/10 md:grid-cols-4">
           {links.map((l) => (
             <a key={l.label} href={l.href} target="_blank" rel="noreferrer" className={cell}>
               <span className="text-white/70 transition group-hover:text-white">

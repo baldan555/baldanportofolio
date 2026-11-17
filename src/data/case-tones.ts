@@ -92,6 +92,17 @@ export const TONES = {
     step: "bg-gradient-to-br from-[#6b4e05] to-[#a07a10] text-white",
     soft: "bg-[#f1ede2]",
   },
+  // This site's own pipeline: GitHub's near-black and its "success" green
+  actions: {
+    hero: "bg-gradient-to-br from-[#f6f8fa] via-[#eef2f5] to-[#e2f0e6]",
+    kicker: "text-[#1a7f37]",
+    rule: "border-[#1f2328]/15",
+    highlight: "text-[#1a7f37]",
+    chip: "border-[#1f2328]/20 text-[#1f2328]/75",
+    cta: "bg-[#1f2328] text-white shadow-[0_10px_24px_-10px_rgba(31,35,40,0.7)] hover:bg-black",
+    step: "bg-[#1a7f37] text-white",
+    soft: "bg-[#eef6f0]",
+  },
   cream: {
     hero: "bg-gradient-to-br from-[#fbfbf9] via-[#f3ede1] to-[#ebe3d3]",
     kicker: "text-ink/60",

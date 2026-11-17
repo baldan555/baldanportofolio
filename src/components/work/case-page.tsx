@@ -1,3 +1,4 @@
+import { ArrowUpRight } from "lucide-react";
 import type { ReactNode } from "react";
 import type { CaseStudy } from "@/data/cases";
 import { BrowserShot } from "./browser-shot";
@@ -33,10 +34,27 @@ export function CasePage({ c, demo }: { c: CaseStudy; demo?: ReactNode }) {
                 </span>
               ))}
             </div>
-            {demo && c.demo && (
-              <a href="#try" className={`mt-8 inline-flex items-center gap-2 rounded-full px-5 py-3 text-[14px] font-semibold transition ${t.cta}`}>
-                {c.demo.cta} ↓
-              </a>
+            {((demo && c.demo) || c.links) && (
+              <div className="mt-8 flex flex-wrap items-center gap-3">
+                {demo && c.demo && (
+                  <a href="#try" className={`inline-flex items-center gap-2 rounded-full px-5 py-3 text-[14px] font-semibold transition ${t.cta}`}>
+                    {c.demo.cta} ↓
+                  </a>
+                )}
+                {c.links?.map((l) => (
+                  <a
+                    key={l.href}
+                    href={l.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-cursor="Visit"
+                    className="inline-flex items-center gap-2 rounded-full border border-ink/20 bg-white/70 px-5 py-3 text-[14px] font-semibold text-ink transition hover:bg-white"
+                  >
+                    {l.label}
+                    <ArrowUpRight className="h-4 w-4" />
+                  </a>
+                ))}
+              </div>
             )}
           </div>
           {c.shot ? <BrowserShot src={c.shot.src} alt={c.shot.alt} label={c.shot.label} priority /> : <ForecastArt />}

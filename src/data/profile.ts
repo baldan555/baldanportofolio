@@ -11,6 +11,7 @@ export const profile = {
   phone: "+6281245941155",
   whatsapp: "https://wa.me/6281245941155",
   linkedin: "https://linkedin.com/in/baldanullah",
+  github: "https://github.com/baldan555",
   cv: "/cv-baldanullah.pdf", // the international CV; every format is in public/cv/ (docs/cv/build.mjs), picked in components/cv-picker.tsx
 };
 
@@ -120,8 +121,12 @@ export type Work = {
   points: { h: string; p: string }[];
   /** the live product, opened in a new tab from the card */
   url?: string;
+  /** button text for that link; default "Visit <name>" */
+  urlLabel?: string;
+  /** chip on the screenshot when there is a link; default "live site" */
+  urlChip?: string;
   /** brand colour for the card; default is the site's cream */
-  theme?: "blue" | "magenta" | "navy" | "ioh" | "graphite" | "gold" | "lavender" | "ticket" | "tower" | "receipt";
+  theme?: "blue" | "magenta" | "navy" | "ioh" | "graphite" | "gold" | "lavender" | "ticket" | "tower" | "receipt" | "actions";
   /** a page on this site that explains how it works */
   case?: string;
   /** button text for that page; default "How <name> works" */
@@ -146,6 +151,27 @@ export const works: Work[] = [
       { h: "Web platform.", p: "Next.js, Prisma and PostgreSQL, bilingual ID/EN." },
       { h: "Three mobile apps.", p: "Expo apps with offline sync, GPS and audio." },
       { h: "On Google Cloud.", p: "Cloud Run, Cloud SQL, Storage and Scheduler." },
+    ],
+  },
+  {
+    slug: "devops",
+    title: "This site: shipped by its own pipeline.",
+    line: "Its code is public on GitHub. Every push is linted, built and checked; main goes out to Cloud Run through Terraform, with no stored cloud keys and no manual deploys.",
+    org: "Own project · this site",
+    year: "2026",
+    role: "DevOps",
+    tags: ["GitHub Actions", "Terraform", "Cloud Run"],
+    visual: "saas",
+    url: "https://github.com/baldan555/baldanportofolio",
+    urlLabel: "See the code",
+    urlChip: "public repo",
+    theme: "actions",
+    case: "/work/devops",
+    caseLabel: "How it ships",
+    points: [
+      { h: "Push to live.", p: "Lint, build, Terraform checks, image, rollout and a smoke test, on every push to main." },
+      { h: "No keys stored.", p: "GitHub signs in to Google Cloud with short-lived tokens (Workload Identity Federation)." },
+      { h: "Infra as code.", p: "Registry, service and access in Terraform, with a plan on every pull request." },
     ],
   },
   {
@@ -325,7 +351,7 @@ export const processAppliesTo = ["ML models", "SaaS & portals", "Field apps", "B
 export const processSteps = [
   { title: "Listen", items: ["Sit with the people doing the work", "Find the real bottleneck", "Agree on what success looks like"] },
   { title: "Prototype", items: ["A working version, fast", "Tested on real data early"] },
-  { title: "Ship", items: ["Auth, roles and cloud deploy", "Docs and a clean handover"] },
+  { title: "Ship", items: ["Auth, roles and cloud deploy", "Tested and deployed on every push", "Docs and a clean handover"] },
   { title: "Keep improving", items: ["Monitor and fix fast", "Automate what repeats", "Measure the impact"] },
 ];
 
@@ -353,7 +379,7 @@ export const stackGraph = {
     { id: "mobile", label: "Mobile" },
     { id: "auto", label: "Automation" },
     { id: "data", label: "Data & AI" },
-    { id: "cloud", label: "Cloud & Data Eng" },
+    { id: "cloud", label: "Cloud, Data & DevOps" },
   ],
   leaves: [
     { id: "Next.js", hubs: ["web"] },
@@ -392,6 +418,8 @@ export const stackGraph = {
     { id: "Cloud Run", hubs: ["cloud", "web"] },
     { id: "Cloud Storage", hubs: ["cloud"] },
     { id: "Docker", hubs: ["cloud", "web"] },
+    { id: "Terraform", hubs: ["cloud"] },
+    { id: "GitHub Actions", hubs: ["cloud", "web"] },
     { id: "Oracle", hubs: ["cloud"] },
   ],
 };

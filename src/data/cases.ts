@@ -6,6 +6,7 @@ import budgetDash from "@/assets/works/budgettower/dashboard.webp";
 import kpiDash from "@/assets/works/dashboards/kpi-dash.webp";
 import kpiTv from "@/assets/works/dashboards/kpi-tv.webp";
 import embedAdmin from "@/assets/works/embedhub/admin.webp";
+import actionsRun from "@/assets/works/devops/actions-run.webp";
 import ffDash from "@/assets/works/fulfillment/dashboard.webp";
 import invDash from "@/assets/works/inventory/dashboard.webp";
 import invPurchases from "@/assets/works/inventory/purchases.webp";
@@ -16,7 +17,7 @@ import tmDash from "@/assets/works/tickmate/dashboard.webp";
 import { TONES, type Tone } from "./case-tones";
 
 /* Content of the "how it works" pages under /work/[slug]. Everything here was read from each app's own source code;
- * screens are the real apps running on made-up demo data. PROTRACK and GatherInsight have hand-built pages of their own. */
+ * screens are the real apps running on made-up demo data (the pipeline page shows this site's own public repository). PROTRACK and GatherInsight have hand-built pages of their own. */
 
 type Item = { h: string; p: string };
 type Shot = { src: StaticImageData; alt: string; label: string };
@@ -31,6 +32,8 @@ export type CaseStudy = {
   highlight?: string;
   lede: string;
   chips: string[];
+  /** outside links next to the demo button, e.g. the public repository */
+  links?: { label: string; href: string }[];
   shot?: Shot; // no screenshot: the hero draws a forecast chart instead
   dataNote: string;
   flow: { kicker: string; title: string; line?: string; steps: Item[] };
@@ -45,6 +48,92 @@ export type CaseStudy = {
 const DEMO_NOTE = "Screens: the real app running on made-up demo data. No real people, outlets or figures.";
 
 export const cases: CaseStudy[] = [
+  // ------------------------------------------------------------------ This site's own pipeline
+  {
+    slug: "devops",
+    name: "This site's pipeline",
+    description: "How this portfolio ships itself: GitHub Actions lints and builds every push, Docker packs the image, Terraform rolls it out to Cloud Run and a smoke test checks the live domain. Keyless sign-in through Workload Identity Federation, least-privilege access, scale to zero.",
+    tone: TONES.actions,
+    kicker: "Own project · 2026",
+    title: "This site ships itself: every push tested, built and live.",
+    highlight: "tested, built and live.",
+    lede: "The page you're reading is the project. Its code is public on GitHub. A push to main is checked, packed into a container and rolled out to Google Cloud by Terraform: nobody types a deploy command, and no cloud key is stored anywhere. A pull request gets a Terraform plan instead, so infrastructure changes are read before they happen.",
+    chips: ["GitHub Actions", "Terraform · Cloud Run", "Docker", "Workload Identity Federation"],
+    links: [{ label: "See the code on GitHub", href: "https://github.com/baldan555/baldanportofolio" }],
+    shot: { src: actionsRun, alt: "GitHub Actions, the first run of this site's repository: lint and build, Terraform format and validate, then build image and deploy, all green in 6m 14s", label: "github.com/baldan555/baldanportofolio/actions" },
+    dataNote: "Screen: the real GitHub Actions page of this site's public repository, its first run. Nothing staged.",
+    flow: {
+      kicker: "One push",
+      title: "From git push to the live domain, untouched by hand.",
+      steps: [
+        { h: "Push", p: "Every push and pull request starts the same workflow, .github/workflows/ci-cd.yml, versioned with the code it ships." },
+        { h: "Lint and build", p: "npm ci, ESLint, then the full production build, which type-checks and prerenders every page. A broken page never reaches the server." },
+        { h: "Check the infrastructure", p: "terraform fmt -check and validate run alongside. On a pull request, terraform plan shows exactly what would change in the cloud." },
+        { h: "Build the image", p: "Docker builds the container, with its layers cached between runs, and pushes it to Artifact Registry tagged with the commit it came from." },
+        { h: "Roll out, then prove it", p: "terraform apply points Cloud Run at the new image. A smoke test checks the service runs exactly that image and the domain answers 200." },
+      ],
+    },
+    demo: { kicker: "Watch it run", title: "What the pipeline does with each kind of change.", line: "Pick a change and watch the jobs: what runs, what waits, what's skipped, and whether the live site moves. Under it, the latest real runs of this site, read live from GitHub.", cta: "Run the pipeline" },
+    mechanisms: {
+      kicker: "Under the hood",
+      title: "Safe by default, cheap when idle.",
+      items: [
+        { h: "No keys to leak", p: "GitHub proves who it is with a short-lived OIDC token, and Google trades it for a one-hour credential through Workload Identity Federation. The trust covers this one repository; no JSON key exists anywhere." },
+        { h: "A deployer with a narrow job", p: "The pipeline's identity can roll out this one Cloud Run service, push to this one registry and write the Terraform state. The other apps in the same Google Cloud project are out of its reach." },
+        { h: "Adopted, not rebuilt", p: "The site first went live with gcloud commands. Terraform import blocks took over the running registry, service and public access in place: 3 imported, 2 changed, 0 destroyed, no downtime." },
+        { h: "State you can't lose", p: "Terraform's state sits in a private, versioned Cloud Storage bucket, so every earlier version can be restored." },
+        { h: "Scales to zero", p: "Cloud Run runs 0 to 3 instances of 1 vCPU and 1 GiB, and bills CPU only while a request is being served. A start-up CPU boost keeps cold starts short." },
+        { h: "Images clean up after themselves", p: "The registry keeps the 10 newest images and deletes anything older than 30 days, so storage doesn't grow with every push." },
+        { h: "One deploy at a time", p: "Deploys share a concurrency group that queues instead of cancelling, so two quick pushes never roll out over each other." },
+        { h: "Rollback is a re-run", p: "Every image is tagged by commit. Re-running an earlier green run, or applying its tag, puts that exact build back." },
+      ],
+    },
+    access: {
+      kicker: "Least privilege",
+      title: "Every permission the pipeline holds, and why.",
+      line: "Granted once by infra/bootstrap.sh. Everything after that is code in the repository.",
+      rows: [
+        { who: "This repository only", can: "May trade its GitHub token for the deployer identity (workloadIdentityUser). Forks and other repositories are refused by the identity provider's condition." },
+        { who: "The Cloud Run service", can: "run.admin on this one service, to roll out new revisions, plus run.viewer across the project, read-only, so Terraform can follow its operations." },
+        { who: "The image registry", can: "artifactregistry.admin on the site's own repository: push images and manage its cleanup policy." },
+        { who: "Terraform state", can: "storage.objectAdmin on the state bucket, nothing else in Cloud Storage." },
+        { who: "The runtime identity", can: "serviceAccountUser on the default runtime account, so new revisions can run as it, and no other account." },
+        { who: "Visitors", can: "run.invoker for allUsers: the site is public. Declared in Terraform, so it can't drift." },
+      ],
+    },
+    details: {
+      title: "Small choices that keep releases boring.",
+      items: [
+        { h: "Non-root container", p: "A three-stage build on node:24-slim; the final image holds only the standalone server and runs as the node user." },
+        { h: "A production environment", p: "The deploy job runs in GitHub's production environment, so every release is listed with its commit and the live URL." },
+        { h: "Deletion protection", p: "The Cloud Run service can't be removed by a stray terraform destroy." },
+        { h: "The domain stays put", p: "The custom domain mapping is left out of Terraform on purpose: it routes by service name, so a release never touches DNS." },
+      ],
+    },
+    architecture: {
+      title: "GitHub on one side, Google Cloud on the other, no key in between.",
+      nodes: [
+        { where: "GitHub", title: "Repository + Actions", body: "App code, Terraform and the workflow live together; every change is a commit.", soft: true, parts: [{ name: "Workflow", what: "ci-cd.yml, 4 jobs" }, { name: "Terraform", what: "registry, service, access" }] },
+        { where: "Trust", title: "Workload Identity Federation", body: "GitHub's OIDC token becomes a short-lived Google credential for the deployer, for this repository only." },
+        { where: "Google Cloud", title: "Artifact Registry + Cloud Run", body: "Images tagged by commit; the service in asia-southeast1 behind the custom domain.", main: true, parts: [{ name: "Images", what: "tagged by commit" }, { name: "Cloud Run", what: "0–3 instances" }] },
+        { where: "State", title: "Cloud Storage bucket", body: "Terraform's remote state, private and versioned." },
+      ],
+    },
+    stack: {
+      title: "What each piece does.",
+      items: [
+        { tech: "GitHub Actions", role: "Lint, build, Terraform checks and the release, on every push." },
+        { tech: "Terraform", role: "Declares the registry, the Cloud Run service and public access; plans on pull requests, applies on main." },
+        { tech: "Docker (Buildx)", role: "The multi-stage image, with its layer cache kept in GitHub between runs." },
+        { tech: "Artifact Registry", role: "Stores the images, tagged by commit, with cleanup policies." },
+        { tech: "Cloud Run", role: "Serves the site, and scales to zero when nobody's visiting." },
+        { tech: "Workload Identity Federation", role: "Keyless sign-in from GitHub to Google Cloud." },
+        { tech: "Cloud Storage", role: "Terraform's remote state." },
+        { tech: "Next.js standalone", role: "A self-contained Node server, so the image stays small." },
+        { tech: "infra/bootstrap.sh", role: "The one-time gcloud script: state bucket, deployer identity and the identity pool." },
+      ],
+    },
+  },
   // ------------------------------------------------------------------ Portal Channel Operation
   {
     slug: "portals",

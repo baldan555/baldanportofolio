@@ -8,6 +8,7 @@ import { FulfillmentDemo } from "@/components/work/demos/fulfillment-demo";
 import { FusionDemo } from "@/components/work/demos/fusion-demo";
 import { InventoryDemo } from "@/components/work/demos/inventory-demo";
 import { KpiTvDemo } from "@/components/work/demos/kpi-tv-demo";
+import { PipelineDemo } from "@/components/work/demos/pipeline-demo";
 import { PortalDemo } from "@/components/work/demos/portal-demo";
 import { QuadrantDemo } from "@/components/work/demos/quadrant-demo";
 import { TickmateDemo } from "@/components/work/demos/tickmate-demo";
@@ -17,8 +18,9 @@ import { cases, getCase } from "@/data/cases";
 // PROTRACK and GatherInsight keep their own hand-built folders next to this route.
 export const instant = false;
 
-// each demo runs the app's own rules in the browser, on made-up data
+// each demo runs the app's own rules in the browser, on made-up data (devops: this repo's real runs, read live from GitHub)
 const DEMOS: Record<string, () => ReactNode> = {
+  devops: () => <PipelineDemo />,
   portals: () => <PortalDemo />,
   tickmate: () => <TickmateDemo />,
   embedhub: () => <EmbedDemo />,

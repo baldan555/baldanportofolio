@@ -42,7 +42,7 @@ const PERSON = {
   jobTitle: profile.role,
   description: SITE_DESCRIPTION,
   url: SITE_URL,
-  sameAs: [profile.linkedin],
+  sameAs: [profile.linkedin, profile.github],
   address: { "@type": "PostalAddress", addressLocality: profile.city, addressCountry: "ID" },
   alumniOf: { "@type": "CollegeOrUniversity", name: credentials.education.org },
   knowsAbout: ["Machine learning", "Deep learning", "Data analytics", "Data engineering", "SaaS development", "Mobile apps", "Automation", "AI agents"],

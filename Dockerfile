@@ -1,5 +1,6 @@
 # The site as a container for Google Cloud Run: Next.js standalone server, listening on $PORT (8080).
-# Built by Cloud Build from cloudbuild.yaml; .dockerignore keeps ml/, docs/, .env files and node_modules out.
+# Built and pushed by GitHub Actions (.github/workflows/ci-cd.yml); cloudbuild.yaml is the manual fallback.
+# .dockerignore keeps ml/, docs/, .env files and node_modules out.
 
 FROM node:24-slim AS deps
 WORKDIR /app

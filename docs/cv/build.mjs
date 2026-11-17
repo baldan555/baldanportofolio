@@ -91,13 +91,13 @@ function australia() {
       <h1>${esc(P.name)}</h1>
       <div class="title">${esc(P.title)}</div>
       <div class="contact"><span>${esc(P.location)}</span><span>${esc(P.phone)}</span><span>${link(`mailto:${P.email}`, P.email)}</span></div>
-      <div class="contact" style="margin-top:1pt"><span>${link(P.linkedin)}</span><span>Portfolio: ${link(P.portfolio)}</span></div>
+      <div class="contact" style="margin-top:1pt"><span>${link(P.linkedin)}</span><span>${link(P.github)}</span><span>Portfolio: ${link(P.portfolio)}</span></div>
     </header>
     <h2>Career Summary</h2><p style="text-align:justify">${rich(en.summary)}</p>
     <h2>Key Skills</h2><ul class="grid">${en.keySkills.map((s) => `<li>${esc(s)}</li>`).join("")}</ul>
     <h2>Professional Experience</h2>${jobs}
     <h2>Selected Projects</h2>
-    ${en.projects.map((p) => `<p class="proj"><b>${esc(p.name)}</b> — ${rich(p.text)} <span class="muted">${esc(p.stack)} · ${link(p.link)}</span></p>`).join("")}
+    ${en.projects.map((p) => `<p class="proj"><b>${esc(p.name)}</b> — ${rich(p.text)} <span class="muted">${esc(p.stack)} · ${link(p.link)}${p.repo ? ` · ${link(p.repo)}` : ""}</span></p>`).join("")}
     <p class="proj"><b>Machine learning:</b> ${esc(en.ml)}</p>
     <p class="proj"><b>Deep learning &amp; computer vision:</b> ${esc(en.dl)}</p>
     <p class="proj"><b>Virtual experiences:</b> ${esc(en.virtual)}</p>
@@ -116,14 +116,14 @@ function australia() {
 function uk() {
   const css = `
     @page { size: A4; margin: 12mm 15mm; }
-    body { font-size: 9pt; line-height: 1.35; }
+    body { font-size: 9pt; line-height: 1.32; }
     header { text-align: center; }
     .kicker { font-size: 8pt; letter-spacing: 0.12em; text-transform: uppercase; color: #777; }
     h1 { margin: 2pt 0 0; font-size: 21pt; color: #111; font-weight: 750; }
     .title { font-size: 10pt; font-weight: 600; color: #333; margin-top: 2pt; }
     .contact { margin-top: 4pt; font-size: 8.6pt; }
     .contact span + span::before { content: "|"; margin: 0 6pt; color: #aaa; }
-    h2 { margin: 9pt 0 4pt; font-size: 10.2pt; font-weight: 750; color: #1f3a5f; text-transform: uppercase; letter-spacing: 0.08em; border-bottom: 0.8pt solid #1f3a5f; padding-bottom: 2pt; break-after: avoid; }
+    h2 { margin: 8pt 0 3.5pt; font-size: 10.2pt; font-weight: 750; color: #1f3a5f; text-transform: uppercase; letter-spacing: 0.08em; border-bottom: 0.8pt solid #1f3a5f; padding-bottom: 2pt; break-after: avoid; }
     .ks { display: grid; grid-template-columns: 1fr 1fr; gap: 3pt 14pt; }
     .ks p { text-align: justify; }
     .job { margin-bottom: 6pt; }
@@ -137,7 +137,7 @@ function uk() {
       <h1>${esc(P.name)}</h1>
       <div class="title">${esc(P.title)}</div>
       <div class="contact"><span>${esc(P.location)}</span><span>${esc(P.phone)}</span><span>${link(`mailto:${P.email}`, P.email)}</span></div>
-      <div class="contact" style="margin-top:1pt"><span>${link(P.linkedin)}</span><span>Portfolio: ${link(P.portfolio)}</span></div>
+      <div class="contact" style="margin-top:1pt"><span>${link(P.linkedin)}</span><span>${link(P.github)}</span><span>Portfolio: ${link(P.portfolio)}</span></div>
     </header>
     <h2>Personal Statement</h2><p style="text-align:justify">${rich(en.summary)}</p>
     <h2>Key Skills</h2><div class="ks">${en.keySkillsUk.map(([k, v]) => `<p><b>${esc(k)}:</b> ${esc(v)}</p>`).join("")}</div>
@@ -187,7 +187,7 @@ function us() {
     <h2>Experience</h2>
     ${en.jobs.map((j) => `<div class="job item"><div class="row"><div><span class="role">${esc(j.role)}</span> — ${esc(j.orgUs ?? `${j.org}${j.orgNote ? ` (${j.orgNote})` : ""}`)}, ${esc(j.where.split(",")[0])}</div><div class="date">${span(j.from, j.to, "short")}</div></div>${ul(j.short.map(toUS), esc)}</div>`).join("")}
     <h2>Projects</h2>
-    ${en.projects.map((p) => `<p class="line"><b>${esc(p.name)}</b> — ${esc(toUS(p.short))} ${link(p.link)}</p>`).join("")}
+    ${en.projects.map((p) => `<p class="line"><b>${esc(p.name)}</b> — ${esc(toUS(p.short))} ${link(p.link)}${p.repo ? ` · ${link(p.repo)}` : ""}</p>`).join("")}
     <p class="line"><b>Machine &amp; deep learning:</b> ${esc(toUS(en.mlShort))}</p>
     <h2>Education</h2>
     <div class="row"><div><b>B.Sc. Computer Science (Data Science)</b>, Universitas Pancasila — GPA 3.76/4.00; thesis on RNN price forecasting</div><div class="date">2020 – 2024</div></div>
@@ -234,7 +234,7 @@ function europass() {
       <div class="info">
         <div><b>Address:</b> ${esc(P.location)} · <b>Phone:</b> ${esc(P.phone)}</div>
         <div><b>Email:</b> ${link(`mailto:${P.email}`, P.email)}</div>
-        <div><b>LinkedIn:</b> ${link(P.linkedin)}</div>
+        <div><b>LinkedIn:</b> ${link(P.linkedin)} · <b>GitHub:</b> ${link(P.github)}</div>
         <div><b>Website:</b> ${link(P.portfolio)}</div>
       </div>
     </header>
@@ -254,7 +254,7 @@ function europass() {
     <p class="note">Levels on the Common European Framework of Reference (CEFR), from IELTS 6.0 and TOEFL ITP 617 (predicted).</p>
     <h2>Digital skills</h2><div class="kv">${en.skills.map(([k, v]) => `<p><b>${esc(k)}:</b> ${esc(v)}</p>`).join("")}</div>
     <h2>Projects</h2>
-    ${en.projects.map((p) => entry("2026", "", `<div class="role">${esc(p.name.replace(/ \(2026\)/, ""))}</div><p style="text-align:justify">${rich(p.text)}</p><p class="note">${esc(p.stack)} · ${link(p.link)}</p>`)).join("")}
+    ${en.projects.map((p) => entry("2026", "", `<div class="role">${esc(p.name.replace(/ \(2026\)/, ""))}</div><p style="text-align:justify">${rich(p.text)}</p><p class="note">${esc(p.stack)} · ${link(p.link)}${p.repo ? ` · ${link(p.repo)}` : ""}</p>`)).join("")}
     ${entry("2023 – 2026", "", `<div class="role">Machine learning &amp; deep learning</div><p style="text-align:justify">${esc(en.ml)}</p><p style="text-align:justify;margin-top:2pt">${esc(en.dl)}</p>`)}
     <h2>Certifications</h2>
     ${en.certs.map(([n, o, f, t]) => entry(span(f, t, "euro"), "", `<div class="role">${esc(n)}</div><div class="org">${esc(o)}</div>`)).join("")}
@@ -279,7 +279,7 @@ function indonesia() {
     <header>
       <h1>${esc(P.name)}</h1>
       <div class="title">FULL STACK DATA SCIENTIST</div>
-      <div class="contact"><span>${esc(P.location)}</span><span>${esc(P.phone)}</span><span>${link(`mailto:${P.email}`, P.email)}</span><span>${link(P.linkedin)}</span></div>
+      <div class="contact"><span>${esc(P.location)}</span><span>${esc(P.phone)}</span><span>${link(`mailto:${P.email}`, P.email)}</span><span>${link(P.linkedin)}</span><span>${link(P.github)}</span></div>
       <div class="contact"><span>Portofolio (30+ project live): ${link(P.portfolio)}</span></div>
     </header>
     <p class="summary">${rich(id.summary)}</p>
@@ -287,7 +287,7 @@ function indonesia() {
     <h2>Pengalaman Kerja</h2>${jobs}
     <h2>Proyek Unggulan</h2>
     <div class="sub">Produk sendiri</div>
-    ${en.projects.map((p, i) => `<p class="proj"><b>${esc(id.projects[i].name ?? p.name)}</b> — ${rich(id.projects[i].text)} <span class="stack">${esc(p.stack)} · ${link(p.link)}</span></p>`).join("")}
+    ${en.projects.map((p, i) => `<p class="proj"><b>${esc(id.projects[i].name ?? p.name)}</b> — ${rich(id.projects[i].text)} <span class="stack">${esc(p.stack)} · ${link(p.link)}${p.repo ? ` · ${link(p.repo)}` : ""}</span></p>`).join("")}
     <div class="sub">Machine learning (scikit-learn, model berjalan di browser)</div><p class="list">${esc(id.ml)}</p>
     <div class="sub">Deep learning &amp; computer vision (TensorFlow, MediaPipe, di perangkat)</div><p class="list">${esc(id.dl)}</p>
     <p class="list" style="margin-top:4pt"><b>Program virtual:</b> ${esc(id.virtual)}</p>
